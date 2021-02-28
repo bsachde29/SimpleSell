@@ -53,7 +53,7 @@ public class Login extends HttpServlet {
                 writer.println("<h1>Life is just sad!</h1>");
                 e.printStackTrace(writer);
                 writer.println();
-                writer.println("<h2>Why is this life sad again?</h2>");
+                writer.println("<h2>Why is this life sad again thrice?</h2>");
                 writer.println("</body>");
                 writer.println("</html>");
             }
