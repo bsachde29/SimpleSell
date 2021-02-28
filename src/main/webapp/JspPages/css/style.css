@@ -1,0 +1,196 @@
+
+/* Element | http://localhost:63342/SimpleTest/SignUp.html?_ijt=s0fvrrsn61sqkf05ghdt7fge39 */
+
+body {
+    font-family: Skia;
+}
+
+
+.back > div:nth-child(1) {
+    width: 39%;
+    height: auto%;
+    margin: auto;
+    margin-top: 0;
+    display: grid;
+    align-content: baseline;
+    padding: ;
+    background-color: white;
+    border-radius: 24px;
+    border-radius: 32px;
+    box-shadow: 12px 12px 35px #d7e0ed, -12px -12px 35px #f7ffff;
+}
+
+/* Element | http://localhost:63342/SimpleTest/SignUp.html?_ijt=s0fvrrsn61sqkf05ghdt7fge39 */
+
+.logo > img:nth-child(1) {
+    width: 45%;
+    margin: auto;
+}
+
+/* Element | http://localhost:63342/SimpleTest/SignUp.html?_ijt=s0fvrrsn61sqkf05ghdt7fge39 */
+
+.logo {
+    margin: auto;
+    margin-top: 8%;
+    margin-bottom: 15%;
+    display: flex;
+    align-content: end;
+}
+
+/* Element | http://localhost:63342/SimpleTest/SignUp.html?_ijt=s0fvrrsn61sqkf05ghdt7fge39 */
+
+.li_txt_box, .su_txt_box {
+    width: 47%;
+    border-radius: 9px;
+    height: 34px;
+    border: 4px;
+    border: 1.5px solid #ecececa3;
+    margin-bottom: 21px;
+    padding-left: 16px;
+}
+
+/* Element | http://localhost:63342/SimpleTest/SignUp.html?_ijt=s0fvrrsn61sqkf05ghdt7fge39 */
+
+#password {
+    width: 47%;
+}
+
+/* Element | http://localhost:63342/SimpleTest/SignUp.html?_ijt=s0fvrrsn61sqkf05ghdt7fge39 */
+
+.login_txt {
+    text-align: center;
+}
+
+/* Element | http://localhost:63342/SimpleTest/SignUp.html?_ijt=s0fvrrsn61sqkf05ghdt7fge39 */
+
+.back > div:nth-child(1) > div:nth-child(3) {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+/* Element | http://localhost:63342/SimpleTest/SignUp.html?_ijt=s0fvrrsn61sqkf05ghdt7fge39 */
+
+body {
+    height: 100%;
+}
+
+/* Element | http://localhost:63342/SimpleTest/SignUp.html?_ijt=s0fvrrsn61sqkf05ghdt7fge39 */
+
+.back {
+    height: 100vh;
+    width: 100vw;
+    background-color: #E7F1FF;
+    padding: ;
+    padding-top: 8%;
+}
+
+/* Element | http://localhost:63342/SimpleTest/SignUp.html?_ijt=s0fvrrsn61sqkf05ghdt7fge39 */
+
+.back > div:nth-child(1) > div:nth-child(3) > button:nth-child(1) {
+    width: 47%;
+    height: 40px;
+    background-color: #74a3e3;
+    border-radius: 8px;
+    color: white;
+    font-size: inherit;
+    border: 1.5px solid #74a3e3;
+}
+
+
+/* Element | http://localhost:63342/SimpleTest/SignUp.html?_ijt=s0fvrrsn61sqkf05ghdt7fge39 */
+
+.back > div:nth-child(1) {
+    width: 39%;
+    height: auto;
+    margin: auto;
+    margin-top: 0;
+    display: grid;
+    align-content: baseline;
+    padding: ;
+    background-color: white;
+    border-radius: 24px;
+    border-radius: 32px;
+    box-shadow: 12px 12px 35px #d7e0ed, -12px -12px 35px #f7ffff;
+}
+
+/* Element | http://localhost:63342/SimpleTest/SignUp.html?_ijt=s0fvrrsn61sqkf05ghdt7fge39 */
+
+.logo > img:nth-child(1) {
+    width: 45%;
+    margin: auto;
+}
+
+/* Element | http://localhost:63342/SimpleTest/SignUp.html?_ijt=s0fvrrsn61sqkf05ghdt7fge39 */
+
+.logo {
+    margin: auto;
+    margin-top: 8%;
+    margin-bottom: 15%;
+    display: flex;
+    align-content: end;
+}
+
+/* Element | http://localhost:63342/SimpleTest/SignUp.html?_ijt=s0fvrrsn61sqkf05ghdt7fge39 */
+
+#userName {
+    width: 47%;
+    border-radius: 9px;
+    height: 34px;
+    border: 4px;
+    border: 1.5px solid #ecececa3;
+}
+
+/* Element | http://localhost:63342/SimpleTest/SignUp.html?_ijt=s0fvrrsn61sqkf05ghdt7fge39 */
+
+
+/* Element | http://localhost:63342/SimpleTest/SignUp.html?_ijt=s0fvrrsn61sqkf05ghdt7fge39 */
+
+.login_txt {
+    text-align: center;
+}
+
+
+/* Element | http://localhost:63342/SimpleTest/SignUp.html?_ijt=s0fvrrsn61sqkf05ghdt7fge39 */
+
+.back > div:nth-child(1) > div:nth-child(3) {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+/* Element | http://localhost:63342/SimpleTest/SignUp.html?_ijt=s0fvrrsn61sqkf05ghdt7fge39 */
+
+body {
+    height: 100%;
+}
+
+/* Element | http://localhost:63342/SimpleTest/SignUp.html?_ijt=s0fvrrsn61sqkf05ghdt7fge39 */
+
+.back {
+    /* background-color: # .back > div:nth-child(1) { width: 39% height: 40% margin: auto margin-top: 20% display: grid align-content: baseline } .logo > img:nth-child(1) { width: 45% margin: auto } .back { height: 100vh width: 100vw } .logo { margin: auto margin-top: 8% margin-bottom: 15% display: flex align-content: end } #userName { width: 40% } #password { width: 40% margin: margin-top: 20px } .login_txt { text-align: center } .back > div:nth-child(1) > div:nth-child(3) { text-align: center margin-top: 10% margin-bottom: 10% }; */
+    height: 100vh;
+    width: 100vw;
+    background-color: #E7F1FF;
+    padding-top: 8%;
+}
+
+/* Element | http://localhost:63342/SimpleTest/SignUp.html?_ijt=s0fvrrsn61sqkf05ghdt7fge39 */
+
+.back > div:nth-child(1) > div:nth-child(3) > button:nth-child(1) {
+    width: 47%;
+    height: 40px;
+    background-color: #74a3e3;
+    border-radius: 8px;
+    color: white;
+    font-size: inherit;
+    border: 1.5px solid #74a3e3;
+}
+
+.si_txt {
+    text-align: left;
+    margin-left: 27%;
+    margin-bottom: 21px;
+    color: #757575;
+    font-size: 16px;
+}

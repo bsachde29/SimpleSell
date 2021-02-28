@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="SshConfigs">
-    <configs>
-      <sshConfig host="3.128.221.131" id="8fcb9b45-b5c9-4c51-8bee-4103907d9068" keyPath="$USER_HOME$/Downloads/SimpleSell-Main-Server-keypair.pem" port="22" nameFormat="DESCRIPTIVE" username="ec2-user" />
-    </configs>
-  </component>
-</project>
