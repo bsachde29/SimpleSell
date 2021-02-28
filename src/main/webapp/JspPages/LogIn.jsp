@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <title>Log In</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/jquery-3.5.1.js"></script>
-    <script src="js/main.js"></script>
+
 
 </head>
 <body style="overflow: hidden">
@@ -26,6 +25,13 @@
         </div>
     </div>
 </div>
-
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-confirm.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/main.js"></script>
 </body>
+
 </html>
