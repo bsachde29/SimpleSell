@@ -42,6 +42,15 @@
     border: 1.5px solid #ecececa3;
 }
 
+.su_txt_box {
+    width: 47%;
+    border-radius: 9px;
+    height: 34px;
+    border: 4px;
+    border: 1.5px solid #ecececa3;
+    margin: 0.5rem;
+}
+
 /* Element | http://localhost:63342/SimpleTest/SignUp.html?_ijt=s0fvrrsn61sqkf05ghdt7fge39 */
 
 #password {
@@ -53,6 +62,10 @@
 /* Element | http://localhost:63342/SimpleTest/SignUp.html?_ijt=s0fvrrsn61sqkf05ghdt7fge39 */
 
 .login_txt {
+    text-align: center;
+}
+
+.sign_up_txt {
     text-align: center;
 }
 
@@ -186,3 +199,7 @@ body {
     border: 1.5px solid #74a3e3;
 }
 
+.h1_sign_up {
+    font-family:Arial, Helvetica, sans-serif;
+    color: #5E5E5E;
+}
