@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Log In</title>
-    <link rel="stylesheet" href="../src/main/webapp/JspPages/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/main.js"></script>
 
 </head>
 <body style="overflow: hidden">
 <div class="back login">
     <div class="li_su_box">
         <div class="logo login">
-            <img src="../src/main/webapp/JspPages/img/logo.png">
+            <img src="img/logo.png">
         </div>
 
         <div class="login_txt">
@@ -20,11 +22,10 @@
         </div>
 
         <div>
-            <button>Sign In</button>
+            <button id="li_but">Sign In</button>
         </div>
     </div>
 </div>
-
 
 </body>
 </html>
