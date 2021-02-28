@@ -65,10 +65,6 @@
     text-align: center;
 }
 
-.sign_up_txt {
-    text-align: center;
-}
-
 /* Element | http://localhost:63342/SimpleTest/SignUp.html?_ijt=s0fvrrsn61sqkf05ghdt7fge39 */
 
 .back > div:nth-child(1) > div:nth-child(3) {
@@ -111,7 +107,7 @@ body {
 
 .back > div:nth-child(1) {
     width: 39%;
-    height: 40%;
+    height: auto;
     margin: auto;
     margin-top: 0;
     display: grid;
