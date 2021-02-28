@@ -9,6 +9,7 @@
 <ul>
     <li><a href="JspPages/LogIn.jsp">Sign In</a></li>
     <li><a href="JspPages/SignUp.jsp">Sign Up</a></li>
+    <li><a href="JspPages/SignUp.jsp">Sign Up</a></li>
 </ul>
 </body>
 </html>
