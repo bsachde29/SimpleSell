@@ -1,19 +1,12 @@
-/*  ---------------------------------------------------
-    Template Name: Ogani
-    Description:  Ogani eCommerce  HTML Template
-    Author: Colorlib
-    Author URI: https://colorlib.com
-    Version: 1.0
-    Created: Colorlib
----------------------------------------------------------  */
 
 'use strict';
 
+console.log("Arjun thinks he is cool");
 
 (function ($) {
 
     var test = $('#li_but');
-
+    console.log("Arjun Is not cool")
     test.on('click', function () {
         console.log("Working");
     });
