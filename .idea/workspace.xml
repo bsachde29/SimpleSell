@@ -9,34 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="jquery working">
-      <change afterPath="$PROJECT_DIR$/src/main/java/SignUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/SimpleSell_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/SimpleSell_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21__3_48_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21__3_48_PM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21__3_58_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21__3_58_AM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21__4_31_PM__Default_Changelist_.xml" beforeDir="false" />
+    <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="Sign up updates">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleSell.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleSell.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/MyServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/MyServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/com/example/SimpleSell/HelloApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/com/example/SimpleSell/HelloApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/com/example/SimpleSell/HelloResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/com/example/SimpleSell/HelloResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/com/example/SimpleSell/HelloServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/com/example/SimpleSell/HelloServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/simplesell/com/SimpleSell/HelloApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/simplesell/com/SimpleSell/HelloApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/simplesell/com/SimpleSell/HelloResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/simplesell/com/SimpleSell/HelloResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/simplesell/com/SimpleSell/HelloServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/simplesell/com/SimpleSell/HelloServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/SimpleSell/HelloApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/SimpleSell/HelloApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/SimpleSell/HelloResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/SimpleSell/HelloResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/SimpleSell/HelloServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/SimpleSell/HelloServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/simplesell/com/SimpleSell/HelloApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/simplesell/com/SimpleSell/HelloApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/simplesell/com/SimpleSell/HelloResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/simplesell/com/SimpleSell/HelloResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/simplesell/com/SimpleSell/HelloServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/simplesell/com/SimpleSell/HelloServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,6 +215,65 @@
     <MESSAGE value="Arjun and Shivam implemented the Java template for the backend using a Tomcat Server" />
     <MESSAGE value="jquery added&#10;main.js created" />
     <MESSAGE value="jquery working" />
-    <option name="LAST_COMMIT_MESSAGE" value="jquery working" />
+    <MESSAGE value="Sign up updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sign up updates" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="497" y="88" key="CommitChangelistDialog2" timestamp="1614626333598">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="497" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1614626333598" />
+    <state width="619" height="279" key="GridCell.Tab.0.bottom" timestamp="1614628154353">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="619" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1614628154353" />
+    <state width="619" height="279" key="GridCell.Tab.0.center" timestamp="1614628154353">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="619" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1614628154353" />
+    <state width="619" height="279" key="GridCell.Tab.0.left" timestamp="1614628154353">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="619" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1614628154353" />
+    <state width="619" height="279" key="GridCell.Tab.0.right" timestamp="1614628154353">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="619" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614628154353" />
+    <state width="619" height="279" key="GridCell.Tab.1.bottom" timestamp="1614628154354">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="619" height="279" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1614628154354" />
+    <state width="619" height="279" key="GridCell.Tab.1.center" timestamp="1614628154354">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="619" height="279" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1614628154354" />
+    <state width="619" height="279" key="GridCell.Tab.1.left" timestamp="1614628154354">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="619" height="279" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1614628154354" />
+    <state width="619" height="279" key="GridCell.Tab.1.right" timestamp="1614628154354">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="619" height="279" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614628154354" />
+    <state width="619" height="279" key="GridCell.Tab.2.bottom" timestamp="1614628154354">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="619" height="279" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1614628154354" />
+    <state width="619" height="279" key="GridCell.Tab.2.center" timestamp="1614628154354">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="619" height="279" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1614628154354" />
+    <state width="619" height="279" key="GridCell.Tab.2.left" timestamp="1614628154354">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="619" height="279" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1614628154354" />
+    <state width="619" height="279" key="GridCell.Tab.2.right" timestamp="1614628154354">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="619" height="279" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614628154354" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1614626204122">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1614626204122" />
   </component>
 </project>
