@@ -45,10 +45,13 @@ body {
     height: 34px;
     border: 4px;
     border: 1.5px solid #ecececa3;
-    margin-bottom: 21px;
     padding-left: 16px;
-    background-color: #ececec93; 
+    background-color: #ececec93;
+    margin: auto;
+    margin-bottom: 21px;
 }
+
+
 
 /* Element | http://localhost:63342/SimpleTest/SignUp.html?_ijt=s0fvrrsn61sqkf05ghdt7fge39 */
 
@@ -58,9 +61,7 @@ body {
 
 /* Element | http://localhost:63342/SimpleTest/SignUp.html?_ijt=s0fvrrsn61sqkf05ghdt7fge39 */
 
-.login_txt {
-    text-align: center;
-}
+
 
 /* Element | http://localhost:63342/SimpleTest/SignUp.html?_ijt=s0fvrrsn61sqkf05ghdt7fge39 */
 
@@ -149,8 +150,9 @@ body {
 
 .login_txt {
     text-align: center;
+    display: grid;
+    /*! align-content: center; */
 }
-
 
 /* Element | http://localhost:63342/SimpleTest/SignUp.html?_ijt=s0fvrrsn61sqkf05ghdt7fge39 */
 

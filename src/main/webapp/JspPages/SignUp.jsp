@@ -22,10 +22,12 @@
 
         <div class="login_txt">
             <section class="si_txt">Create Account. </section>
-            <input class="su_txt_box" id="firstName" type="text" placeholder="Name">
+            <input class="su_txt_box name" id="firstName" type="text" placeholder="First Name">
+            <input class="su_txt_box name" id="lastName" type="text" placeholder="Last Name">
             <input class="su_txt_box" id="email" type="text" placeholder="Email ID">
-            <input class="su_txt_box" id="mobilenumber" type="text" placeholder="Mobile Number">
+            <input class="su_txt_box" id="mobileNumber" type="text" placeholder="Mobile Number">
             <input class="su_txt_box" id="password" type="text" placeholder="Password">
+            <input class="su_txt_box" id="re-password" type="text" placeholder="Re-type Password">
             <input class="su_txt_box" id="storeName" type="text" placeholder="Store Name">
         </div>
 

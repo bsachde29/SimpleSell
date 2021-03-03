@@ -11,10 +11,11 @@
 
 
     signUpButton.on('click', function () {
-        var Name = $('#firstName').val();
+        var FirstName = $('#firstName').val();
+        var LastName = $('#lastName').val();
         var EmailID = $('#email').val();
         var Password = $('#password').val();
-        var MobileNumber = $('#mobilenumber').val();
+        var MobileNumber = $('#mobileNumber').val();
         var storeName = $('#storeName').val();
         // send ajax request
         DEBUG && console.log(Password);
@@ -24,12 +25,12 @@
             type: 'post',
             url: '/SimpleSell_war/SignUp',
             data: {
-                Name: Name, EmailID: EmailID, Password: Password,
+                FirstName: Name, LastName: LastName, EmailID: EmailID, Password: Password,
                 MobileNumber: MobileNumber, StoreName: storeName
             },
             success: function (data) {
 
-                DEBUG && console.log(this.data);
+                DEBUG && console.log(data);
 
                 // if (data != 1) {
                 //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'red');

@@ -9,9 +9,8 @@ import java.sql.*;
 @WebServlet(name = "SignUp", value = "/SignUp")
 public class SignUp extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String name = request.getParameter("Name");
-        String firstName = name;
-        String lastName = "Doe";
+        String firstName = request.getParameter("FirstName");
+        String lastName = request.getParameter("LastName");
         String emailID = request.getParameter("EmailID");
         String mobileNum = request.getParameter("MobileNumber");
         String password = request.getParameter("Password");
