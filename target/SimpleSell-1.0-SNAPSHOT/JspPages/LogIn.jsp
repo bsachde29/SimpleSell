@@ -16,8 +16,8 @@
 
         <div class="login_txt">
             <section class="si_txt">Please sign in. </section>
-            <input class="li_txt_box" id="userName" type="text" placeholder="Username"><br>
-            <input class="li_txt_box" id="password" type="text" placeholder="Password"><br>
+            <input class="li_txt_box" id="userName" type="text" placeholder="Username">
+            <input class="li_txt_box" id="password" type="text" placeholder="Password">
         </div>
 
         <div>

@@ -6,12 +6,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.*;
 
-@WebServlet(name = "SignUp")
+@WebServlet(name = "SignUp", value = "/SignUp")
 public class SignUp extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String name = request.getParameter("Name");
-        String firstName = name.substring(0, name.indexOf(" "));
-        String lastName = name.substring(name.indexOf(" ") + 1, name.length());
+        String firstName = name;
+        String lastName = "Doe";
         String emailID = request.getParameter("EmailID");
         String mobileNum = request.getParameter("MobileNumber");
         String password = request.getParameter("Password");
@@ -27,15 +27,17 @@ public class SignUp extends HttpServlet {
             if (con != null) {
                 System.out.println("Database connection is successful !!!!");
                 Statement s1 = con.createStatement();
-                String sqlquery = "INSERT INTO 'Sellers' (FirstName,LastName,Email,MobileNum,Pswd,StoreName) " +
+                String sqlquery = "INSERT INTO Sellers (FirstName,LastName,Email,MobileNum,Pswd,StoreName) " +
                         "VALUES ('" + firstName + "','" + lastName + "','" + emailID + "','" + mobileNum + "','" +
                         password + "','" + storeName + "')";
+                System.out.println(sqlquery);
                 s1.executeUpdate(sqlquery);
                 System.out.println("Inserted Seller into Table");
+                response.getWriter().write(sqlquery + "\n");
+                response.getWriter().write("User Registered Successfully");
             }
-        } catch (SQLException se) {
-            se.printStackTrace();
-        } catch (Exception e) {
+        } catch (Exception e) { 
+            response.getWriter().write("User Not Registered");
             e.printStackTrace();
         }
     }

@@ -22,18 +22,29 @@
 
         <div class="login_txt">
             <section class="si_txt">Create Account. </section>
-            <input class="su_txt_box" id="firstName" type="text" placeholder="Name"><br>
-            <input class="su_txt_box" id="email" type="text" placeholder="Email ID"><br>
-            <input class="su_txt_box" id="password" type="text" placeholder="Password"><br>
-            <input class="su_txt_box" id="storeName" type="text" placeholder="Store Name"><br>
+            <input class="su_txt_box" id="firstName" type="text" placeholder="Name">
+            <input class="su_txt_box" id="email" type="text" placeholder="Email ID">
+            <input class="su_txt_box" id="mobilenumber" type="text" placeholder="Mobile Number">
+            <input class="su_txt_box" id="password" type="text" placeholder="Password">
+            <input class="su_txt_box" id="storeName" type="text" placeholder="Store Name">
         </div>
 
         <div>
-            <button>Start Selling!</button>
+            <button id="su_but">Start Selling!</button>
+            <button><a href = "${pageContext.request.contextPath}/SignUp">Hello</a> Start Selling!</button>
+            <script>
+                console.log("${pageContext.request.contextPath}/SignUp");
+            </script>
         </div>
     </div>
 </div>
-
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-confirm.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
