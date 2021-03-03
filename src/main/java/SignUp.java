@@ -32,8 +32,15 @@ public class SignUp extends HttpServlet {
                 System.out.println(sqlquery);
                 s1.executeUpdate(sqlquery);
                 System.out.println("Inserted Seller into Table");
-                response.getWriter().write(sqlquery + "\n");
-                response.getWriter().write("User Registered Successfully");
+                //response.getWriter().write(sqlquery + "\n");
+
+
+
+                // check and return appropriate message to response.getWriter
+
+
+
+                //response.getWriter().write("Email Exists");
             }
         } catch (Exception e) { 
             response.getWriter().write("User Not Registered");

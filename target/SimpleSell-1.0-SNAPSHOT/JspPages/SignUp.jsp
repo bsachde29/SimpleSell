@@ -21,19 +21,23 @@
         </div>
 
         <div class="login_txt">
+
             <section class="si_txt">Create Account. </section>
+            <div class="name_box">
             <input class="su_txt_box name" id="firstName" type="text" placeholder="First Name">
             <input class="su_txt_box name" id="lastName" type="text" placeholder="Last Name">
+            </div>
             <input class="su_txt_box" id="email" type="text" placeholder="Email ID">
+            <section class="email_check">Email already registered!</section>
             <input class="su_txt_box" id="mobileNumber" type="text" placeholder="Mobile Number">
-            <input class="su_txt_box" id="password" type="text" placeholder="Password">
-            <input class="su_txt_box" id="re-password" type="text" placeholder="Re-type Password">
+            <section class="phone_check">Phone Number already exists!</section>
+            <input class="su_txt_box" id="password" type="password" placeholder="Password">
+            <input class="su_txt_box" id="re-password" type="password" placeholder="Re-type Password">
             <input class="su_txt_box" id="storeName" type="text" placeholder="Store Name">
         </div>
 
         <div>
             <button id="su_but">Start Selling!</button>
-            <button><a href = "${pageContext.request.contextPath}/SignUp">Hello</a> Start Selling!</button>
             <script>
                 console.log("${pageContext.request.contextPath}/SignUp");
             </script>

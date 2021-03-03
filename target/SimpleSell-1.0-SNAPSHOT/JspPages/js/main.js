@@ -8,6 +8,8 @@
     var DEBUG = true;
 
     var signUpButton = $('#su_but');
+    $('.email_check').hide();
+    $('.phone_check').hide();
 
 
     signUpButton.on('click', function () {
@@ -25,12 +27,29 @@
             type: 'post',
             url: '/SimpleSell_war/SignUp',
             data: {
-                FirstName: Name, LastName: LastName, EmailID: EmailID, Password: Password,
+                FirstName: FirstName, LastName: LastName, EmailID: EmailID, Password: Password,
                 MobileNumber: MobileNumber, StoreName: storeName
             },
-            success: function (data) {
+            success: function (response) {
 
-                DEBUG && console.log(data);
+                DEBUG && console.log(response);
+
+                if (response == "Email Exists") {
+                    $('.email_check').show();
+                    $('#email').css({
+                            "background-color": "#f4d2d294",
+                            "border": "1.5px solid #e10000a3"
+                        });
+
+                }
+
+                if (response == "Phone Exists") {
+                    $('.phone_check').show()
+                    $('#phoneNumber').css({
+                        "background-color": "#f4d2d294",
+                        "border": "1.5px solid #e10000a3"
+                    });
+                }
 
                 // if (data != 1) {
                 //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'red');
