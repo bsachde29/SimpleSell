@@ -1,0 +1,9 @@
+<changelist name="Uncommitted_changes_before_Update_at_3_3_21,_3_16_AM_[Default_Changelist]" date="1614759419532" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_3_21,_3_16_AM_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 3/3/21, 3:16 AM [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value="target/SimpleSell-1.0-SNAPSHOT.war" />
+    <option name="AFTER_PATH" value="target/SimpleSell-1.0-SNAPSHOT.war" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_3_21,_3_16_AM_[Default_Changelist]/SimpleSell-1.0-SNAPSHOT.war" />
+  </binary>
+</changelist>
