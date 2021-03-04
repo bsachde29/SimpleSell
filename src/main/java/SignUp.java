@@ -31,7 +31,7 @@ public class SignUp extends HttpServlet {
         String hashedPass = SHA256Hash.hash(password);
 
 
-        //TODO Maybe check email with regex
+        //Not Important TODO Maybe check email with regex
 
         String dburl = "jdbc:mysql://selldb.cqt5tgj7qyws.us-east-2.rds.amazonaws.com:3306/simpledb";
         String dbusername = "simpledb";

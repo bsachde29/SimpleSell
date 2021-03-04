@@ -10,12 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="Email and phone repetition checked!">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ModifyAccountDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/ModifyAccountDetails.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/SignUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/SignUp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SignUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SignUp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="JavaScript File" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -76,6 +76,7 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/JspPages" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/JspPages/js" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
     </key>
   </component>
@@ -83,6 +84,19 @@
     <option name="openRunningConfigInTab" value="true" />
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.431">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="main.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="main.js" working-dir="$PROJECT_DIR$/src/main/webapp/JspPages/js">
       <method v="2" />
     </configuration>
@@ -241,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614807024927</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added the Hash function and added some TODOS to help team-mates">
+      <created>1614836346094</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1614836346094</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,7 +286,8 @@
     <MESSAGE value="jquery working" />
     <MESSAGE value="Added first and last names, stored both to database, printed ajax response to console. NOT TESTED YET." />
     <MESSAGE value="Email and phone repetition checked!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Email and phone repetition checked!" />
+    <MESSAGE value="Added the Hash function and added some TODOS to help team-mates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the Hash function and added some TODOS to help team-mates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

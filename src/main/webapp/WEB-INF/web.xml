@@ -34,4 +34,15 @@
         <url-pattern>/SignUp</url-pattern>
     </servlet-mapping>
 
+
+    <servlet>
+        <servlet-name>ModifyAccountDetails</servlet-name>
+        <servlet-class>ModifyAccountDetails</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ModifyAccountDetails</servlet-name>
+        <url-pattern>/ModifyAccountDetails</url-pattern>
+    </servlet-mapping>
+
 </web-app>
