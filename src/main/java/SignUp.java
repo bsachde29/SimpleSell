@@ -19,14 +19,19 @@ public class SignUp extends HttpServlet {
 
         //check password here
         boolean check = true;
-        //TODO
+        //TODO insert password checking algorithm
         if (!check) {
             response.getWriter().write("Password Too weak");
             //TODO use response getWriter to respond with password requirements
             //
+
         }
 
-        //TODO Maybe check email
+        //HASHING THE PASSWORD
+        String hashedPass = SHA256Hash.hash(password);
+
+
+        //TODO Maybe check email with regex
 
         String dburl = "jdbc:mysql://selldb.cqt5tgj7qyws.us-east-2.rds.amazonaws.com:3306/simpledb";
         String dbusername = "simpledb";
@@ -52,7 +57,7 @@ public class SignUp extends HttpServlet {
                 }
                 String sqlquery = "INSERT INTO Sellers (FirstName,LastName,Email,MobileNum,Pswd,StoreName) " +
                         "VALUES ('" + firstName + "','" + lastName + "','" + emailID + "','" + mobileNum + "','" +
-                        password + "','" + storeName + "')";
+                        hashedPass + "','" + storeName + "')";
                 System.out.println(sqlquery);
                 s1.executeUpdate(sqlquery);
                 System.out.println("Inserted Seller into Table");
