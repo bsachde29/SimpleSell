@@ -207,6 +207,7 @@ body {
     color: white;
     font-size: inherit;
     border: 1.5px solid #74a3e3;
+    cursor: pointer;
 }
 
 .si_txt {
