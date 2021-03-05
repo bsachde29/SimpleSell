@@ -62,5 +62,58 @@
         });
     });
 
+    var logInButton = $('#li_but');
+
+    logInButton.on('click', function () {
+        var EmailID = $('#email').val();
+        var Password = $('#password').val();
+        // send ajax request
+        DEBUG && console.log(Password);
+        DEBUG && console.log("Sign IN button works");
+
+        $.ajax({
+            type: 'post',
+            url: '/SimpleSell_war/Login',
+            data: {
+                EmailID: EmailID, Password: Password
+            },
+
+            success: function (response) {
+
+                DEBUG && console.log(response);
+
+                if (response == "Email Exists") {
+                    $('.email_check').show();
+                    $('#email').css({
+                        "background-color": "#f4d2d294",
+                        "border": "1.5px solid #e10000a3"
+                    });
+
+                }
+
+                if (response == "Phone Exists") {
+                    $('.phone_check').show()
+                    $('#phoneNumber').css({
+                        "background-color": "#f4d2d294",
+                        "border": "1.5px solid #e10000a3"
+                    });
+                }
+
+                // if (data != 1) {
+                //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'red');
+                // }
+                // else {
+                //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'green');
+                // }
+
+            }
+        });
+    });
+
+
+    //TODO Send requests for Login
+
+
+    //TODO Send requests for Modifying
 
 })(jQuery);
