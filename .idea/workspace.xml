@@ -9,16 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="jquery working">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/mysql-connector-java-8.0.23.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/SimpleSell_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/SimpleSell_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
+    <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="Email and phone repetition checked!">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ModifyAccountDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/ModifyAccountDetails.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,13 +25,21 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="JavaScript File" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -71,23 +76,29 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/JspPages" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/JspPages/js" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
     </key>
   </component>
   <component name="RunDashboard">
     <option name="openRunningConfigInTab" value="true" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.431">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="main.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="main.js" working-dir="$PROJECT_DIR$/src/main/webapp/JspPages/js">
+      <method v="2" />
     </configuration>
     <configuration name="Tomcat 9.0.431" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.431" ALTERNATIVE_JRE_ENABLED="false">
       <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
@@ -177,6 +188,15 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Node.js.main.js" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.431" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.main.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -190,6 +210,15 @@
       <workItem from="1614502452327" duration="2992000" />
       <workItem from="1614505481463" duration="7416000" />
       <workItem from="1614545197289" duration="2094000" />
+      <workItem from="1614559206950" duration="609000" />
+      <workItem from="1614560326938" duration="618000" />
+      <workItem from="1614738305075" duration="3313000" />
+      <workItem from="1614751472400" duration="3233000" />
+      <workItem from="1614760130353" duration="48000" />
+      <workItem from="1614760282543" duration="1162000" />
+      <workItem from="1614761465180" duration="3867000" />
+      <workItem from="1614804494220" duration="118000" />
+      <workItem from="1614804815308" duration="4777000" />
     </task>
     <task id="LOCAL-00001" summary="jquery added&#10;main.js created">
       <created>1614501372547</created>
@@ -205,7 +234,35 @@
       <option name="project" value="LOCAL" />
       <updated>1614505901476</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added first and last names, stored both to database, printed ajax response to console. NOT TESTED YET.">
+      <created>1614761741058</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1614761741058</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Email and phone repetition checked!">
+      <created>1614806967936</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1614806967936</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Email and phone repetition checked!">
+      <created>1614807024927</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1614807024927</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added the Hash function and added some TODOS to help team-mates">
+      <created>1614836346094</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1614836346094</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +284,19 @@
     <MESSAGE value="Arjun and Shivam implemented the Java template for the backend using a Tomcat Server" />
     <MESSAGE value="jquery added&#10;main.js created" />
     <MESSAGE value="jquery working" />
-    <option name="LAST_COMMIT_MESSAGE" value="jquery working" />
+    <MESSAGE value="Added first and last names, stored both to database, printed ajax response to console. NOT TESTED YET." />
+    <MESSAGE value="Email and phone repetition checked!" />
+    <MESSAGE value="Added the Hash function and added some TODOS to help team-mates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the Hash function and added some TODOS to help team-mates" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/JspPages/LogIn.jsp</url>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
