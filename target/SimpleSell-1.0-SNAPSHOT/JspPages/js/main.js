@@ -69,6 +69,8 @@
         var Password = $('#password').val();
         // send ajax request
         DEBUG && console.log(Password);
+        DEBUG && console.log(EmailID);
+
         DEBUG && console.log("Sign IN button works");
 
         $.ajax({

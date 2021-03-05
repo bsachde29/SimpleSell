@@ -12,15 +12,14 @@ import java.sql.*;
 @WebServlet(name = "Login", value = "/Login")
 public class Login extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String emailID = request.getParameter("EmailID");
         String Password = request.getParameter("Password");
         //TODO use SHA - 256 Hash
-        System.out.println("FUNN IS HERE");
         String url = "jdbc:mysql://selldb.cqt5tgj7qyws.us-east-2.rds.amazonaws.com:3306/simpledb";
         String username = "simpledb";
         String password = "sell1234";
-        String hashedPass = SHA256Hash.hash(password);
+        //String hashedPass = SHA256Hash.hash(Password);
         Connection con = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -28,9 +27,10 @@ public class Login extends HttpServlet {
             if (con != null) {
                 System.out.println("Database connection is successful !!!!");
                 Statement s1 = con.createStatement();
-                String check = "SELECT EXISTS ( SELECT * FROM Sellers WHERE Email = '"+emailID+"'+ AND Pswd ='"+Password+"' )";
+                String check = "SELECT COUNT(*) FROM Sellers WHERE Email = '"+emailID+"' AND Pswd ='"+Password+"'";
+                response.getWriter().write(check);
                 ResultSet result = s1.executeQuery(check);
-                if (result.getString(1).equals("1")) {
+                if (result.getString("COUNT(*)").equals("1")) {
                     System.out.println("Seller found");
                     response.getWriter().write("Seller details found");
                 } else {
@@ -43,13 +43,15 @@ public class Login extends HttpServlet {
             }
         } catch (Exception e) {
             response.getWriter().write("User Not Registered");
+            System.out.println(Password);
+            System.out.println(emailID);
             e.printStackTrace();
         }
 
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 
     }
