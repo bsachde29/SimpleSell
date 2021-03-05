@@ -7,16 +7,19 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.sql.*;
 
 @WebServlet(name = "Login", value = "/Login")
 public class Login extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.setContentType("text/html");
-        response.setCharacterEncoding("UTF-8");
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String emailID = request.getParameter("EmailID");
+        String Password = request.getParameter("Password");
+        //TODO use SHA - 256 Hash
         String url = "jdbc:mysql://selldb.cqt5tgj7qyws.us-east-2.rds.amazonaws.com:3306/simpledb";
         String username = "simpledb";
         String password = "sell1234";
+        //String hashedPass = SHA256Hash.hash(Password);
         Connection con = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -24,45 +27,31 @@ public class Login extends HttpServlet {
             if (con != null) {
                 System.out.println("Database connection is successful !!!!");
                 Statement s1 = con.createStatement();
-                ResultSet result = s1.executeQuery("select * from Buyers");
-
-
-                try (PrintWriter writer = response.getWriter()) {
-                    writer.println("<!DOCTYPE html><html>");
-                    writer.println("<head>");
-                    writer.println("<meta charset=\"UTF-8\" />");
-                    writer.println("<title>MyServlet.java:doGet(): Servlet code!</title>");
-                    writer.println("</head>");
-                    writer.println("<body>");
-                    while (result.next()) {
-                        writer.println("<h1>" + result.getString("FirstName") + "</h1>");
-                    }
-                    writer.println("</body>");
-                    writer.println("</html>");
+                String check = "SELECT COUNT(*) FROM Sellers WHERE Email = '"+emailID+"' AND Pswd ='"+Password+"'";
+                response.getWriter().write(check);
+                ResultSet result = s1.executeQuery(check);
+                if (result.getString("COUNT(*)").equals("1")) {
+                    System.out.println("Seller found");
+                    response.getWriter().write("Seller details found");
+                } else {
+                    System.out.println("Wrong Details");
+                    response.getWriter().write("Wrong Details");
                 }
 
+                //TODO check in database whether email exists if not return with response does not exist
+                //If exists then get the whole object return sellerID for now
             }
         } catch (Exception e) {
-            try (PrintWriter writer = response.getWriter()) {
-                writer.println("<!DOCTYPE html><html>");
-                writer.println("<head>");
-                writer.println("<meta charset=\"UTF-8\" />");
-                writer.println("<title>MyServlet.java:doGet(): Servlet code!</title>");
-                writer.println("</head>");
-                writer.println("<body>");
-                writer.println("<h1>Life is just sad!</h1>");
-                e.printStackTrace(writer);
-                writer.println();
-                writer.println("<h2>Why is this life sad again thrice?</h2>");
-                writer.println("</body>");
-                writer.println("</html>");
-            }
+            response.getWriter().write("User Not Registered");
+            System.out.println(Password);
+            System.out.println(emailID);
+            e.printStackTrace();
         }
 
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 
     }
