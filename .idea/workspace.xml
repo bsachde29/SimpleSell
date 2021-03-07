@@ -10,9 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21__3_48_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21__3_48_PM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21__3_58_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21__3_58_AM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21__4_33_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21__4_33_AM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21__5_54_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21__5_54_PM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21__7_52_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21__7_52_PM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_2_21__9_27_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_2_21__9_27_PM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_3_21__3_16_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_3_21__3_16_AM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_5_2021_3_35_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_5_2021_3_35_PM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_5_2021_3_47_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_5_2021_3_47_PM__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Buyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Buyer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +34,7 @@
         <option value="JavaScript File" />
         <option value="Jsp File" />
         <option value="Class" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
@@ -79,10 +89,18 @@
       <recent name="$PROJECT_DIR$/src/main/webapp" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="openRunningConfigInTab" value="true" />
-  </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.431">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="main.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="main.js" working-dir="$PROJECT_DIR$/src/main/webapp/JspPages/js">
       <method v="2" />
     </configuration>
@@ -315,6 +333,80 @@
     <MESSAGE value="Buyer Class Made" />
     <MESSAGE value="Order Class made and previous classes fixed." />
     <option name="LAST_COMMIT_MESSAGE" value="Order Class made and previous classes fixed." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1170" y="299" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1615142770681">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1170" y="299" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615142770681" />
+    <state width="619" height="279" key="GridCell.Tab.0.bottom" timestamp="1615143178789">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="619" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1615143178789" />
+    <state width="619" height="279" key="GridCell.Tab.0.center" timestamp="1615143178789">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="619" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1615143178789" />
+    <state width="619" height="279" key="GridCell.Tab.0.left" timestamp="1615143178789">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="619" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1615143178789" />
+    <state width="619" height="279" key="GridCell.Tab.0.right" timestamp="1615143178789">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="619" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1615143178789" />
+    <state width="1293" height="279" key="GridCell.Tab.1.bottom" timestamp="1615140424986">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="279" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1615140424986" />
+    <state width="1293" height="279" key="GridCell.Tab.1.center" timestamp="1615140424986">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="279" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1615140424986" />
+    <state width="1293" height="279" key="GridCell.Tab.1.left" timestamp="1615140424986">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="279" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1615140424986" />
+    <state width="1293" height="279" key="GridCell.Tab.1.right" timestamp="1615140424986">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="279" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1615140424986" />
+    <state width="1293" height="279" key="GridCell.Tab.2.bottom" timestamp="1615140424987">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="279" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1615140424987" />
+    <state width="1293" height="279" key="GridCell.Tab.2.center" timestamp="1615140424987">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="279" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1615140424987" />
+    <state width="1293" height="279" key="GridCell.Tab.2.left" timestamp="1615140424987">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="279" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1615140424987" />
+    <state width="1293" height="279" key="GridCell.Tab.2.right" timestamp="1615140424987">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1293" height="279" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1615140424987" />
+    <state x="184" y="86" key="MergeDialog" timestamp="1615140231529">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="86" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615140231529" />
+    <state x="1106" y="226" key="RollbackChangesDialog" timestamp="1615142600242">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1106" y="226" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615142600242" />
+    <state x="756" y="340" width="408" height="343" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1615158426865">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="756" y="340" width="408" height="343" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615158426865" />
+    <state x="818" y="258" width="582" height="524" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1615159113449">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="818" y="258" width="582" height="524" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615159113449" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1615154965170">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1615154965170" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

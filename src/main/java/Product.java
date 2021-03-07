@@ -4,16 +4,17 @@ enum inStock {
     IN_STOCK, OUT_OF_STOCK;
 }
 public class Product {
+
     private String name;
     private String description;
     private String category;
     private boolean hasSubCategories;
     private double price;
-    private String skuNumber;
+    private int skuNumber;
     private inStock in_Stock;
     private ArrayList<Product> subCategories;
 
-    public Product(String name, String description, String category, boolean hasSubCategories, double price, String skuNumber, inStock in_Stock, ArrayList<Product> subCategories) {
+    public Product(String name, String description, String category, boolean hasSubCategories, double price, int skuNumber, inStock in_Stock, ArrayList<Product> subCategories) {
         this.subCategories = subCategories;
         this.name = name;
         this.description = description;
@@ -44,7 +45,7 @@ public class Product {
         return description;
     }
 
-    public String getSkuNumber() {
+    public int getSkuNumber() {
         return skuNumber;
     }
 
@@ -76,7 +77,7 @@ public class Product {
         this.price = price;
     }
 
-    public void setSkuNumber(String skuNumber) {
+    public void setSkuNumber(int skuNumber) {
         this.skuNumber = skuNumber;
     }
 
