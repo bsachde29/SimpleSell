@@ -7,9 +7,9 @@ public class Buyer {
     private String customerId;
     private String phoneNumber;
     private String email;
-    private ArrayList<Items> order;
+    private ArrayList<Order> order;
 
-    public Buyer(String name, String customerId, String phoneNumber, String email, ArrayList<Items> order) {
+    public Buyer(String name, String customerId, String phoneNumber, String email, ArrayList<Order> order) {
         this.name = name;
         this.customerId = customerId;
         this.phoneNumber = phoneNumber;
@@ -41,7 +41,7 @@ public class Buyer {
         return phoneNumber;
     }
 
-    public ArrayList<Items> getOrder() {
+    public ArrayList<Order> getOrder() {
         return order;
     }
 
@@ -53,7 +53,7 @@ public class Buyer {
         this.customerId = customerId;
     }
 
-    public void setOrder(ArrayList<Items> order) {
+    public void setOrder(ArrayList<Order> order) {
         this.order = order;
     }
 }

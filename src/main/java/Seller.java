@@ -9,14 +9,16 @@ public class Seller {
     private String email;
     private String phoneNumber;
     private ArrayList<Product> items;
+    private int sellerID;
 
-    public Seller(String name, String appName, String about, String email, String phoneNumber, ArrayList<Product> items) {
+    public Seller(String name, String appName, String about, String email, String phoneNumber, ArrayList<Product> items, int sellerID) {
         this.name = name;
         this.appName = appName;
         this.email = email;
         this.about = about;
         this.phoneNumber = phoneNumber;
         this.items = items;
+        this.sellerID = sellerID;
     }
 
     public ArrayList<Product> getItems() {
@@ -65,5 +67,13 @@ public class Seller {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public int getSellerID() {
+        return sellerID;
+    }
+
+    public void setSellerID(int sellerID) {
+        this.sellerID = sellerID;
     }
 }

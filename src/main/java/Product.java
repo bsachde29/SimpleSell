@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 enum inStock {
     IN_STOCK, OUT_OF_STOCK;
 }
@@ -9,8 +11,10 @@ public class Product {
     private double price;
     private String skuNumber;
     private inStock in_Stock;
+    private ArrayList<Product> subCategories;
 
-    public Product(String name, String description, String category, boolean hasSubCategories, double price, String skuNumber, inStock in_Stock) {
+    public Product(String name, String description, String category, boolean hasSubCategories, double price, String skuNumber, inStock in_Stock, ArrayList<Product> subCategories) {
+        this.subCategories = subCategories;
         this.name = name;
         this.description = description;
         this.category = category;
@@ -74,5 +78,13 @@ public class Product {
 
     public void setSkuNumber(String skuNumber) {
         this.skuNumber = skuNumber;
+    }
+
+    public ArrayList<Product> getSubCategories() {
+        return subCategories;
+    }
+
+    public void setSubCategories(ArrayList<Product> subCategories) {
+        this.subCategories = subCategories;
     }
 }
