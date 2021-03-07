@@ -8,9 +8,9 @@ public class Seller {
     private String about;
     private String email;
     private String phoneNumber;
-    private ArrayList<Items> items;
+    private ArrayList<Product> items;
 
-    public Seller(String name, String appName, String about, String email, String phoneNumber, ArrayList<Items> items) {
+    public Seller(String name, String appName, String about, String email, String phoneNumber, ArrayList<Product> items) {
         this.name = name;
         this.appName = appName;
         this.email = email;
@@ -19,7 +19,7 @@ public class Seller {
         this.items = items;
     }
 
-    public ArrayList<Items> getItems() {
+    public ArrayList<Product> getItems() {
         return items;
     }
 
@@ -55,7 +55,7 @@ public class Seller {
         this.email = email;
     }
 
-    public void setItems(ArrayList<Items> items) {
+    public void setItems(ArrayList<Product> items) {
         this.items = items;
     }
 
