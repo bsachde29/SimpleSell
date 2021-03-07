@@ -1,5 +1,3 @@
-import com.sun.tools.javac.jvm.Items;
-
 import java.util.ArrayList;
 
 public class Buyer {

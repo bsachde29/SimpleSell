@@ -1,24 +1,26 @@
-import com.sun.tools.javac.jvm.Items;
-
 import java.util.ArrayList;
 
 public class Seller {
-    private String name;
-    private String appName;
+    private int sellerID;
+    private String firstName;
+    private String lastName;
     private String about;
     private String email;
     private String phoneNumber;
+    private String appName;
     private ArrayList<Product> items;
-    private int sellerID;
 
-    public Seller(String name, String appName, String about, String email, String phoneNumber, ArrayList<Product> items, int sellerID) {
-        this.name = name;
-        this.appName = appName;
-        this.email = email;
-        this.about = about;
-        this.phoneNumber = phoneNumber;
-        this.items = items;
+    public Seller(int sellerID, String firstName, String lastName,
+                  //String about,
+                  String email, String phoneNumber, String appName) {
         this.sellerID = sellerID;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.about = null;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.appName = appName;
+        this.items = new ArrayList<>();
     }
 
     public ArrayList<Product> getItems() {
@@ -41,8 +43,20 @@ public class Seller {
         return email;
     }
 
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public void setAbout(String about) {
@@ -59,10 +73,6 @@ public class Seller {
 
     public void setItems(ArrayList<Product> items) {
         this.items = items;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public void setPhoneNumber(String phoneNumber) {

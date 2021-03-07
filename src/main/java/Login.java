@@ -7,6 +7,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import com.google.gson.Gson;
 import java.sql.*;
 
 @WebServlet(name = "Login", value = "/Login")
@@ -33,7 +34,13 @@ public class Login extends HttpServlet {
 
                     System.out.println("Seller found");
                     //creating new Seller object from SQL response
-                    //Seller currentSeller = new Seller();
+                    Seller currentSeller = new Seller(result.getInt("SellerID"),
+                            result.getString("FirstName"), result.getString("LastName"),
+                            result.getString("Email"), result.getString("MobileNum"),
+                            result.getString("StoreName"));
+                    Gson gson = new Gson();
+                    String jsonSeller = gson.toJson(currentSeller);
+                    response.getWriter().write(jsonSeller);
                 } else {
                     System.out.println("Wrong Details");
                     response.getWriter().write("Wrong Details");
