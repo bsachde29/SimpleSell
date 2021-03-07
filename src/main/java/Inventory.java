@@ -72,13 +72,10 @@ public class Inventory extends HttpServlet {
                     String jsonSeller = gson.toJson(currentSeller);
                     response.getWriter().write(jsonSeller);*/
                 } else {
-                    System.out.println("Wrong Details");
-                    response.getWriter().write("Wrong Details");
+                    System.out.println("No items");
+                    response.getWriter().write("No items");
                 }
 
-
-                //TODO check in database whether email exists if not return with response does not exist
-                //If exists then get the whole object return sellerID for now
             }
         } catch (Exception e) {
             response.getWriter().write("No Items in Inventory");
