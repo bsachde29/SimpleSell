@@ -10,13 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21__7_33_PM__Default_Changelist_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Seller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Login.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +23,7 @@
       <list>
         <option value="JavaScript File" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -86,13 +82,15 @@
     <option name="openRunningConfigInTab" value="true" />
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.431">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
