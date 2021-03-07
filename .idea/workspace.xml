@@ -10,8 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Seller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Buyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Buyer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Order.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,19 +83,6 @@
     <option name="openRunningConfigInTab" value="true" />
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.431">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="main.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="main.js" working-dir="$PROJECT_DIR$/src/main/webapp/JspPages/js">
       <method v="2" />
     </configuration>
@@ -268,7 +256,35 @@
       <option name="project" value="LOCAL" />
       <updated>1614934574233</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Seller Class made">
+      <created>1615098595061</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1615098595061</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Product Class and In Stock enum">
+      <created>1615099577602</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1615099577602</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Buyer Class Made">
+      <created>1615104481279</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1615104481279</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Order Class made and previous classes fixed.">
+      <created>1615104975198</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1615104975198</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,7 +310,11 @@
     <MESSAGE value="Email and phone repetition checked!" />
     <MESSAGE value="Added the Hash function and added some TODOS to help team-mates" />
     <MESSAGE value="Initial Login Made" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Login Made" />
+    <MESSAGE value="Seller Class made" />
+    <MESSAGE value="Product Class and In Stock enum" />
+    <MESSAGE value="Buyer Class Made" />
+    <MESSAGE value="Order Class made and previous classes fixed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Order Class made and previous classes fixed." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

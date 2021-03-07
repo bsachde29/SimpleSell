@@ -1,25 +1,29 @@
-import com.sun.tools.javac.jvm.Items;
-
 import java.util.ArrayList;
 
 public class Seller {
-    private String name;
-    private String appName;
+    private int sellerID;
+    private String firstName;
+    private String lastName;
     private String about;
     private String email;
     private String phoneNumber;
-    private ArrayList<Items> items;
+    private String appName;
+    private ArrayList<Product> items;
 
-    public Seller(String name, String appName, String about, String email, String phoneNumber, ArrayList<Items> items) {
-        this.name = name;
-        this.appName = appName;
+    public Seller(int sellerID, String firstName, String lastName,
+                  //String about,
+                  String email, String phoneNumber, String appName) {
+        this.sellerID = sellerID;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.about = null;
         this.email = email;
-        this.about = about;
         this.phoneNumber = phoneNumber;
-        this.items = items;
+        this.appName = appName;
+        this.items = new ArrayList<>();
     }
 
-    public ArrayList<Items> getItems() {
+    public ArrayList<Product> getItems() {
         return items;
     }
 
@@ -39,8 +43,20 @@ public class Seller {
         return email;
     }
 
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public void setAbout(String about) {
@@ -55,15 +71,19 @@ public class Seller {
         this.email = email;
     }
 
-    public void setItems(ArrayList<Items> items) {
+    public void setItems(ArrayList<Product> items) {
         this.items = items;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public int getSellerID() {
+        return sellerID;
+    }
+
+    public void setSellerID(int sellerID) {
+        this.sellerID = sellerID;
     }
 }
