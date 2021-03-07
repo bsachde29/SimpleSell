@@ -19,7 +19,7 @@ public class Login extends HttpServlet {
         String url = "jdbc:mysql://selldb.cqt5tgj7qyws.us-east-2.rds.amazonaws.com:3306/simpledb";
         String username = "simpledb";
         String password = "sell1234";
-        //String hashedPass = SHA256Hash.hash(Password);
+        String hashedPass = SHA256Hash.hash(Password);
         Connection con = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -27,10 +27,10 @@ public class Login extends HttpServlet {
             if (con != null) {
                 System.out.println("Database connection is successful !!!!");
                 Statement s1 = con.createStatement();
-                String check = "SELECT COUNT(*) FROM Sellers WHERE Email = '"+emailID+"' AND Pswd ='"+Password+"'";
+                String check = "SELECT COUNT(*) FROM Sellers WHERE Email = '" + emailID + "' AND Pswd ='" + hashedPass + "'";
                 response.getWriter().write(check);
                 ResultSet result = s1.executeQuery(check);
-                if (result.getString("COUNT(*)").equals("1")) {
+                if (result.next() && result.getString("COUNT(*)").equals("1")) {
                     System.out.println("Seller found");
                     response.getWriter().write("Seller details found");
                 } else {
@@ -47,12 +47,10 @@ public class Login extends HttpServlet {
             System.out.println(emailID);
             e.printStackTrace();
         }
-
     }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
 
     }
 }

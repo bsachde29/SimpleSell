@@ -10,15 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Seller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/LogIn.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/LogIn.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/LogIn.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/LogIn.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Login.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +23,7 @@
       <list>
         <option value="JavaScript File" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -67,9 +61,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.23103449" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -87,13 +82,15 @@
     <option name="openRunningConfigInTab" value="true" />
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.431">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -220,6 +217,7 @@
       <workItem from="1614761465180" duration="3867000" />
       <workItem from="1614804494220" duration="118000" />
       <workItem from="1614804815308" duration="4777000" />
+      <workItem from="1615096821095" duration="988000" />
     </task>
     <task id="LOCAL-00001" summary="jquery added&#10;main.js created">
       <created>1614501372547</created>
