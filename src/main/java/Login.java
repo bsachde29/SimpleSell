@@ -27,16 +27,19 @@ public class Login extends HttpServlet {
             if (con != null) {
                 System.out.println("Database connection is successful !!!!");
                 Statement s1 = con.createStatement();
-                String check = "SELECT COUNT(*) FROM Sellers WHERE Email = '" + emailID + "' AND Pswd ='" + hashedPass + "'";
-                response.getWriter().write(check);
+                String check = "SELECT * FROM Sellers WHERE Email = '" + emailID + "' AND Pswd ='" + hashedPass + "'";
                 ResultSet result = s1.executeQuery(check);
-                if (result.next() && result.getString("COUNT(*)").equals("1")) {
+                if (result.next()) {
+
                     System.out.println("Seller found");
-                    response.getWriter().write("Seller details found");
+                    //creating new Seller object from SQL response
+                    //Seller currentSeller = new Seller();
                 } else {
                     System.out.println("Wrong Details");
                     response.getWriter().write("Wrong Details");
                 }
+
+
 
                 //TODO check in database whether email exists if not return with response does not exist
                 //If exists then get the whole object return sellerID for now
