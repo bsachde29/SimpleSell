@@ -1,18 +1,26 @@
 import java.util.ArrayList;
 
 public class Order {
-    private Buyer customer;
+    private int buyerId;
     private ArrayList<Product> products;
     private ArrayList<Integer> quantities;
     private double totalPrice;
     private String orderId;
 
-    public Order(Buyer customer, ArrayList<Product> products, ArrayList<Integer> quantities, double totalPrice, String orderId) {
-        this.customer = customer;
+    public Order(int buyerId, ArrayList<Product> products, ArrayList<Integer> quantities, double totalPrice, String orderId) {
+        this.buyerId = buyerId;
         this.products = products;
         this.quantities = quantities;
         this.totalPrice = totalPrice;
         this.orderId = orderId;
+    }
+
+    public int getBuyerId() {
+        return buyerId;
+    }
+
+    public void setBuyerId(int buyerId) {
+        this.buyerId = buyerId;
     }
 
     public ArrayList<Integer> getQuantities() {
@@ -23,9 +31,7 @@ public class Order {
         return products;
     }
 
-    public Buyer getCustomer() {
-        return customer;
-    }
+
 
     public double getTotalPrice() {
         return totalPrice;
@@ -35,9 +41,6 @@ public class Order {
         return orderId;
     }
 
-    public void setCustomer(Buyer customer) {
-        this.customer = customer;
-    }
 
     public void setOrderId(String orderId) {
         this.orderId = orderId;

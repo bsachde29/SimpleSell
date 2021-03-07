@@ -10,10 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Buyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Buyer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Seller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Seller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Order.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -291,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615104481279</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Order Class made and previous classes fixed.">
+      <created>1615104975198</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1615104975198</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,7 +326,8 @@
     <MESSAGE value="Seller Class made" />
     <MESSAGE value="Product Class and In Stock enum" />
     <MESSAGE value="Buyer Class Made" />
-    <option name="LAST_COMMIT_MESSAGE" value="Buyer Class Made" />
+    <MESSAGE value="Order Class made and previous classes fixed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Order Class made and previous classes fixed." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
