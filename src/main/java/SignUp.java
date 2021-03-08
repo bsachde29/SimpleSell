@@ -18,11 +18,14 @@ public class SignUp extends HttpServlet {
         String storeName = request.getParameter("StoreName");
 
         //check password here
-        boolean check = true;
+        boolean check = pwcheck.isValidPassword(password);
         //TODO insert password checking algorithm
         if (!check) {
             response.getWriter().write("Password Too weak");
             //TODO use response getWriter to respond with password requirements
+            response.getWriter().write("The password must have between 8 to 20 characters, atleast one digit" +
+                    ", atleast one upper case alphabet, atleast one lower case alphabet, " +
+                    "atleast one special character, and must not contain any whitespace");
             //
 
         }
