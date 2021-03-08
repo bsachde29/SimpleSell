@@ -9,32 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="Inventory servlet build">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/afadec95-718f-4d43-aee4-102d00e09fb4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/afadec95-718f-4d43-aee4-102d00e09fb4/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21,_3_48_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21,_3_58_AM_[Default_Changelist]/SimpleSell-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21,_3_58_AM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21,_4_33_AM_[Default_Changelist]/SimpleSell-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21,_4_33_AM_[Default_Changelist]/javax.annotation.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21,_4_33_AM_[Default_Changelist]/javax.ejb.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21,_4_33_AM_[Default_Changelist]/javax.jms.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21,_4_33_AM_[Default_Changelist]/javax.persistence.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21,_4_33_AM_[Default_Changelist]/javax.resource.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21,_4_33_AM_[Default_Changelist]/javax.servlet.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21,_4_33_AM_[Default_Changelist]/javax.servlet.jsp.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21,_4_33_AM_[Default_Changelist]/javax.servlet.jsp.jstl.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21,_4_33_AM_[Default_Changelist]/javax.transaction.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21,_4_33_AM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21,_5_54_PM_[Default_Changelist]/SimpleSell-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21,_5_54_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21,_7_52_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21__3_48_PM__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21__3_58_AM__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21__4_33_AM__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21__5_54_PM__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_28_21__7_52_PM__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Inventory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,6 +79,17 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.431">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="main.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="main.js" working-dir="$PROJECT_DIR$/src/main/webapp/JspPages/js">
       <method v="2" />
     </configuration>
@@ -227,7 +213,6 @@
       <workItem from="1614804494220" duration="118000" />
       <workItem from="1614804815308" duration="4777000" />
       <workItem from="1615096821095" duration="988000" />
-      <workItem from="1615166176730" duration="439000" />
     </task>
     <task id="LOCAL-00001" summary="jquery added&#10;main.js created">
       <created>1614501372547</created>
@@ -313,14 +298,7 @@
       <option name="project" value="LOCAL" />
       <updated>1615159827918</updated>
     </task>
-    <task id="LOCAL-00013" summary="Inventory servlet build">
-      <created>1615161562641</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1615161562641</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,58 +336,58 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1170" y="299" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615142770681" />
-    <state x="497" y="88" key="CommitChangelistDialog2" timestamp="1615161711728">
+    <state x="497" y="88" key="CommitChangelistDialog2" timestamp="1615159827330">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="497" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1615161711728" />
-    <state width="1293" height="279" key="GridCell.Tab.0.bottom" timestamp="1615164156266">
+    <state x="497" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1615159827330" />
+    <state width="619" height="279" key="GridCell.Tab.0.bottom" timestamp="1615143178789">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1615164156266" />
-    <state width="1293" height="279" key="GridCell.Tab.0.center" timestamp="1615164156266">
+    <state width="619" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1615143178789" />
+    <state width="619" height="279" key="GridCell.Tab.0.center" timestamp="1615143178789">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1615164156266" />
-    <state width="1293" height="279" key="GridCell.Tab.0.left" timestamp="1615164156266">
+    <state width="619" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1615143178789" />
+    <state width="619" height="279" key="GridCell.Tab.0.left" timestamp="1615143178789">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1615164156266" />
-    <state width="1293" height="279" key="GridCell.Tab.0.right" timestamp="1615164156266">
+    <state width="619" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1615143178789" />
+    <state width="619" height="279" key="GridCell.Tab.0.right" timestamp="1615143178789">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1615164156266" />
-    <state width="1293" height="279" key="GridCell.Tab.1.bottom" timestamp="1615164156267">
+    <state width="619" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1615143178789" />
+    <state width="1293" height="279" key="GridCell.Tab.1.bottom" timestamp="1615140424986">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="279" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1615164156267" />
-    <state width="1293" height="279" key="GridCell.Tab.1.center" timestamp="1615164156267">
+    <state width="1293" height="279" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1615140424986" />
+    <state width="1293" height="279" key="GridCell.Tab.1.center" timestamp="1615140424986">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="279" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1615164156267" />
-    <state width="1293" height="279" key="GridCell.Tab.1.left" timestamp="1615164156267">
+    <state width="1293" height="279" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1615140424986" />
+    <state width="1293" height="279" key="GridCell.Tab.1.left" timestamp="1615140424986">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="279" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1615164156267" />
-    <state width="1293" height="279" key="GridCell.Tab.1.right" timestamp="1615164156267">
+    <state width="1293" height="279" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1615140424986" />
+    <state width="1293" height="279" key="GridCell.Tab.1.right" timestamp="1615140424986">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="279" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1615164156267" />
-    <state width="1293" height="279" key="GridCell.Tab.2.bottom" timestamp="1615164156268">
+    <state width="1293" height="279" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1615140424986" />
+    <state width="1293" height="279" key="GridCell.Tab.2.bottom" timestamp="1615140424987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="279" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1615164156268" />
-    <state width="1293" height="279" key="GridCell.Tab.2.center" timestamp="1615164156267">
+    <state width="1293" height="279" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1615140424987" />
+    <state width="1293" height="279" key="GridCell.Tab.2.center" timestamp="1615140424987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="279" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1615164156267" />
-    <state width="1293" height="279" key="GridCell.Tab.2.left" timestamp="1615164156267">
+    <state width="1293" height="279" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1615140424987" />
+    <state width="1293" height="279" key="GridCell.Tab.2.left" timestamp="1615140424987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="279" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1615164156267" />
-    <state width="1293" height="279" key="GridCell.Tab.2.right" timestamp="1615164156267">
+    <state width="1293" height="279" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1615140424987" />
+    <state width="1293" height="279" key="GridCell.Tab.2.right" timestamp="1615140424987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="279" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1615164156267" />
+    <state width="1293" height="279" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1615140424987" />
     <state x="184" y="86" key="MergeDialog" timestamp="1615140231529">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -418,10 +396,6 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1106" y="226" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615142600242" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1615161767583">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1615161767583" />
     <state x="756" y="340" width="408" height="343" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1615158426865">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -430,10 +404,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="818" y="258" width="582" height="524" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615159113449" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1615161718467">
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1615154965170">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1615161718467" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1615154965170" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
