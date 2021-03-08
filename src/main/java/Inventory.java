@@ -66,11 +66,12 @@ public class Inventory extends HttpServlet {
                         Product product = new Product(result.getString("Name"), result.getString("Description"),
                                 result.getString("Category"), result.getBoolean("hasSubcategories"), result.getInt("price"),
                                 productId, stock, subcategory);
+                        inventory.add(product);
                     }
 
-                    /*Gson gson = new Gson();
-                    String jsonSeller = gson.toJson(currentSeller);
-                    response.getWriter().write(jsonSeller);*/
+                    Gson gson = new Gson();
+                    String jsonSeller = gson.toJson(inventory);
+                    response.getWriter().write(jsonSeller);
                 } else {
                     System.out.println("No items");
                     response.getWriter().write("No items");
