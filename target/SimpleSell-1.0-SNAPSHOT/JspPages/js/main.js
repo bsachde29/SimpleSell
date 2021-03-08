@@ -84,12 +84,9 @@
 
                 DEBUG && console.log(response);
 
-                if (response == "Email Exists") {
-                    $('.email_check').show();
-                    $('#email').css({
-                        "background-color": "#f4d2d294",
-                        "border": "1.5px solid #e10000a3"
-                    });
+                if (response == "Seller details found") {
+
+
 
                 }
 
