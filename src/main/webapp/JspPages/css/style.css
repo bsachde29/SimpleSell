@@ -15,6 +15,11 @@ body {
     margin: auto;
 }
 
+.logo_nav {
+    width: 88%;
+    /*! float: left; */
+}
+
 .email_check, .phone_check {
     text-align: left;
     margin-left: 28%;
@@ -217,3 +222,70 @@ body {
     color: #757575;
     font-size: 30px;
 }
+
+/* Inline #2 | http://localhost:8080/SimpleSell_war/JspPages/Products.jsp */
+
+.nav_bar {
+    display: flex;
+}
+
+.nav_logo {
+    width: 14%;
+}
+
+.right_nav {
+    display: block ruby;
+    font-size: 26px;
+    margin-top: 5px;
+    margin-right: 14px;
+}
+
+.nav_bar {
+    display: flex;
+    padding: 5px;
+    box-shadow: bisque;
+}
+
+
+/* Inline #2 | http://localhost:8080/SimpleSell_war/JspPages/Products.jsp */
+
+.side_bar {
+    display: grid;
+    width: 11%;
+}
+
+.side_bar_item {
+    height: 26px;
+    margin-left: 10%;
+    padding: ;
+    padding-top: 10;
+    padding-left: 14;
+}
+
+.content {
+    background-color: #f0f0f0;
+    min-height: 100vh;
+}
+
+.content_main_out {
+
+    height: 100%;
+    width: 87%;
+    float: right;
+    border-left: solid 1px #ccc;
+}
+
+.content {
+    padding: ;
+    padding-top: 22px;
+}
+
+.side_bar {
+    float: left;
+}
+
+.selected_nav_item {
+    background-color: #cacaca;
+    border-radius: 10px;
+}
+

@@ -15,14 +15,14 @@
     <script src="https://kit.fontawesome.com/7dff33b5c2.js" crossorigin="anonymous"></script>
 
 </head>
-<body style="overflow: hidden">
+<body style="overflow: scroll">
 
 
 
 <div>
     <div class="nav_bar">
         <div class="logo_nav">
-            <img class = "nav_logo" src="img/logo_txt.png.png">
+            <img class = "nav_logo" src="img/logo_txt.png">
         </div>
 
         <div class="right_nav">
