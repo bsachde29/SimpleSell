@@ -58,6 +58,58 @@ body {
     margin: auto;
     margin-bottom: 21px;
 }
+
+.product_page_txt_box{
+
+    width: 47%;
+    border-radius: 9px;
+    height: 34px;
+    border: 4px;
+    border: 1.5px solid #ecececa3;
+    margin-left: 30px;
+    background-color: #ffffff;
+    margin: auto;
+    margin-bottom: 21px;
+    margin-left: 2%;
+    border: solid lightgray;
+}
+
+.product_page_txt_box:focus {
+    outline: none;
+}
+
+.desc {
+    height: 200px;
+}
+
+.desc::placeholder {
+    text-align: center;
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .btn {
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+
 .back > div:nth-child(1) {
     width: 33%;
     height: auto;
@@ -289,3 +341,34 @@ body {
     border-radius: 10px;
 }
 
+.product_text {
+   margin-left: 2%;
+}
+
+.product_btns {
+    margin-left: 4%;
+    width: 10%;
+    height: 40px;
+    background-color: #74a3e3;
+    border-radius: 8px;
+    color: white;
+    font-size: inherit;
+    border: 1.5px solid #74a3e3;
+    text-align: center;
+}
+
+.product_btns:hover {
+    background-color: white;
+    color: black;
+}
+
+.cancel_btn {
+    background-color: white;
+    color: black;
+    margin-left: 35%;
+}
+
+.cancel_btn:hover{
+    background-color: #74a3e3;
+    color: white;
+}
