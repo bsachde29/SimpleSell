@@ -17,7 +17,8 @@
         <div class="login_txt">
             <section class="si_txt">Please sign in. </section>
             <input class="li_txt_box" id="email" type="text" placeholder="Username">
-            <input class="li_txt_box" id="password" type="text" placeholder="Password">
+            <input class="li_txt_box" id="password" type="password" placeholder="Password">
+            <section class="already"><a href="SignUp.jsp">New to SimpleSell? Sign Up.</a></section>
         </div>
 
         <div>

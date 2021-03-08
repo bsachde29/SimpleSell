@@ -49,11 +49,11 @@ public class Inventory extends HttpServlet {
                                     String retrieveSub = "SELECT * FROM Product WHERE ProductID ='" + subID + "'";
                                     ResultSet res3 = s3.executeQuery(retrieveSub);
                                     inStock stock = inStock.OUT_OF_STOCK;
-                                    if (res2.getBoolean("inStock")) {
+                                    if (res3.getBoolean("inStock")) {
                                         stock = inStock.IN_STOCK;
                                     }
-                                    Product p = new Product(res2.getString("Name"), res2.getString("Description"),
-                                            res2.getString("Category"), false, res2.getInt("price"),
+                                    Product p = new Product(res3.getString("Name"), res3.getString("Description"),
+                                            res3.getString("Category"), false, res3.getInt("price"),
                                             subID, stock, null);
                                     subcategory.add(p);
                                 }
@@ -66,11 +66,12 @@ public class Inventory extends HttpServlet {
                         Product product = new Product(result.getString("Name"), result.getString("Description"),
                                 result.getString("Category"), result.getBoolean("hasSubcategories"), result.getInt("price"),
                                 productId, stock, subcategory);
+                        inventory.add(product);
                     }
 
-                    /*Gson gson = new Gson();
-                    String jsonSeller = gson.toJson(currentSeller);
-                    response.getWriter().write(jsonSeller);*/
+                    Gson gson = new Gson();
+                    String jsonSeller = gson.toJson(inventory);
+                    response.getWriter().write(jsonSeller);
                 } else {
                     System.out.println("No items");
                     response.getWriter().write("No items");
