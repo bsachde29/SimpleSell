@@ -9,7 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="Email Integration check" />
+    <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="Email Integration check">
+      <change afterPath="$PROJECT_DIR$/src/main/java/InventoryAdd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_2_21__9_27_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_2_21__9_27_PM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_3_21__3_16_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_3_21__3_16_AM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_5_2021_3_35_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_5_2021_3_35_PM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_5_2021_3_47_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_5_2021_3_47_PM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Inventory.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,6 +85,17 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.431">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="main.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="main.js" working-dir="$PROJECT_DIR$/src/main/webapp/JspPages/js">
       <method v="2" />
     </configuration>
@@ -319,6 +338,12 @@
     <MESSAGE value="Inventory servlet build" />
     <MESSAGE value="Email Integration check" />
     <option name="LAST_COMMIT_MESSAGE" value="Email Integration check" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1236" y="340" width="408" height="355" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1615305096866">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1236" y="340" width="408" height="355" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615305096866" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
