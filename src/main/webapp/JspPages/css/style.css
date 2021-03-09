@@ -72,6 +72,11 @@ body {
     margin-bottom: 21px;
     margin-left: 2%;
     border: solid lightgray;
+    display: inline;
+}
+
+.sml_prd_txt_box {
+    width: 160px;
 }
 
 .product_page_txt_box:focus {
@@ -93,7 +98,7 @@ body {
   }
   
   .btn {
-    border: 2px solid gray;
+    border: 3px solid lightgray;
     color: gray;
     background-color: white;
     padding: 8px 20px;
@@ -316,7 +321,7 @@ body {
 
 .content {
     background-color: #f0f0f0;
-    min-height: 100vh;
+    min-height: 120vh;
 }
 
 .content_main_out {
@@ -343,6 +348,11 @@ body {
 
 .product_text {
    margin-left: 2%;
+   color:#606060;
+}
+
+.prd_title {
+    color: #85AEE5;
 }
 
 .product_btns {
@@ -358,8 +368,8 @@ body {
 }
 
 .product_btns:hover {
-    background-color: white;
-    color: black;
+    background-color:#2978e7 ;
+    color: white;
 }
 
 .cancel_btn {
@@ -369,6 +379,50 @@ body {
 }
 
 .cancel_btn:hover{
-    background-color: #74a3e3;
-    color: white;
+    background-color: rgb(241, 62, 62);
+}
+
+.prod_wrapper {
+    padding-top: 2%;
+    margin-left: 2%;
+    display:inline-block;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 8px;
+    width: 40%;
+    margin-bottom: 2%;
+}
+
+.inv_img{
+    display: block;
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-left: 10%;
+    border: 2px solid gray;
+    border-radius: 1rem;
+}
+
+.prod_title {
+    text-align:justify;
+    margin-left: 2%;
+    display: inline;
+    border: 2px solid gray;
+    border-radius: 8px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.prd_desc {
+    display: inline-block;
+    border: 2px solid gray;
+    border-radius: 8px;
+    width: 320px;
+    margin-left: 10%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.price {
+    margin-left: 10%;
 }
