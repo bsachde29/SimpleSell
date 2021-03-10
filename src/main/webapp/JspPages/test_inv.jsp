@@ -62,6 +62,8 @@
         <div class = "content_main_out">
             <div class = "content_main">
 
+                <button class = "test_inv">get inventory</button>
+
             </div>
 
         </div>
