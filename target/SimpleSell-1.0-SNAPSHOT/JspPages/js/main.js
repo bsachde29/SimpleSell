@@ -88,19 +88,11 @@
 
                 } else {
                     var seller = JSON.parse(response);
-
+                    console.log(seller);
                     sessionStorage.setItem("sellerID", seller.sellerID);
                     sessionStorage.setItem(("storeName"), seller.appName);
                     sessionStorage.setItem("sellerName", seller.firstName + " " + seller.lastName);
 
-                } else if (response == "Phone Exists") {
-                    $('.phone_check').show()
-                    $('#phoneNumber').css({
-                        "background-color": "#f4d2d294",
-                        "border": "1.5px solid #e10000a3"
-                    });
-                } else {
-                    console.log(response);
                 }
 
                 // if (data != 1) {
@@ -123,7 +115,7 @@
             type: 'get',
             url: '/SimpleSell_war/Inventory',
             data: {
-                selerID: sessionStorage.getItem("sellerID")
+                SellerID: sessionStorage.getItem("sellerID")
             },
 
             success: function (response) {
