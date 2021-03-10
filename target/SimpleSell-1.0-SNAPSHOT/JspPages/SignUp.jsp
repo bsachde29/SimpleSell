@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body style="overflow: hidden">
+<body style="overflow: scroll">
 <div class="back login">
     <div class="li_su_box">
         <div class="logo login">
@@ -34,14 +34,13 @@
             <input class="su_txt_box" id="password" type="password" placeholder="Password">
             <input class="su_txt_box" id="re-password" type="password" placeholder="Re-type Password">
             <input class="su_txt_box" id="storeName" type="text" placeholder="Store Name">
+            <section class="already"><a href="LogIn.jsp">Already registed? Sign In.</a></section>
         </div>
 
-        <div>
             <button id="su_but">Start Selling!</button>
             <script>
                 console.log("${pageContext.request.contextPath}/SignUp");
             </script>
-        </div>
     </div>
 </div>
 <script src="js/jquery-3.5.1.js"></script>

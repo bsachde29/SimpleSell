@@ -18,7 +18,7 @@ public class SignUp extends HttpServlet {
         String storeName = request.getParameter("StoreName");
 
         //check password here
-        boolean check = pwcheck.isValidPassword(password);
+        boolean check = pwcheck.isValidPass(password);
         //TODO insert password checking algorithm
         if (!check) {
             response.getWriter().write("Password Too weak");
@@ -26,8 +26,9 @@ public class SignUp extends HttpServlet {
             response.getWriter().write("The password must have between 8 to 20 characters, atleast one digit" +
                     ", atleast one upper case alphabet, atleast one lower case alphabet, " +
                     "atleast one special character, and must not contain any whitespace");
+            //doPost(request, response);
+            //return;
             //
-
         }
 
         //HASHING THE PASSWORD
@@ -35,6 +36,17 @@ public class SignUp extends HttpServlet {
 
 
         //Not Important TODO Maybe check email with regex
+
+        boolean chk = mailchk.isValidEmail(emailID);
+
+        if (!chk) {
+            response.getWriter().write("Email Too weak");
+            //TODO use response getWriter to respond with password requirements
+            response.getWriter().write("Email needs to have an @");
+            //doPost(request, response);
+            //return;
+            //
+        }
 
         String dburl = "jdbc:mysql://selldb.cqt5tgj7qyws.us-east-2.rds.amazonaws.com:3306/simpledb";
         String dbusername = "simpledb";

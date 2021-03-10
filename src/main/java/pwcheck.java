@@ -1,6 +1,6 @@
 import java.util.regex.*;
 public class pwcheck {
-    public static boolean isValidPassword(String password) {
+    public static boolean isValidPass(String password) {
         String regex = "^(?=.*[0-9])"
                 + "(?=.*[a-z])(?=.*[A-Z])"
                 + "(?=.*[@#$%^&+=])"

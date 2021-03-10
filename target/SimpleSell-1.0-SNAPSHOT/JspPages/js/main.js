@@ -1,4 +1,3 @@
-
 'use strict';
 
 
@@ -37,9 +36,9 @@
                 if (response == "Email Exists") {
                     $('.email_check').show();
                     $('#email').css({
-                            "background-color": "#f4d2d294",
-                            "border": "1.5px solid #e10000a3"
-                        });
+                        "background-color": "#f4d2d294",
+                        "border": "1.5px solid #e10000a3"
+                    });
 
                 }
 
@@ -84,21 +83,16 @@
 
                 DEBUG && console.log(response);
 
-                if (response == "Email Exists") {
-                    $('.email_check').show();
-                    $('#email').css({
-                        "background-color": "#f4d2d294",
-                        "border": "1.5px solid #e10000a3"
-                    });
+                if (response == "Wrong Details") {
 
-                }
 
-                if (response == "Phone Exists") {
-                    $('.phone_check').show()
-                    $('#phoneNumber').css({
-                        "background-color": "#f4d2d294",
-                        "border": "1.5px solid #e10000a3"
-                    });
+                } else {
+                    var seller = JSON.parse(response);
+                    console.log(seller);
+                    sessionStorage.setItem("sellerID", seller.sellerID);
+                    sessionStorage.setItem(("storeName"), seller.appName);
+                    sessionStorage.setItem("sellerName", seller.firstName + " " + seller.lastName);
+
                 }
 
                 // if (data != 1) {
@@ -107,6 +101,28 @@
                 // else {
                 //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'green');
                 // }
+
+            }
+        });
+    });
+
+
+
+    $('.test_inv').on('click', function () {
+
+
+        $.ajax({
+            type: 'get',
+            url: '/SimpleSell_war/Inventory',
+            data: {
+                SellerID: sessionStorage.getItem("sellerID")
+            },
+
+            success: function (response) {
+
+                DEBUG && console.log(response);
+
+
 
             }
         });
