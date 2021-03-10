@@ -50,7 +50,6 @@ public class Inventory extends HttpServlet {
                             Statement s2 = con.createStatement();
                             String sublist = "SELECT * FROM Product_Subcategories WHERE ProductID = '" + productId + "'";
                             ResultSet res2 = s2.executeQuery(sublist);
-                            if (res2.next()) {
                                 while (res2.next()) {
                                     int subID = res2.getInt("SubItemID");
                                     Statement s3 = con.createStatement();
@@ -67,10 +66,8 @@ public class Inventory extends HttpServlet {
                                     Product p = new Product(res3.getString("Name"), res3.getString("Description"),
                                             res3.getString("Category"), false, res3.getInt("price"),
                                             subID, stock, null);
-
                                     subcategory.add(p);
                                 }
-                            }
                         }
                         inStock stock = inStock.OUT_OF_STOCK;
                         if (result.getBoolean("inStock")) {
