@@ -9,14 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="Email Integration check">
-      <change afterPath="$PROJECT_DIR$/src/main/java/InventoryAdd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_2_21__9_27_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_2_21__9_27_PM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_3_21__3_16_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_3_21__3_16_AM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_5_2021_3_35_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_5_2021_3_35_PM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_5_2021_3_47_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_5_2021_3_47_PM__Default_Changelist_.xml" afterDir="false" />
+    <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ModifyAccountDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ModifyAccountDetails.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -305,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615159827918</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="AddProduct">
+      <created>1615305658417</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1615305658417</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,9 +339,18 @@
     <MESSAGE value="Order Class made and previous classes fixed." />
     <MESSAGE value="Inventory servlet build" />
     <MESSAGE value="Email Integration check" />
-    <option name="LAST_COMMIT_MESSAGE" value="Email Integration check" />
+    <MESSAGE value="AddProduct" />
+    <option name="LAST_COMMIT_MESSAGE" value="AddProduct" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="977" y="88" key="CommitChangelistDialog2" timestamp="1615305657737">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="977" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1615305657737" />
+    <state x="1032" y="253" key="Vcs.Push.Dialog.v2" timestamp="1615305663952">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1032" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1615305663952" />
     <state x="1236" y="340" width="408" height="355" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1615305096866">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
