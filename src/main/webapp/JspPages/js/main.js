@@ -1,4 +1,3 @@
-
 'use strict';
 
 
@@ -37,9 +36,9 @@
                 if (response == "Email Exists") {
                     $('.email_check').show();
                     $('#email').css({
-                            "background-color": "#f4d2d294",
-                            "border": "1.5px solid #e10000a3"
-                        });
+                        "background-color": "#f4d2d294",
+                        "border": "1.5px solid #e10000a3"
+                    });
 
                 }
 
@@ -88,14 +87,14 @@
 
 
 
-                }
-
-                if (response == "Phone Exists") {
+                } else if (response == "Phone Exists") {
                     $('.phone_check').show()
                     $('#phoneNumber').css({
                         "background-color": "#f4d2d294",
                         "border": "1.5px solid #e10000a3"
                     });
+                } else {
+                    console.log(response);
                 }
 
                 // if (data != 1) {

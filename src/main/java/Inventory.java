@@ -55,6 +55,7 @@ public class Inventory extends HttpServlet {
                                     Product p = new Product(res3.getString("Name"), res3.getString("Description"),
                                             res3.getString("Category"), false, res3.getInt("price"),
                                             subID, stock, null);
+
                                     subcategory.add(p);
                                 }
                             }
