@@ -108,7 +108,7 @@
 
 
 
-    $('.test_inv').on('click', function () {
+    if (($(".all_products")[0])) {
 
 
         $.ajax({
@@ -121,12 +121,40 @@
             success: function (response) {
 
                 DEBUG && console.log(response);
+                var obj = JSON.parse(response);
+
+                DEBUG && console.log(obj[0]["name"]);
+
+                DEBUG && console.log(obj.length)
+
+
+                for (let i = 0; i < obj.length; i ++ ) {
+                    $('.all_products').append("<div class=\"prod_wrapper\">\n" +
+                        "                        <div class=\"product_content\">\n" +
+                        "                            <img class=\"inv_img\" src=\"img/product_image.jpg\">\n" +
+                        "                            <div class=\"product_txt\">\n" +
+                        "                            <div class=\"title_price\">\n" +
+                        "                                <input class=\"prod_title\" value=\"" + obj[i]["name"] + "\">\n" +
+                        "                                <section class=\"product_price\">\n" +
+                        "                                    <span class=\"price_dollar\">$</span>\n" +
+                        "                                    <input class=\"prod_title price\" value=\"" + obj[i]["price"] + "\">\n" +
+                        "                                </section>\n" +
+                        "                            </div>\n" +
+                        "                            <textarea class=\"prd_desc\">" + obj[i]["description"] + " </textarea>\n" +
+                        "                                <button class=\"product_btns\">Save</button>\n" +
+                        "                            </div>\n" +
+                        "                        </div>\n" +
+                        "\n" +
+                        "                    </div>")
+
+
+                }
 
 
 
             }
         });
-    });
+    }
 
 
     //TODO Send requests for Login
