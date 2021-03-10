@@ -83,9 +83,15 @@
 
                 DEBUG && console.log(response);
 
-                if (response == "Seller details found") {
+                if (response == "Wrong Details") {
 
 
+                } else {
+                    var seller = JSON.parse(response);
+
+                    sessionStorage.setItem("sellerID", seller.sellerID);
+                    sessionStorage.setItem(("storeName"), seller.appName);
+                    sessionStorage.setItem("sellerName", seller.firstName + " " + seller.lastName);
 
                 } else if (response == "Phone Exists") {
                     $('.phone_check').show()
@@ -103,6 +109,28 @@
                 // else {
                 //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'green');
                 // }
+
+            }
+        });
+    });
+
+
+
+    $('.test_inv').on('click', function () {
+
+
+        $.ajax({
+            type: 'get',
+            url: '/SimpleSell_war/Inventory',
+            data: {
+                selerID: sessionStorage.getItem("sellerID")
+            },
+
+            success: function (response) {
+
+                DEBUG && console.log(response);
+
+
 
             }
         });
