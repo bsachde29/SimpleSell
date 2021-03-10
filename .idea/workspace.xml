@@ -9,10 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ModifyAccountDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ModifyAccountDetails.java" afterDir="false" />
-    </list>
+    <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="Modify Products, and changed swunumber to productid in product" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,17 +77,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.431">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="main.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="main.js" working-dir="$PROJECT_DIR$/src/main/webapp/JspPages/js">
       <method v="2" />
     </configuration>
@@ -215,6 +201,7 @@
       <workItem from="1614804815308" duration="4777000" />
       <workItem from="1615096821095" duration="988000" />
       <workItem from="1615271050517" duration="779000" />
+      <workItem from="1615398451854" duration="309000" />
     </task>
     <task id="LOCAL-00001" summary="jquery added&#10;main.js created">
       <created>1614501372547</created>
@@ -341,20 +328,6 @@
     <MESSAGE value="Email Integration check" />
     <MESSAGE value="AddProduct" />
     <option name="LAST_COMMIT_MESSAGE" value="AddProduct" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="977" y="88" key="CommitChangelistDialog2" timestamp="1615305657737">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="977" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1615305657737" />
-    <state x="1032" y="253" key="Vcs.Push.Dialog.v2" timestamp="1615305663952">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1032" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1615305663952" />
-    <state x="1236" y="340" width="408" height="355" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1615305096866">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1236" y="340" width="408" height="355" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615305096866" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
