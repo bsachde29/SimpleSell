@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body style="overflow: hidden">
+<body style="overflow: scroll">
 <div class="back login">
     <div class="li_su_box">
         <div class="logo login">

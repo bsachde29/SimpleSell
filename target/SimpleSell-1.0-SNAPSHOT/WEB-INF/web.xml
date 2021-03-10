@@ -45,4 +45,14 @@
         <url-pattern>/ModifyAccountDetails</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>Inventory</servlet-name>
+        <servlet-class>Inventory</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Inventory</servlet-name>
+        <url-pattern>/Inventory</url-pattern>
+    </servlet-mapping>
+
 </web-app>

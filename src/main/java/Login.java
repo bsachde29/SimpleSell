@@ -16,7 +16,6 @@ public class Login extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String emailID = request.getParameter("EmailID");
         String Password = request.getParameter("Password");
-        //TODO use SHA - 256 Hash
         String url = "jdbc:mysql://selldb.cqt5tgj7qyws.us-east-2.rds.amazonaws.com:3306/simpledb";
         String username = "simpledb";
         String password = "sell1234";
