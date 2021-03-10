@@ -37,12 +37,10 @@
             <section class="already"><a href="LogIn.jsp">Already registed? Sign In.</a></section>
         </div>
 
-        <div>
             <button id="su_but">Start Selling!</button>
             <script>
                 console.log("${pageContext.request.contextPath}/SignUp");
             </script>
-        </div>
     </div>
 </div>
 <script src="js/jquery-3.5.1.js"></script>

@@ -28,7 +28,7 @@ public class Inventory extends HttpServlet {
             if (con != null) {
                 System.out.println("Database connection is successful !!!!");
                 Statement s1 = con.createStatement();
-                String itemList = "SELECT * FROM Seller_Items WHERE SellerID = '" + sellerID + "'";
+                String itemList = "SELECT * FROM Seller_Product WHERE SellerID = '" + sellerID + "'";
                 ResultSet result = s1.executeQuery(itemList);
                 if (result.next()) {
                     ArrayList<Product> inventory = new ArrayList<Product>();
