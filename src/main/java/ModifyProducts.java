@@ -17,11 +17,11 @@ public class ModifyProducts extends HttpServlet {
         String ProductID = request.getParameter("ProductID");
         String category = request.getParameter("Category");
         String name = request.getParameter("Name");
-        int hasSubcategories = Integer.parseInt(request.getParameter("Has Subcategories"));
+        int hasSubcategories = Integer.parseInt(request.getParameter("hasSubcategories"));
         double price = Double.parseDouble(request.getParameter("Price"));
-        int inStock = Integer.parseInt(request.getParameter("In stock"));
+        int inStock = Integer.parseInt(request.getParameter("inStock"));
         String description = request.getParameter("Description");
-        int isSubProduct = Integer.parseInt(request.getParameter("Is sub product"));
+        int isSubProduct = Integer.parseInt(request.getParameter("isSubProduct"));
         String url = "jdbc:mysql://selldb.cqt5tgj7qyws.us-east-2.rds.amazonaws.com:3306/simpledb";
         String username = "simpledb";
         String password = "sell1234";
