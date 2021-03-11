@@ -61,15 +61,10 @@ public class InventoryAdd extends HttpServlet {
                     }
                     System.out.println("Inserted Product into Inventory");
                     response.getWriter().write("Product Inserted");
+                } else {
+                    System.out.println("There is some problem");
+                    response.getWriter().write("Seller not Present or Problem with Subcategories");
                 }
-
-
-
-                // check and return appropriate message to response.getWriter
-
-
-
-
             }
         } catch (Exception e) {
             response.getWriter().write("User Not Registered");
