@@ -56,6 +56,9 @@ public class ModifyAccountDetails extends HttpServlet {
         String mobileNum = request.getParameter("MobileNumber");
         String password = request.getParameter("Password");
         String storeName = request.getParameter("StoreName");
+        String description = request.getParameter("Description");
+        String fbHandle = request.getParameter("fbHandle");
+        String instaHandle = request.getParameter("instaHandle");
 
         //check password here
         boolean check = pwcheck.isValidPass(password);
@@ -120,7 +123,9 @@ public class ModifyAccountDetails extends HttpServlet {
                 }
                 String sqlquery = "UPDATE Sellers SET FirstName = '" + firstName + "', LastName = '" + lastName +
                         "', Email = '" + emailID + "', MobileNum = '" + mobileNum + "', Pswd = '" + hashedPass +
-                        "', StoreName = '" + storeName + "' WHERE SellerID = '" + sellerID + "')";
+                        "', StoreName = '" + storeName + "', Description = '" + description + "', " +
+                        "FbHandle = '" + fbHandle + "', InstaHandle = '" + instaHandle +
+                        "' WHERE SellerID = '" + sellerID + "')";
                 System.out.println(sqlquery);
                 s1.executeUpdate(sqlquery);
                 System.out.println("Updated Seller Info");

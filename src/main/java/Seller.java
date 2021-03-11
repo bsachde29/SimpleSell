@@ -4,23 +4,25 @@ public class Seller {
     private int sellerID;
     private String firstName;
     private String lastName;
-    private String about;
     private String email;
     private String phoneNumber;
     private String appName;
+    private String description;
+    private String fbHandle;
+    private String instaHandle;
     private ArrayList<Product> items;
 
-    public Seller(int sellerID, String firstName, String lastName,
-                  //String about,
-                  String email, String phoneNumber, String appName) {
+    public Seller(int sellerID, String firstName, String lastName, String email, String phoneNumber, String appName) {
         this.sellerID = sellerID;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.about = null;
         this.email = email;
         this.phoneNumber = phoneNumber;
         this.appName = appName;
         this.items = new ArrayList<>();
+        this.description = null;
+        this.fbHandle = null;
+        this.instaHandle = null;
     }
 
     public ArrayList<Product> getItems() {
@@ -28,7 +30,7 @@ public class Seller {
     }
 
     public String getAbout() {
-        return about;
+        return description;
     }
 
     public String getAppName() {
@@ -51,6 +53,12 @@ public class Seller {
         return lastName;
     }
 
+    public String getDescription() { return description; }
+
+    public String getFbHandle() { return fbHandle; }
+
+    public String getInstaHandle() { return instaHandle; }
+
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
@@ -60,7 +68,7 @@ public class Seller {
     }
 
     public void setAbout(String about) {
-        this.about = about;
+        this.description = about;
     }
 
     public void setAppName(String appName) {
@@ -86,4 +94,10 @@ public class Seller {
     public void setSellerID(int sellerID) {
         this.sellerID = sellerID;
     }
+
+    public void setDescription(String description) { this.description = description; }
+
+    public void setFbHandle(String fbHandle) { this.fbHandle = fbHandle; }
+
+    public void setInstaHandle(String instaHandle) { this.instaHandle = instaHandle; }
 }
