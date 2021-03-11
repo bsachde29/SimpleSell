@@ -1,7 +1,11 @@
 import java.util.ArrayList;
 
+enum orderAccept {
+    ACCEPTED, REJECTED;
+}
+
 enum orderState {
-    PLACED, ACCEPTED, REJECTED, COMPLETED;
+    PLACED, COMPLETED;
 }
 
 public class Order {
