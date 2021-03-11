@@ -38,7 +38,6 @@
                 Price: prod_price,
                 inStock: stock,
                 Description: prod_desc,
-                isSubProduct: 0
             },
 
             success: function (response) {
@@ -46,8 +45,12 @@
                 DEBUG && console.log(response);
 
 
+                window.location.href = "Inventory.jsp";
+
             }
         });
+
+
 
 
     });
@@ -68,6 +71,24 @@
         prod_id = prod_id.substring(12);
 
         DEBUG && console.log(prod_id)
+
+        $.ajax({
+            type: 'post',
+            url: '/SimpleSell_war/DeleteProduct',
+            data: {
+                ProductID: prod_id
+
+            },
+
+            success: function (response) {
+                DEBUG && console.log(response);
+                DEBUG && console.log(response);
+
+
+            }
+        });
+
+
     });
 
 

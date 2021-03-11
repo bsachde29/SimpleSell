@@ -9,19 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="save id corrected">
+    <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="Inventory working other than delete product">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/order_template.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ModifyProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ModifyProducts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/js/save_moded.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/js/save_moded.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/product_item.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/product_item.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/product_item.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/product_item.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ModifyProducts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ModifyProducts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Order.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,14 +87,16 @@
       <recent name="$PROJECT_DIR$/src/main/webapp" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.main.js">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.431">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -105,6 +105,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Tomcat 9.0.431" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.431" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER" value="false" />
       <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
       <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
@@ -229,7 +230,8 @@
       <workItem from="1615444587086" duration="163000" />
       <workItem from="1615444785958" duration="81000" />
       <workItem from="1615445315996" duration="3676000" />
-      <workItem from="1615454406730" duration="2916000" />
+      <workItem from="1615454406730" duration="3225000" />
+      <workItem from="1615457778631" duration="7385000" />
     </task>
     <task id="LOCAL-00001" summary="jquery added&#10;main.js created">
       <created>1614501372547</created>
@@ -350,7 +352,21 @@
       <option name="project" value="LOCAL" />
       <updated>1615447069823</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Inventory working other than delete product">
+      <created>1615457495690</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1615457495690</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Inventory working other than delete product">
+      <created>1615457549569</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1615457549569</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,7 +402,8 @@
     <MESSAGE value="Added more details to Inventory.jsp" />
     <MESSAGE value="Sku repaired" />
     <MESSAGE value="save id corrected" />
-    <option name="LAST_COMMIT_MESSAGE" value="save id corrected" />
+    <MESSAGE value="Inventory working other than delete product" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inventory working other than delete product" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

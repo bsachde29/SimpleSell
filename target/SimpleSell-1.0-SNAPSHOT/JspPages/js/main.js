@@ -95,6 +95,8 @@
 
                 }
 
+                window.location.href = "Inventory.jsp";
+
                 // if (data != 1) {
                 //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'red');
                 // }
@@ -163,7 +165,7 @@
                         "                                    </section>\n" +
                         "                                </div>\n" +
                         "                                <textarea class=\"prd_desc\">" + obj[i]["description"] + " </textarea>\n" +
-                        "                                <input class=\"prod_cat\" value=\"Clothing\">\n" +
+                        "                                <input class=\"prod_cat\" value=\"" + obj[i]["category"] + "\">\n" +
                         "                                <button class=\"product_btns save_mod_prod\">Save</button>\n" +
                         "                            </div>\n" +
                         "                            <div class=\"prod_right\">\n" +

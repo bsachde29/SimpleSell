@@ -95,6 +95,8 @@
 
                 }
 
+                window.location.href = "Inventory.jsp";
+
                 // if (data != 1) {
                 //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'red');
                 // }
@@ -163,7 +165,7 @@
                         "                                    </section>\n" +
                         "                                </div>\n" +
                         "                                <textarea class=\"prd_desc\">" + obj[i]["description"] + " </textarea>\n" +
-                        "                                <input class=\"prod_cat\" value=\"Clothing\">\n" +
+                        "                                <input class=\"prod_cat\" value=\"" + obj[i]["category"] + "\">\n" +
                         "                                <button class=\"product_btns save_mod_prod\">Save</button>\n" +
                         "                            </div>\n" +
                         "                            <div class=\"prod_right\">\n" +
@@ -222,6 +224,51 @@
 
             }
         });
+    }
+
+
+
+
+
+
+    if (($(".all_order_products")[0])) {
+
+
+        $.ajax({
+            type: 'post',
+            url: '/SimpleSell_war/Login',
+            data: {
+                EmailID: EmailID, Password: Password
+            },
+
+            success: function (response) {
+
+                DEBUG && console.log(response);
+
+                if (response == "Wrong Details") {
+
+
+                } else {
+                    var seller = JSON.parse(response);
+                    console.log(seller);
+                    sessionStorage.setItem("sellerID", seller.sellerID);
+                    sessionStorage.setItem(("storeName"), seller.appName);
+                    sessionStorage.setItem("sellerName", seller.firstName + " " + seller.lastName);
+
+                }
+
+                window.location.href = "Inventory.jsp";
+
+                // if (data != 1) {
+                //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'red');
+                // }
+                // else {
+                //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'green');
+                // }
+
+            }
+        });
+
     }
 
 

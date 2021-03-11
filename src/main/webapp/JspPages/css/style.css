@@ -3,7 +3,11 @@
 
 body {
     font-family: Skia;
+
+    color: #464646;
 }
+
+
 
 
 
@@ -355,10 +359,12 @@ body {
     color: #85AEE5;
 }
 
-.product_btns {
+.product_btns, .order_btns {
     margin-left: auto;
     width: 21%;
     height: 40px;
+
+
     background-color: #74a3e3;
     border-radius: 8px;
     color: white;
@@ -514,4 +520,119 @@ body {
 
 .prod_cat {
     height: 35;
+}
+
+
+/* Inline #5 | http://localhost:63342/SimpleSell/target/SimpleSell-1.0-SNAPSHOT/JspPages/Orders.html?_ijt=9fn2cb58ndolhujbg0r4ifdeso */
+
+.order_prod_wrapper {
+    display: flex;
+}
+
+.order_prod_details {
+    display: grid;
+}
+
+.order_image {
+    /* height: 1450\[; */
+    height: 194;
+}
+
+.all_orders {
+    text-align: center;
+    width: 78%;
+    margin-left: 11%;
+    /*! background-color: white; */
+}
+
+.order_image {
+    margin-right: 12%;
+    margin-left: 5%;
+}
+
+.order_prod_name {
+    font-size: 24px;
+    padding-top: 57;
+    margin-right: 32%;
+}
+
+.order_prod_details {
+    height: min-content;
+    margin-top: 48px;
+    font-size: 20px;
+}
+
+.order_prod_name {
+    /* margin-right: 32%; */
+    margin-right: 31%;
+}
+
+.order_prod_price {
+    margin-bottom: 21px;
+}
+
+.order_prod_details {
+    /* font-size: 20px; */
+    font-size: 22px;
+    font-weight: 450;
+}
+
+.order_prod_name {
+    font-weight: 500;
+}
+
+.order_prod_wrapper {
+    margin-bottom: 34px;
+}
+
+.order_bottom {
+    display: flex;
+}
+
+
+.order_bts {
+    display: flex;
+}
+
+.order_bottom {
+}
+
+.order_buyer_details {
+    margin-left: 35%;
+    margin-right: 18%;
+    font-size: 21;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.all_orders {
+    /* text-align: center; */
+    text-align: left;
+}
+
+
+.accept_order.order_btns {
+    width: 40%;
+    /*! margin-right: -1%; */
+    margin-left: 5%;
+}
+
+.order_btns_wrapper {
+    width: 30%;
+    margin: auto;
+}
+
+.decline_order.order_btns {
+    width: 40%;
+    margin-right: 5%;
+    margin-left: 5%;
+    background: #cc6c6c;
+}
+
+.order_wrapper {
+    border: solid 1px #b9b9b9;
+    border-radius: 32px;
+    background: white;
+    padding: 10px;
+    padding-bottom: 34px;
 }
