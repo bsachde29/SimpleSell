@@ -75,6 +75,16 @@
         <url-pattern>/ModifyProducts</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>DeleteProduct</servlet-name>
+        <servlet-class>DeleteProduct</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteProduct</servlet-name>
+        <url-pattern>/DeleteProduct</url-pattern>
+    </servlet-mapping>
+
 
 
 </web-app>
