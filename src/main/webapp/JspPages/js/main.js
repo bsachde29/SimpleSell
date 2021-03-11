@@ -198,7 +198,7 @@
 
 
 
-    $('.product_btns').on('click', function () {
+    $('#save_mod_prod').on('click', function () {
 
         var prod_name = this.parent().find('.prod_title').val();
         var prod_desc =  this.parent().find('.prod_desc').val();
@@ -210,7 +210,7 @@
 
         $.ajax({
             type: 'post',
-            url: '/SimpleSell_war/Login',
+            url: '/SimpleSell_war/Mo',
             data: {
                 ProductID: prod_id,
                 Category: "Place holder for now",
