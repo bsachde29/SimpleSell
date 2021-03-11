@@ -125,36 +125,110 @@
 
                 DEBUG && console.log(obj[0]["name"]);
 
-                DEBUG && console.log(obj.length)
+                DEBUG && console.log(obj.length);
 
 
                 for (let i = 0; i < obj.length; i ++ ) {
-                    $('.all_products').append("<div class=\"prod_wrapper\">\n" +
+
+                    var hasSub = "No";
+                    if(obj[i]["hasSubCategories"] == true ) {
+                        hasSub = "Yes";
+                    }
+
+
+
+                    var soldout_btn = "<button class=\"product_btns sold_out\" >Mark as sold out</button>\n"
+                    var instock_btn = "<button class=\"product_btns in_stock\" >Mark as in stock</button>\n"
+
+                    var final_btn;
+
+
+
+
+
+
+
+
+
+
+                    $('.all_products').append("<div class=\"prod_wrapper prod_" + i +"\">\n" +
                         "                        <div class=\"product_content\">\n" +
                         "                            <img class=\"inv_img\" src=\"img/product_image.jpg\">\n" +
                         "                            <div class=\"product_txt\">\n" +
-                        "                            <div class=\"title_price\">\n" +
-                        "                                <input class=\"prod_title\" value=\"" + obj[i]["name"] + "\">\n" +
-                        "                                <section class=\"product_price\">\n" +
-                        "                                    <span class=\"price_dollar\">$</span>\n" +
-                        "                                    <input class=\"prod_title price\" value=\"" + obj[i]["price"] + "\">\n" +
-                        "                                </section>\n" +
+                        "                                <div class=\"title_price\">\n" +
+                        "                                    <input class=\"prod_title\" value=\"" + obj[i]["name"] + "\">\n" +
+                        "                                    <section class=\"product_price\">\n" +
+                        "                                        <span class=\"price_dollar\">$</span>\n" +
+                        "                                        <input class=\"prod_title_price\" value=\"" + obj[i]["price"] + "\">\n" +
+                        "                                    </section>\n" +
+                        "                                </div>\n" +
+                        "                                <textarea class=\"prd_desc\">" + obj[i]["description"] + " </textarea>\n" +
+                        "                                <input class=\"prod_cat\" value=\"Clothing\">\n" +
+                        "                                <button class=\"product_btns save_mod_prod\">Save</button>\n" +
                         "                            </div>\n" +
-                        "                            <textarea class=\"prd_desc\">" + obj[i]["description"] + " </textarea>\n" +
-                        "                                <button class=\"product_btns\">Save</button>\n" +
+                        "                            <div class=\"prod_right\">\n" +
+                        "                                <p class = \"prod_id\">SKU Number: " + obj[i]["productID"] + "</p>\n" +
+                        "                                <p class = \"has_sub\">Has Sub Products: " + hasSub +"</p>\n" +
+                        "\n" +
+                        "                                <button class=\"product_btns sold_out\">Mark as sold out</button>\n" +
+                        "                                <button class=\"product_btns in_stock\" >Mark as in stock</button>\n" +
+                        "                                <button class=\"product_btns delete_prod\" >Remove from inventory</button>\n" +
+                        "\n" +
                         "                            </div>\n" +
+                        "\n" +
+                        "\n" +
                         "                        </div>\n" +
                         "\n" +
                         "                    </div>")
 
+                    DEBUG &&
+                    console.log(obj[i]["in_Stock"]);
+
+
+                    if (obj[i]["in_Stock"] == "IN_STOCK") {
+                        $('.prod_'+ i).find('.in_stock').hide();
+                        DEBUG && console.log("is in stock  " + i);
+
+                    } else {
+                        $('.prod_'+ i).find('.sold_out').hide();
+                    }
+
+
+
+                    // $('.all_products').append("<div class=\"prod_wrapper\">\n" +
+                    //     "                        <div class=\"product_content\">\n" +
+                    //     "                            <img class=\"inv_img\" src=\"img/product_image.jpg\">\n" +
+                    //     "                            <div class=\"product_txt\">\n" +
+                    //     "                            <div class=\"title_price\">\n" +
+                    //     "                                <input class=\"prod_title\" value=\"" + obj[i]["name"] + "\">\n" +
+                    //     "                                <section class=\"product_price\">\n" +
+                    //     "                                    <span class=\"price_dollar\">$</span>\n" +
+                    //     "                                    <input class=\"prod_title_price\" value=\"" + obj[i]["price"] + "\">\n" +
+                    //     "                                </section>\n" +
+                    //     "                            </div>\n" +
+                    //     "                            <textarea class=\"prd_desc\">" + obj[i]["description"] + " </textarea>\n" +
+                    //     "                                <button class=\"product_btns\">Save</button>\n" +
+                    //     "                            </div>\n" +
+                    //     "                           <p id='prod_id'>SKU Number: " + obj[i]["skuNumber"] + "</p>\n" +
+                    //     "                        </div>\n" +
+                    //     "\n" +
+                    //     "                    </div>")
+
 
                 }
 
+                $('.scripts').append("<script src=\"js/save_moded.js\"></script>")
 
 
             }
         });
     }
+
+
+
+
+
+
 
 
     //TODO Send requests for Login

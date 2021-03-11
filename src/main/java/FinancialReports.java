@@ -13,7 +13,7 @@ import javax.swing.plaf.nimbus.State;
 
 @WebServlet(name = "FinancialReports", value = "/FinancialReports")
 public class FinancialReports extends HttpServlet {
-    private class Report{
+    private class Report {
         float sales;
         float avg;
 

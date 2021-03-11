@@ -64,7 +64,7 @@ public class Inventory extends HttpServlet {
                                         stock = inStock.IN_STOCK;
                                     }
                                     Product p = new Product(res3.getString("Name"), res3.getString("Description"),
-                                            res3.getString("Category"), false, res3.getInt("price"),
+                                            res3.getString("Category"), false, res3.getDouble("price"),
                                             subID, stock, null);
                                     subcategory.add(p);
                                 }
@@ -74,7 +74,7 @@ public class Inventory extends HttpServlet {
                             stock = inStock.IN_STOCK;
                         }
                         Product product = new Product(result.getString("Name"), result.getString("Description"),
-                                result.getString("Category"), result.getBoolean("hasSubcategories"), result.getInt("price"),
+                                result.getString("Category"), result.getBoolean("hasSubcategories"), result.getDouble("price"),
                                 productId, stock, subcategory);
                         inventory.add(product);
                     } while (resultFromSellerProduct.next());

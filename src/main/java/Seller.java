@@ -4,31 +4,37 @@ public class Seller {
     private int sellerID;
     private String firstName;
     private String lastName;
-    private String about;
     private String email;
     private String phoneNumber;
     private String appName;
     private ArrayList<Product> items;
+    private String Description;
+    private String InstaHandle;
+    private String FbHandle;
 
     public Seller(int sellerID, String firstName, String lastName,
                   //String about,
-                  String email, String phoneNumber, String appName) {
+                  String email, String phoneNumber, String appName, String Description) {
         this.sellerID = sellerID;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.about = null;
         this.email = email;
         this.phoneNumber = phoneNumber;
         this.appName = appName;
+        this.Description = Description;
         this.items = new ArrayList<>();
+        this.InstaHandle = null;
+        this.FbHandle = null;
     }
+
+
 
     public ArrayList<Product> getItems() {
         return items;
     }
 
-    public String getAbout() {
-        return about;
+    public String getDescription() {
+        return Description;
     }
 
     public String getAppName() {
@@ -51,6 +57,22 @@ public class Seller {
         return lastName;
     }
 
+    public String getInstaHandle() {
+        return InstaHandle;
+    }
+
+    public void setInstaHandle(String instaHandle) {
+        InstaHandle = instaHandle;
+    }
+
+    public String getFbHandle() {
+        return FbHandle;
+    }
+
+    public void setFbHandle(String fbHandle) {
+        FbHandle = fbHandle;
+    }
+
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
@@ -59,8 +81,8 @@ public class Seller {
         this.lastName = lastName;
     }
 
-    public void setAbout(String about) {
-        this.about = about;
+    public void setDescription(String about) {
+        this.Description = about;
     }
 
     public void setAppName(String appName) {

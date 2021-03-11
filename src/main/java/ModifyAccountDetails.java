@@ -31,7 +31,9 @@ public class ModifyAccountDetails extends HttpServlet {
                     Seller seller = new Seller(userCheck.getInt("SellerID"),
                             userCheck.getString("FirstName"), userCheck.getString("LastName"),
                             userCheck.getString("Email"), userCheck.getString("MobileNum"),
-                            userCheck.getString("StoreName"));
+                            userCheck.getString("StoreName"), userCheck.getString("Description"));
+                    seller.setFbHandle(userCheck.getString("FbHandle"));
+                    seller.setInstaHandle(userCheck.getString("InstaHandle"));
                     Gson gson = new Gson();
                     String jsonSeller = gson.toJson(seller);
                     response.getWriter().write(jsonSeller);
@@ -56,37 +58,30 @@ public class ModifyAccountDetails extends HttpServlet {
         String mobileNum = request.getParameter("MobileNumber");
         String password = request.getParameter("Password");
         String storeName = request.getParameter("StoreName");
+        String description = request.getParameter("Description");
+        String instaHandle = request.getParameter("InstaHandle");
+        String fbHandle = request.getParameter("FbHandle");
 
         //check password here
         boolean check = pwcheck.isValidPass(password);
         //TODO insert password checking algorithm
         if (!check) {
             response.getWriter().write("Password Too weak");
-            //TODO use response getWriter to respond with password requirements
-            response.getWriter().write("The password must have between 8 to 20 characters, atleast one digit" +
-                    ", atleast one upper case alphabet, atleast one lower case alphabet, " +
-                    "atleast one special character, and must not contain any whitespace");
-            //doPost(request, response);
-            //return;
-            //
+            return;
         }
 
         //HASHING THE PASSWORD
         String hashedPass = SHA256Hash.hash(password);
 
-
-        //Not Important TODO Maybe check email with regex
-
         boolean chk = mailchk.isValidEmail(emailID);
 
-        if (!chk) {
-            response.getWriter().write("Email Too weak");
-            //TODO use response getWriter to respond with password requirements
-            response.getWriter().write("Email needs to have an @");
-            //doPost(request, response);
-            //return;
-            //
-        }
+//        if (!chk) {
+//            response.getWriter().write("Email Too weak");
+//            response.getWriter().write("Email needs to have an @");
+//            //doPost(request, response);
+//            //return;
+//            //
+//        }
 
         String dburl = "jdbc:mysql://selldb.cqt5tgj7qyws.us-east-2.rds.amazonaws.com:3306/simpledb";
         String dbusername = "simpledb";
@@ -120,17 +115,15 @@ public class ModifyAccountDetails extends HttpServlet {
                 }
                 String sqlquery = "UPDATE Sellers SET FirstName = '" + firstName + "', LastName = '" + lastName +
                         "', Email = '" + emailID + "', MobileNum = '" + mobileNum + "', Pswd = '" + hashedPass +
-                        "', StoreName = '" + storeName + "' WHERE SellerID = '" + sellerID + "')";
+                        "', StoreName = '" + storeName + "', Description = '" + description + "', InstaHandle = '" +
+                        instaHandle + "', FbHandle = '" + fbHandle + "' WHERE SellerID = '" + sellerID + "')";
                 System.out.println(sqlquery);
                 s1.executeUpdate(sqlquery);
                 System.out.println("Updated Seller Info");
                 response.getWriter().write("Seller Info Updated");
 
 
-
                 // check and return appropriate message to response.getWriter
-
-
 
 
             }
