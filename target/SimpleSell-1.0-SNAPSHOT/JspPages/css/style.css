@@ -24,13 +24,18 @@ body {
     /*! float: left; */
 }
 
-.email_check, .phone_check {
+.email_check, .phone_check, pass_check {
     text-align: left;
     margin-left: 28%;
     margin-bottom: 18px;
     margin-top: -14px;
     color: red;
     font-size: 14px;
+}
+
+.err {
+background-color: #f4d2d294,
+border: 1.5px solid #e10000a3
 }
 
 .su_txt_box.name {
