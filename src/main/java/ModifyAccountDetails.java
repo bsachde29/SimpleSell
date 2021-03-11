@@ -32,6 +32,9 @@ public class ModifyAccountDetails extends HttpServlet {
                             userCheck.getString("FirstName"), userCheck.getString("LastName"),
                             userCheck.getString("Email"), userCheck.getString("MobileNum"),
                             userCheck.getString("StoreName"));
+                    seller.setDescription(userCheck.getString("Description"));
+                    seller.setFbHandle(userCheck.getString("FbHandle"));
+                    seller.setInstaHandle(userCheck.getString("InstaHandle"));
                     Gson gson = new Gson();
                     String jsonSeller = gson.toJson(seller);
                     response.getWriter().write(jsonSeller);

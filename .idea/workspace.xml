@@ -28,10 +28,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ModifyAccountDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ModifyAccountDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Seller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Seller.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -330,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615345019686</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Seller and Order changes">
+      <created>1615434278036</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1615434278036</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,9 +367,18 @@
     <MESSAGE value="Inventory servlet build" />
     <MESSAGE value="Email Integration check" />
     <MESSAGE value="Testing inventory, database entries created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing inventory, database entries created" />
+    <MESSAGE value="Seller and Order changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Seller and Order changes" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="566" y="88" key="CommitChangelistDialog2" timestamp="1615434277589">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="566" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1615434277589" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1615434285384">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1615434285384" />
     <state x="756" y="340" width="408" height="355" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1615433362664">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
