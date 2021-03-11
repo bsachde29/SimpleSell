@@ -67,6 +67,7 @@
         </div>
     </div>
 </div>
+<div class="scripts">
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-confirm.min.js"></script>
@@ -74,6 +75,10 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/main.js"></script>
+
+
+
+</div>
 
 </body>
 </html>

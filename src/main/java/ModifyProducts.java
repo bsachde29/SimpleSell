@@ -3,7 +3,6 @@ import com.google.gson.Gson;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
-import javax.servlet.jsp.jstl.sql.SQLExecutionTag;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -38,7 +37,7 @@ public class ModifyProducts extends HttpServlet {
                             productCheck.getString("Description"),
                             productCheck.getString("Category"),
                             productCheck.getBoolean("hasSubcategories"),
-                            productCheck.getDouble("price") ,
+                            productCheck.getDouble("price"),
                             productID, stock, null);
                     Gson gson = new Gson();
                     String jsonProduct = gson.toJson(product);
@@ -60,34 +59,16 @@ public class ModifyProducts extends HttpServlet {
         String ProductID = request.getParameter("ProductID");
         String category = request.getParameter("Category");
         String name = request.getParameter("Name");
-        String has_Subcategories = request.getParameter("hasSubcategories");
         double price = Double.parseDouble(request.getParameter("Price"));
         String in_Stock = request.getParameter("inStock");
         String description = request.getParameter("Description");
-        String is_SubProduct = request.getParameter("isSubProduct");
-        boolean hasSubcategories, inStock, isSubProduct;
-        if (has_Subcategories.equalsIgnoreCase("true")) {
-            hasSubcategories = true;
-        }
-        else {
-            hasSubcategories = false;
-        }
-        if (in_Stock.equalsIgnoreCase("true")) {
-            inStock = true;
-        }
-        else {
-            inStock = false;
-        }
-        if (is_SubProduct.equalsIgnoreCase("true")) {
-            isSubProduct = true;
-        }
-        else {
-            isSubProduct = false;
-        }
+        boolean inStock, isSubProduct;
+        inStock = in_Stock.equalsIgnoreCase("true");
         String url = "jdbc:mysql://selldb.cqt5tgj7qyws.us-east-2.rds.amazonaws.com:3306/simpledb";
         String username = "simpledb";
         String password = "sell1234";
-        //String hashedPass = SHA256Hash.hash(Password);
+        System.out.println(ProductID);
+
         Connection con = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -97,6 +78,7 @@ public class ModifyProducts extends HttpServlet {
                 Statement s1 = con.createStatement();
                 //String check = "SELECT * FROM Sellers WHERE Email = '" + emailID + "' AND Pswd ='" + hashedPass + "'";
                 String checkProductQuery = "SELECT * FROM Product WHERE ProductID = '" + ProductID + "'";
+                System.out.println(checkProductQuery);
                 ResultSet result = s1.executeQuery(checkProductQuery);
                 if (result.next()) {
                     System.out.println("Product Found");
@@ -104,25 +86,20 @@ public class ModifyProducts extends HttpServlet {
                     //String checkCategoryQuery = "SELECT * FROM Product WHERE Category = '" + category + "'";
                     //String update = "UPDATE Product SET Category=" + category +  " WHERE ProductID=" + productId;
                     String update = "UPDATE Product SET Category = '" + category + "', Name = '" + name +
-                            "', hasSubCategories = '" + hasSubcategories + "', price = '" + price + "', inStock = '" + inStock +
-                            "', Description = '" + description + "', isSubProduct = '" + isSubProduct
-                            + "' WHERE ProductID = '" + productId + "')";
+                            "', price = '" + price + "', inStock = '" + (inStock ? 1 : 0) +
+                            "', Description = '" + description + "' WHERE ProductID = '" + productId + "'";
+                    System.out.println(update);
                     //ResultSet result1 = s1.executeQuery(update);
                     s1.executeUpdate(update);
-//                    if (result1.next()) {
                     System.out.println("Updated successfully");
-//                    }
-//                    else {
-//                        System.out.println("update unsuccessful");
-//                        response.getWriter().write("update unsuccessful");
-//                    }
+                    response.getWriter().write("Updated successfully");
                 } else {
-                    System.out.println("Wrong Details");
-                    response.getWriter().write("Wrong Details");
+                    System.out.println("Product Not Found");
+                    response.getWriter().write("Product Not Found");
                 }
             }
         } catch (Exception e) {
-            response.getWriter().write("User Not Registered");
+            response.getWriter().write("There was some Problem");
             e.printStackTrace();
         }
     }

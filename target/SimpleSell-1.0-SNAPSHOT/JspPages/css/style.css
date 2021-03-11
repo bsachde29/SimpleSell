@@ -506,7 +506,7 @@ body {
     background-color: #b75656;
 }
 
-#save_mod_prod {
+.save_mod_prod {
     height: 50px;
     background: #659165;
 }

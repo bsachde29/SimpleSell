@@ -150,7 +150,7 @@
                         "                                </div>\n" +
                         "                                <textarea class=\"prd_desc\">" + obj[i]["description"] + " </textarea>\n" +
                         "                                <input class=\"prod_cat\" value=\"Clothing\">\n" +
-                        "                                <button class=\"product_btns\" id=\"save_mod_prod\">Save</button>\n" +
+                        "                                <button class=\"product_btns save_mod_prod\">Save</button>\n" +
                         "                            </div>\n" +
                         "                            <div class=\"prod_right\">\n" +
                         "                                <p id = \"prod_id\">SKU Number: " + obj[i]["productID"] + "</p>\n" +
@@ -190,6 +190,7 @@
 
                 }
 
+                $('.scripts').append("<script src=\"js/save_moded.js\"></script>")
 
 
             }
@@ -198,47 +199,7 @@
 
 
 
-    $('#save_mod_prod').on('click', function () {
 
-        var prod_name = this.parent().find('.prod_title').val();
-        var prod_desc =  this.parent().find('.prod_desc').val();
-        var prod_price = this.parent().find('.prod_title_price').val();
-
-        var prod_id = this.parent().parent().find('#prod_id').text();
-
-        //add other details
-
-        $.ajax({
-            type: 'post',
-            url: '/SimpleSell_war/Mo',
-            data: {
-                ProductID: prod_id,
-                Category: "Place holder for now",
-                Name: prod_name,
-                hasSubcategories: 0,
-                Price: prod_price,
-                inStock: 1,
-                Description: prod_desc,
-                isSubProduct: 0
-            },
-
-            success: function (response) {
-                DEBUG && console.log(response);
-                DEBUG && console.log(response);
-
-
-
-            }
-        });
-
-
-
-
-
-
-
-
-    });
 
 
 
