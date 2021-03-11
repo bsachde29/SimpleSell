@@ -13,15 +13,29 @@ public class Order {
     private ArrayList<Product> products;
     private ArrayList<Integer> quantities;
     private double totalPrice;
-    private String orderId;
+    private int orderId;
+    private String firstName;
+    private String lastName;
+    private String email;
+    private String mobileNum;
+    private orderState state;
+    private orderAccept accept;
+
 
     public Order(int buyerId, ArrayList<Product> products, ArrayList<Integer> quantities,
-                 double totalPrice, String orderId) {
+                 double totalPrice, int orderId, String firstName, String lastName, String email,
+                 String mobileNum, orderState state, orderAccept accept) {
         this.buyerId = buyerId;
         this.products = products;
         this.quantities = quantities;
         this.totalPrice = totalPrice;
         this.orderId = orderId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.mobileNum = mobileNum;
+        this.state = state;
+        this.accept = accept;
     }
 
     public int getBuyerId() {
@@ -40,18 +54,27 @@ public class Order {
         return products;
     }
 
-
-
     public double getTotalPrice() {
         return totalPrice;
     }
 
-    public String getOrderId() {
+    public int getOrderId() {
         return orderId;
     }
 
+    public orderAccept getAccept() { return accept; }
 
-    public void setOrderId(String orderId) {
+    public orderState getState() { return state; }
+
+    public String getFirstName() { return firstName; }
+
+    public String getEmail() { return email; }
+
+    public String getLastName() { return lastName; }
+
+    public String getMobileNum() { return mobileNum; }
+
+    public void setOrderId(int orderId) {
         this.orderId = orderId;
     }
 
@@ -66,4 +89,16 @@ public class Order {
     public void setTotalPrice(double totalPrice) {
         this.totalPrice = totalPrice;
     }
+
+    public void setAccept(orderAccept accept) { this.accept = accept; }
+
+    public void setEmail(String email) { this.email = email; }
+
+    public void setFirstName(String firstName) { this.firstName = firstName; }
+
+    public void setLastName(String lastName) { this.lastName = lastName; }
+
+    public void setMobileNum(String mobileNum) { this.mobileNum = mobileNum; }
+
+    public void setState(orderState state) { this.state = state; }
 }
