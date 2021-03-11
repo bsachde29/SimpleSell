@@ -231,6 +231,56 @@
 
 
 
+    if (($(".all_orders")[0])) {
+
+
+        var sellerID = sessionStorage.getItem("sellerID");
+
+
+
+
+        $.ajax({
+            type: 'get',
+            url: '/SimpleSell_war/FetchOrder',
+            data: {
+                SelllerID: sellerID
+            },
+
+            success: function (response) {
+
+                DEBUG && console.log(response);
+
+                // if (response == "Wrong Details") {
+                //
+                //
+                // } else {
+                //     var seller = JSON.parse(response);
+                //     console.log(seller);
+                //     sessionStorage.setItem("sellerID", seller.sellerID);
+                //     sessionStorage.setItem(("storeName"), seller.appName);
+                //     sessionStorage.setItem("sellerName", seller.firstName + " " + seller.lastName);
+                //
+                // }
+                //
+                // window.location.href = "Inventory.jsp";
+
+                // if (data != 1) {
+                //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'red');
+                // }
+                // else {
+                //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'green');
+                // }
+
+            }
+        });
+
+    }
+
+
+
+
+
+
 
 
     //TODO Send requests for Login

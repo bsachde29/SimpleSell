@@ -19,7 +19,7 @@ public class FetchOrder extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        int sellerID = Integer.parseInt(request.getParameter("OrderID"));
+        int sellerID = Integer.parseInt(request.getParameter("SellerID"));
         String dburl = "jdbc:mysql://selldb.cqt5tgj7qyws.us-east-2.rds.amazonaws.com:3306/simpledb";
         String dbusername = "simpledb";
         String dbpassword = "sell1234";

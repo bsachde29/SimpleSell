@@ -231,33 +231,38 @@
 
 
 
-    if (($(".all_order_products")[0])) {
+    if (($(".all_orders")[0])) {
+
+
+        var sellerID = sessionStorage.getItem("sellerID");
+
+
 
 
         $.ajax({
-            type: 'post',
-            url: '/SimpleSell_war/Login',
+            type: 'get',
+            url: '/SimpleSell_war/FetchOrder',
             data: {
-                EmailID: EmailID, Password: Password
+                SelllerID: sellerID
             },
 
             success: function (response) {
 
                 DEBUG && console.log(response);
 
-                if (response == "Wrong Details") {
-
-
-                } else {
-                    var seller = JSON.parse(response);
-                    console.log(seller);
-                    sessionStorage.setItem("sellerID", seller.sellerID);
-                    sessionStorage.setItem(("storeName"), seller.appName);
-                    sessionStorage.setItem("sellerName", seller.firstName + " " + seller.lastName);
-
-                }
-
-                window.location.href = "Inventory.jsp";
+                // if (response == "Wrong Details") {
+                //
+                //
+                // } else {
+                //     var seller = JSON.parse(response);
+                //     console.log(seller);
+                //     sessionStorage.setItem("sellerID", seller.sellerID);
+                //     sessionStorage.setItem(("storeName"), seller.appName);
+                //     sessionStorage.setItem("sellerName", seller.firstName + " " + seller.lastName);
+                //
+                // }
+                //
+                // window.location.href = "Inventory.jsp";
 
                 // if (data != 1) {
                 //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'red');
