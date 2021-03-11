@@ -28,26 +28,37 @@ public class Inventory extends HttpServlet {
             if (con != null) {
                 System.out.println("Database connection is successful !!!!");
                 Statement s1 = con.createStatement();
-                String itemList = "SELECT * FROM Seller_Product WHERE SellerID = '" + sellerID + "'";
-                ResultSet result = s1.executeQuery(itemList);
-                if (result.next()) {
+                String itemList = "SELECT * FROM Seller_Product WHERE SellerID = " + sellerID;
+                System.out.println(itemList);
+                ResultSet resultFromSellerProduct = s1.executeQuery(itemList);
+                if (resultFromSellerProduct.next()) {
                     ArrayList<Product> inventory = new ArrayList<Product>();
                     System.out.println("Inventory found");
                     //creating new Seller object from SQL response
-                    while (result.next()) {
-                        int productId = result.getInt("ProductID");
+                    do {
+                        int productId = resultFromSellerProduct.getInt("ProductID");
+                        System.out.println("Current Product ID: " + productId);
+                        Statement s4 = con.createStatement();
+                        String getProduct = "SELECT * FROM Product WHERE ProductID ='" + productId + "'";
+                        ResultSet result = s4.executeQuery(getProduct);
+                        if (!result.next()) {
+                            throw new Exception("There is some error in the database");
+                        }
                         boolean isSub = result.getBoolean("isSubProduct");
                         ArrayList<Product> subcategory = new ArrayList<Product>();
                         if (!isSub) {
                             Statement s2 = con.createStatement();
                             String sublist = "SELECT * FROM Product_Subcategories WHERE ProductID = '" + productId + "'";
                             ResultSet res2 = s2.executeQuery(sublist);
-                            if (res2.next()) {
                                 while (res2.next()) {
                                     int subID = res2.getInt("SubItemID");
                                     Statement s3 = con.createStatement();
                                     String retrieveSub = "SELECT * FROM Product WHERE ProductID ='" + subID + "'";
                                     ResultSet res3 = s3.executeQuery(retrieveSub);
+                                    if (!res3.next()) {
+                                        throw new Exception("There is some error in the database");
+                                    }
+                                    System.out.println(res3);
                                     inStock stock = inStock.OUT_OF_STOCK;
                                     if (res3.getBoolean("inStock")) {
                                         stock = inStock.IN_STOCK;
@@ -57,7 +68,6 @@ public class Inventory extends HttpServlet {
                                             subID, stock, null);
                                     subcategory.add(p);
                                 }
-                            }
                         }
                         inStock stock = inStock.OUT_OF_STOCK;
                         if (result.getBoolean("inStock")) {
@@ -67,7 +77,7 @@ public class Inventory extends HttpServlet {
                                 result.getString("Category"), result.getBoolean("hasSubcategories"), result.getInt("price"),
                                 productId, stock, subcategory);
                         inventory.add(product);
-                    }
+                    } while (resultFromSellerProduct.next());
 
                     Gson gson = new Gson();
                     String jsonSeller = gson.toJson(inventory);
