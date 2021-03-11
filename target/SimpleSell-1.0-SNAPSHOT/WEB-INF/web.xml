@@ -55,4 +55,26 @@
         <url-pattern>/Inventory</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>FinancialReports</servlet-name>
+        <servlet-class>FinancialReports</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FinancialReports</servlet-name>
+        <url-pattern>/FinancialReports</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ModifyProducts</servlet-name>
+        <servlet-class>ModifyProducts</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ModifyProducts</servlet-name>
+        <url-pattern>/ModifyProducts</url-pattern>
+    </servlet-mapping>
+
+
+
 </web-app>

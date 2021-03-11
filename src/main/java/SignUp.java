@@ -31,17 +31,17 @@ public class SignUp extends HttpServlet {
 
 
         //Not Important TODO Maybe check email with regex
-
-        boolean chk = mailchk.isValidEmail(emailID);
-
-        if (!chk) {
-            response.getWriter().write("Email Too weak");
-            //TODO use response getWriter to respond with password requirements
-            response.getWriter().write("Email needs to have an @");
-            //doPost(request, response);
-            //return;
-            //
-        }
+//
+//        boolean chk = mailchk.isValidEmail(emailID);
+//
+//        if (!chk) {
+//            response.getWriter().write("Email Too weak");
+//            //TODO use response getWriter to respond with password requirements
+//            response.getWriter().write("Email needs to have an @");
+//            //doPost(request, response);
+//            //return;
+//            //
+//        }
 
         String dburl = "jdbc:mysql://selldb.cqt5tgj7qyws.us-east-2.rds.amazonaws.com:3306/simpledb";
         String dbusername = "simpledb";

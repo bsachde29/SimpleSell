@@ -12,6 +12,7 @@
 
 
     signUpButton.on('click', function () {
+
         var FirstName = $('#firstName').val();
         var LastName = $('#lastName').val();
         var EmailID = $('#email').val();
@@ -40,7 +41,6 @@
                         "background-color": "#f4d2d294",
                         "border": "1.5px solid #e10000a3"
                     });
-
                 }
 
                 if (response == "Phone Exists") {
@@ -50,14 +50,6 @@
                         "border": "1.5px solid #e10000a3"
                     });
                 }
-
-                // if (data != 1) {
-                //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'red');
-                // }
-                // else {
-                //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'green');
-                // }
-
             }
         });
     });
