@@ -10,18 +10,18 @@ public class Product {
     private String category;
     private boolean hasSubCategories;
     private double price;
-    private int skuNumber;
+    private int productID;
     private inStock in_Stock;
     private ArrayList<Product> subCategories;
 
-    public Product(String name, String description, String category, boolean hasSubCategories, double price, int skuNumber, inStock in_Stock, ArrayList<Product> subCategories) {
+    public Product(String name, String description, String category, boolean hasSubCategories, double price, int productID, inStock in_Stock, ArrayList<Product> subCategories) {
         this.subCategories = subCategories;
         this.name = name;
         this.description = description;
         this.category = category;
         this.hasSubCategories = hasSubCategories;
         this.price = price;
-        this.skuNumber = skuNumber;
+        this.productID = productID;
         this.in_Stock = in_Stock;
     }
 
@@ -45,8 +45,8 @@ public class Product {
         return description;
     }
 
-    public int getSkuNumber() {
-        return skuNumber;
+    public int getproductID() {
+        return productID;
     }
 
     public void setName(String name) {
@@ -77,8 +77,8 @@ public class Product {
         this.price = price;
     }
 
-    public void setSkuNumber(int skuNumber) {
-        this.skuNumber = skuNumber;
+    public void setproductID(int productID) {
+        this.productID = productID;
     }
 
     public ArrayList<Product> getSubCategories() {

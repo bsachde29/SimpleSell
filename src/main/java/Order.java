@@ -1,5 +1,13 @@
 import java.util.ArrayList;
 
+enum orderAccept {
+    ACCEPTED, REJECTED;
+}
+
+enum orderState {
+    PLACED, COMPLETED;
+}
+
 public class Order {
     private int buyerId;
     private ArrayList<Product> products;
@@ -7,7 +15,8 @@ public class Order {
     private double totalPrice;
     private String orderId;
 
-    public Order(int buyerId, ArrayList<Product> products, ArrayList<Integer> quantities, double totalPrice, String orderId) {
+    public Order(int buyerId, ArrayList<Product> products, ArrayList<Integer> quantities,
+                 double totalPrice, String orderId) {
         this.buyerId = buyerId;
         this.products = products;
         this.quantities = quantities;
