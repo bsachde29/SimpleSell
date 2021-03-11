@@ -63,7 +63,7 @@ public class ModifyProducts extends HttpServlet {
         String in_Stock = request.getParameter("inStock");
         String description = request.getParameter("Description");
         boolean inStock, isSubProduct;
-        inStock = in_Stock.equalsIgnoreCase("true");
+        inStock = in_Stock.equalsIgnoreCase("1");
         String url = "jdbc:mysql://selldb.cqt5tgj7qyws.us-east-2.rds.amazonaws.com:3306/simpledb";
         String username = "simpledb";
         String password = "sell1234";

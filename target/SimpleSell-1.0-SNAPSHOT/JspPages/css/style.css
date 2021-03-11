@@ -491,17 +491,17 @@ body {
     width: 28%;
 }
 
-#prod_id {
+.prod_id {
     margin-top: 17%;
     font-size: larger;
     font-weight: 550;
 }
 
-#sold_out {
+.sold_out, .in_stock {
     width: 75%;
 }
 
-#delete_prod {
+.delete_prod {
     width: 75%;
     background-color: #b75656;
 }

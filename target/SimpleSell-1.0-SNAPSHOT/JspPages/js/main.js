@@ -137,7 +137,21 @@
 
 
 
-                    $('.all_products').append("<div class=\"prod_wrapper\">\n" +
+                    var soldout_btn = "<button class=\"product_btns sold_out\" >Mark as sold out</button>\n"
+                    var instock_btn = "<button class=\"product_btns in_stock\" >Mark as in stock</button>\n"
+
+                    var final_btn;
+
+
+
+
+
+
+
+
+
+
+                    $('.all_products').append("<div class=\"prod_wrapper prod_" + i +"\">\n" +
                         "                        <div class=\"product_content\">\n" +
                         "                            <img class=\"inv_img\" src=\"img/product_image.jpg\">\n" +
                         "                            <div class=\"product_txt\">\n" +
@@ -153,11 +167,12 @@
                         "                                <button class=\"product_btns save_mod_prod\">Save</button>\n" +
                         "                            </div>\n" +
                         "                            <div class=\"prod_right\">\n" +
-                        "                                <p id = \"prod_id\">SKU Number: " + obj[i]["productID"] + "</p>\n" +
-                        "                                <p id = \"has_sub\">Has Sub Products:" + hasSub +"</p>\n" +
+                        "                                <p class = \"prod_id\">SKU Number: " + obj[i]["productID"] + "</p>\n" +
+                        "                                <p class = \"has_sub\">Has Sub Products: " + hasSub +"</p>\n" +
                         "\n" +
-                        "                                <button class=\"product_btns\" id = \"sold_out\">Mark as sold out</button>\n" +
-                        "                                <button class=\"product_btns\" id = \"delete_prod\" >Remove from inventory</button>\n" +
+                        "                                <button class=\"product_btns sold_out\">Mark as sold out</button>\n" +
+                        "                                <button class=\"product_btns in_stock\" >Mark as in stock</button>\n" +
+                        "                                <button class=\"product_btns delete_prod\" >Remove from inventory</button>\n" +
                         "\n" +
                         "                            </div>\n" +
                         "\n" +
@@ -165,6 +180,18 @@
                         "                        </div>\n" +
                         "\n" +
                         "                    </div>")
+
+                    DEBUG &&
+                    console.log(obj[i]["in_Stock"]);
+
+
+                    if (obj[i]["in_Stock"] == "IN_STOCK") {
+                        $('.prod_'+ i).find('.in_stock').hide();
+                        DEBUG && console.log("is in stock  " + i);
+
+                    } else {
+                        $('.prod_'+ i).find('.sold_out').hide();
+                    }
 
 
 
