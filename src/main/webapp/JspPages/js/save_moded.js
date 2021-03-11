@@ -73,7 +73,6 @@
         DEBUG && console.log(prod_id)
 
         $.ajax({
-            type: 'post',
             url: '/SimpleSell_war/DeleteProduct',
             data: {
                 ProductID: prod_id
