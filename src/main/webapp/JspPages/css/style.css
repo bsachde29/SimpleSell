@@ -324,7 +324,7 @@ body {
 
 .content {
     background-color: #f0f0f0;
-    min-height: 120vh;
+    min-height: 200vh;
 }
 
 .content_main_out {
@@ -389,7 +389,7 @@ body {
 .cancel_btn {
     background-color: white;
     color: black;
-    margin-left: 35%;
+    margin-left: 24%;
 }
 
 .cancel_btn:hover{
@@ -481,4 +481,18 @@ body {
 
 .price {
     margin-left: 10%;
+}
+
+.mdfy_Acc_Desc {
+    width: 380px;
+    height: 120px;
+}
+
+.left {
+    margin-left: 2%;
+    float: left;
+}
+
+.push_right {
+    margin-left:10%;
 }
