@@ -108,8 +108,6 @@
         });
     });
 
-
-
     if (($(".all_products")[0])) {
 
 
@@ -137,21 +135,10 @@
                         hasSub = "Yes";
                     }
 
-
-
                     var soldout_btn = "<button class=\"product_btns sold_out\" >Mark as sold out</button>\n"
                     var instock_btn = "<button class=\"product_btns in_stock\" >Mark as in stock</button>\n"
 
                     var final_btn;
-
-
-
-
-
-
-
-
-
 
                     $('.all_products').append("<div class=\"prod_wrapper prod_" + i +"\">\n" +
                         "                        <div class=\"product_content\">\n" +
@@ -183,9 +170,7 @@
                         "\n" +
                         "                    </div>")
 
-                    DEBUG &&
-                    console.log(obj[i]["in_Stock"]);
-
+                    DEBUG && console.log(obj[i]["in_Stock"]);
 
                     if (obj[i]["in_Stock"] == "IN_STOCK") {
                         $('.prod_'+ i).find('.in_stock').hide();
@@ -254,25 +239,97 @@
                     sessionStorage.setItem("sellerID", seller.sellerID);
                     sessionStorage.setItem(("storeName"), seller.appName);
                     sessionStorage.setItem("sellerName", seller.firstName + " " + seller.lastName);
-
                 }
-
                 window.location.href = "Inventory.jsp";
-
-                // if (data != 1) {
-                //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'red');
-                // }
-                // else {
-                //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'green');
-                // }
-
             }
         });
-
     }
 
 
+    if (($(".modify_details")[0])) {
 
+        $(".modify_details").hide();
+        $.ajax({
+            type: 'get',
+            url: '/SimpleSell_war/ModifyAccountDetails',
+            data: {
+                SellerID: sessionStorage.getItem("sellerID")
+            },
+            success: function (response) {
+                var seller = JSON.parse(response);
+                $("#firstName").val(seller.firstName);
+                $("#lastName").val(seller.lastName);
+                $("#storeName").val(seller.appName);
+                $("#description").val(seller.Description);
+                $("#email").val(seller.email);
+                $("#phone").val(seller.phoneNumber);
+                $("#pass").val("");
+                $("#ConfirmPass").val("");
+                $("#instaID").val(seller.InstaHandle);
+                $("#fbID").val(seller.FbHandle);
+                $(".modify_details").show();
+            }
+        });
+    }
+
+    var modifySaveBut = $("#modify_account_button");
+
+    modifySaveBut.on('click', function () {
+        var FirstName = $('#firstName').val();
+        var LastName = $('#lastName').val();
+        var storeName = $('#storeName').val();
+        var description = $('#description').val();
+        var EmailID = $('#email').val();
+        var Password = $('#password').val();
+
+        var MobileNumber = $('#phone').val();
+        var instaID = $('#instaID').val();
+        var fbID = $('#instaID').val();
+        // send ajax request
+        DEBUG && console.log("Sign Up button works");
+
+        $.ajax({
+            type: 'post',
+            url: '/SimpleSell_war/ModifyAccountDetails',
+            data: {
+                SellerID: sessionStorage.getItem("sellerID"),
+                FirstName: FirstName,
+                LastName: LastName,
+                EmailID: EmailID,
+                Password: Password,
+                MobileNumber: MobileNumber,
+                StoreName: storeName,
+                Description: description,
+                InstaHandle: instaID,
+                FbHandle: fbID
+            },
+
+            success: function (response) {
+
+                DEBUG && console.log(response);
+
+                if (response == "Email Exists") {
+                    $('.email_check').show();
+                    $('#email').css({
+                        "background-color": "#f4d2d294",
+                        "border": "1.5px solid #e10000a3"
+                    });
+
+                }
+
+                if (response == "Phone Exists") {
+                    $('.phone_check').show()
+                    $('#phoneNumber').css({
+                        "background-color": "#f4d2d294",
+                        "border": "1.5px solid #e10000a3"
+                    });
+                }
+
+                //TODO password too weak
+
+            }
+        });
+    });
 
 
 

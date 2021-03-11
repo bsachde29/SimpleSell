@@ -83,11 +83,8 @@
             success: function (response) {
                 DEBUG && console.log(response);
                 DEBUG && console.log(response);
-
-
             }
         });
-
 
     });
 

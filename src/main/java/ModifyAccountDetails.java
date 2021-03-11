@@ -62,16 +62,19 @@ public class ModifyAccountDetails extends HttpServlet {
         String instaHandle = request.getParameter("InstaHandle");
         String fbHandle = request.getParameter("FbHandle");
 
-        //check password here
+        boolean updatePass = true;
+
         boolean check = pwcheck.isValidPass(password);
-        //TODO insert password checking algorithm
         if (!check) {
-            response.getWriter().write("Password Too weak");
-            return;
+            updatePass = false;
+//            response.getWriter().write("Password Too weak");
+//            return;
         }
 
         //HASHING THE PASSWORD
-        String hashedPass = SHA256Hash.hash(password);
+        String hashedPass = "";
+        if (updatePass)
+            hashedPass = SHA256Hash.hash(password);
 
         boolean chk = mailchk.isValidEmail(emailID);
 
@@ -99,30 +102,34 @@ public class ModifyAccountDetails extends HttpServlet {
                     response.getWriter().write("User does not exist");
                     return;
                 }
-                String checkEmailQuery = "SELECT COUNT(*) FROM Sellers WHERE Sellers.Email = '" + emailID + "'";
+                String checkEmailQuery = "SELECT * FROM Sellers WHERE Sellers.Email = '" + emailID + "'";
                 ResultSet set = s1.executeQuery(checkEmailQuery);
-                if ((!emailID.equals(set.getString("Email"))) &&
-                        (set.next() && set.getString("COUNT(*)").equals("1"))) {
+                if ((set.next() && !set.getString("SellerID").equals(request.getParameter("SellerID")))) {
                     response.getWriter().write("Email Exists");
                     return;
                 }
-                String checkPhoneQuery = "SELECT COUNT(*) FROM Sellers WHERE Sellers.MobileNum = '" + mobileNum + "'";
+                String checkPhoneQuery = "SELECT * FROM Sellers WHERE Sellers.MobileNum = '" + mobileNum + "'";
                 set = s1.executeQuery(checkPhoneQuery);
-                if ((!emailID.equals(set.getString("Email"))) &&
-                        (set.next() && set.getString("COUNT(*)").equals("1"))) {
+                if ((set.next() && !set.getString("SellerID").equals(request.getParameter("SellerID")))) {
                     response.getWriter().write("Phone Exists");
                     return;
                 }
-                String sqlquery = "UPDATE Sellers SET FirstName = '" + firstName + "', LastName = '" + lastName +
-                        "', Email = '" + emailID + "', MobileNum = '" + mobileNum + "', Pswd = '" + hashedPass +
-                        "', StoreName = '" + storeName + "', Description = '" + description + "', InstaHandle = '" +
-                        instaHandle + "', FbHandle = '" + fbHandle + "' WHERE SellerID = '" + sellerID + "')";
+                String sqlquery;
+                if (updatePass)
+                    sqlquery = "UPDATE Sellers SET FirstName = '" + firstName + "', LastName = '" + lastName +
+                            "', Email = '" + emailID + "', MobileNum = '" + mobileNum + "', Pswd = '" + hashedPass +
+                            "', StoreName = '" + storeName + "', Description = '" + description + "', InstaHandle = '" +
+                            instaHandle + "', FbHandle = '" + fbHandle + "' WHERE SellerID = '" + sellerID + "'";
+                else
+                    sqlquery = "UPDATE Sellers SET FirstName = '" + firstName + "', LastName = '" + lastName +
+                            "', Email = '" + emailID + "', MobileNum = '" + mobileNum + "', StoreName = '" + storeName
+                            + "', Description = '" + description + "', InstaHandle = '" +
+                            instaHandle + "', FbHandle = '" + fbHandle + "' WHERE SellerID = '" + sellerID + "'";
+
                 System.out.println(sqlquery);
                 s1.executeUpdate(sqlquery);
                 System.out.println("Updated Seller Info");
                 response.getWriter().write("Seller Info Updated");
-
-
                 // check and return appropriate message to response.getWriter
 
 
