@@ -1,5 +1,9 @@
 import java.util.ArrayList;
 
+enum orderState {
+    PLACED, ACCEPTED, REJECTED, COMPLETED;
+}
+
 public class Order {
     private int buyerId;
     private ArrayList<Product> products;

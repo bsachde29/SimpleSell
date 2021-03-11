@@ -13,6 +13,8 @@
       <change afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/Inventory.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/product_item.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FinancialReports.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FinancialReports.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/Inventory.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/Inventory.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/js/main.js" afterDir="false" />
@@ -21,7 +23,6 @@
       <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/Inventory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/Inventory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/ModifyCategories.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Inventory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Inventory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ModifyCategories.class" beforeDir="false" />
     </list>
