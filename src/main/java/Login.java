@@ -36,7 +36,7 @@ public class Login extends HttpServlet {
                     Seller currentSeller = new Seller(result.getInt("SellerID"),
                             result.getString("FirstName"), result.getString("LastName"),
                             result.getString("Email"), result.getString("MobileNum"),
-                            result.getString("StoreName"));
+                            result.getString("StoreName"), result.getString("Description"));
                     Gson gson = new Gson();
                     String jsonSeller = gson.toJson(currentSeller);
                     response.getWriter().write(jsonSeller);
