@@ -261,7 +261,7 @@ body {
 
 /* Element | http://localhost:63342/SimpleTest/SignUp.html?_ijt=s0fvrrsn61sqkf05ghdt7fge39 */
 
-.back > div:nth-child(1) > div:nth-child(3) > button:nth-child(1) {
+#su_but, #li_but {
     width: 47%;
     height: 40px;
     background-color: #74a3e3;
@@ -270,6 +270,9 @@ body {
     font-size: inherit;
     border: 1.5px solid #74a3e3;
     cursor: pointer;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .si_txt {
