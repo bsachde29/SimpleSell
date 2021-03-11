@@ -12,7 +12,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-@WebServlet(name = "FetchOrder")
+@WebServlet(name = "FetchOrder", value = "/FetchOrder")
 public class FetchOrder extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -80,7 +80,7 @@ public class FetchOrder extends HttpServlet {
                                             Product product = new Product(productQuery.getString("Name"),
                                                     productQuery.getString("Description"),
                                                     productQuery.getString("Category"),
-                                                    productQuery.getBoolean("hasSubcategory"),
+                                                    productQuery.getBoolean("hasSubcategories"),
                                                     productQuery.getDouble("price"),
                                                     productQuery.getInt("ProductID"),
                                                     stock,

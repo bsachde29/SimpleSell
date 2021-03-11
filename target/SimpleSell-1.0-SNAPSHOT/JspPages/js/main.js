@@ -243,7 +243,7 @@
             type: 'get',
             url: '/SimpleSell_war/FetchOrder',
             data: {
-                SelllerID: sellerID
+                SellerID: sellerID
             },
 
             success: function (response) {
