@@ -18,6 +18,7 @@
         var Password = $('#password').val();
         var MobileNumber = $('#mobileNumber').val();
         var storeName = $('#storeName').val();
+        var description = $('#description').val();
         // send ajax request
         DEBUG && console.log(Password);
         DEBUG && console.log("Sign Up button works");
@@ -27,7 +28,7 @@
             url: '/SimpleSell_war/SignUp',
             data: {
                 FirstName: FirstName, LastName: LastName, EmailID: EmailID, Password: Password,
-                MobileNumber: MobileNumber, StoreName: storeName
+                MobileNumber: MobileNumber, StoreName: storeName, Description :description
             },
             success: function (response) {
 
@@ -156,10 +157,8 @@
         });
     }
 
-
-    //TODO Send requests for Login
-
-
     //TODO Send requests for Modifying
+
+
 
 })(jQuery);

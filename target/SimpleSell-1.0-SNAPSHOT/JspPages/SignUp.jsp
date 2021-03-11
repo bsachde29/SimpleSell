@@ -34,6 +34,7 @@
             <input class="su_txt_box" id="password" type="password" placeholder="Password">
             <input class="su_txt_box" id="re-password" type="password" placeholder="Re-type Password">
             <input class="su_txt_box" id="storeName" type="text" placeholder="Store Name">
+            <input class="su_txt_box" id="description" type="text" placeholder="About">
             <section class="already"><a href="LogIn.jsp">Already registed? Sign In.</a></section>
         </div>
 
