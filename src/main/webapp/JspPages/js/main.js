@@ -153,7 +153,7 @@
                         "                                <button class=\"product_btns\" id=\"save_mod_prod\">Save</button>\n" +
                         "                            </div>\n" +
                         "                            <div class=\"prod_right\">\n" +
-                        "                                <p id = \"prod_id\">SKU Number: " + obj[i]["skuNumber"] + "</p>\n" +
+                        "                                <p id = \"prod_id\">SKU Number: " + obj[i]["productID"] + "</p>\n" +
                         "                                <p id = \"has_sub\">Has Sub Products:" + hasSub +"</p>\n" +
                         "\n" +
                         "                                <button class=\"product_btns\" id = \"sold_out\">Mark as sold out</button>\n" +
