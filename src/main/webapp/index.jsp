@@ -10,8 +10,8 @@
 <ul>
     <li><a href="JspPages/LogIn.jsp">Sign In</a></li>
     <li><a href="JspPages/SignUp.jsp">Sign Up</a></li>
-    <li><a href="JspPages/SignUp.jsp">Sign Up</a></li>
     <li><a href="JspPages/Products.jsp">Add Product</a></li>
+    <li><a href="JspPages/ModifyAccountDetails.jsp">Modify Account Details</a></li>
     <li><a href="JspPages/Inventory.jsp">Inventory</a></li>
     <li><a href="JspPages/test_inv.jsp">Test Inventory</a></li>
 </ul>
