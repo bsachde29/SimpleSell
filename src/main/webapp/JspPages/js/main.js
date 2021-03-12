@@ -8,6 +8,8 @@
 
     var DEBUG = true;
 
+    $('.sellername').text(sessionStorage.getItem("sellerName"))
+
     var signUpButton = $('#su_but');
     $('.email_check').hide();
     $('.phone_check').hide();
@@ -191,7 +193,7 @@
                         "                            <div class=\"prod_right\">\n" +
                         "                                <p class = \"prod_id\">SKU Number: " + obj[i]["productID"] + "</p>\n" +
                         "                                <p class = \"has_sub\">Has Sub Products: " + hasSub +"</p>\n" +
-                        "\n" +
+                        "\n<p class='units_sold'>Units Sold: " + obj[i]["unitsSold"] +  " </p>" +
                         "                                <button class=\"product_btns sold_out\">Mark as sold out</button>\n" +
                         "                                <button class=\"product_btns in_stock\" >Mark as in stock</button>\n" +
                         "                                <button class=\"product_btns delete_prod\" >Remove from inventory</button>\n" +

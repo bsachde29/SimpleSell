@@ -88,4 +88,50 @@
     });
 
 
+
+    $('.accept_order').on('click', function () {
+
+        var order_id = $(this).parent().parent().parent().find('.order_id').text();
+        order_id = order_id.substring(10);
+        DEBUG && console.log(order_id);
+
+
+        $.ajax({
+            type: 'post',
+            url: '/SimpleSell_war/AcceptOrder',
+            data: {
+                OrderId: order_id
+            },
+
+            success: function (response) {
+                DEBUG && console.log(response);
+
+                window.location.href = "Orders.jsp";
+            }
+        });
+    });
+
+    $('.decline_order').on('click', function () {
+
+        var order_id = $(this).parent().parent().parent().find('.order_id').text();
+        order_id = order_id.substring(10);
+        DEBUG && console.log(order_id);
+
+
+        $.ajax({
+            type: 'post',
+            url: '/SimpleSell_war/RejectOrder',
+            data: {
+                OrderId: order_id
+            },
+
+            success: function (response) {
+                DEBUG && console.log(response);
+
+                window.location.href = "Orders.jsp";
+            }
+        });
+    });
+
+
 })(jQuery);

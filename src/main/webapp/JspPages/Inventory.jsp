@@ -25,29 +25,29 @@
     </div>
     <div class="content">
         <div class="side_bar">
-            <span class="side_bar_item">
+            <span class = "side_bar_item">
                 <i class="fas fa-home"></i>
                 Home
             </span>
-            <span class="side_bar_item selected_nav_item">
+            <span style="cursor: pointer;" onclick="window.location='Inventory.jsp';" class = "side_bar_item selected_nav_item">
                 <i class="fas fa-dolly-flatbed"></i>
                 Inventory
 
             </span>
-            <span class="side_bar_item">
+            <span style="cursor: pointer;" onclick="window.location='Analytics.jsp';" class = "side_bar_item">
                 <i class="fas fa-chart-bar"></i>
                 Analytics
 
             </span>
-            <span class="side_bar_item">
+            <span class = "side_bar_item">
                 <i class="fas fa-star"></i>
                 Discounts
             </span>
-            <span class="side_bar_item">
-                <i class="fas fa-store"></i>
-                Storefront
+            <span style="cursor: pointer;" onclick="window.location='Orders.jsp';" class = "side_bar_item">
+                <i class="fas fa-boxes"></i>
+                Orders
             </span>
-            <span class="side_bar_item">
+            <span style="cursor: pointer;" onclick="window.location='ModifyAccountDetails.jsp';" class = "side_bar_item">
                 <i class="fas fa-user-alt"></i>
                 Profile
             </span>
