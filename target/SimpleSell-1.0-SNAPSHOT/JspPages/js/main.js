@@ -96,7 +96,7 @@
 
             success: function (response) {
 
-                DEBUG && console.log(response);
+                    DEBUG && console.log(response);
 
                 if (response == "Wrong Details") {
 
@@ -112,15 +112,19 @@
 
                 window.location.href = "Inventory.jsp";
 
-                // if (data != 1) {
-                //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'red');
-                // }
-                // else {
-                //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'green');
-                // }
-
-            }
-        });
+                    // if (data != 1) {
+                    //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'red');
+                    // }
+                    // else {
+                    //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'green');
+                    // }
+                }
+            });
+        } else {
+            $('.pass_check').show();
+            $('#password').addClass('err');
+            $('re-password').addClass('err');
+        }
     });
 
 
@@ -353,22 +357,15 @@
 
                 DEBUG && console.log(response);
 
-                if (response == "Email Exists") {
-                    $('.email_check').show();
-                    $('#email').css({
-                        "background-color": "#f4d2d294",
-                        "border": "1.5px solid #e10000a3"
-                    });
+                    if (response == "Email Exists") {
+                        $('.email_check').show();
+                        $('#email').addClass('err');
+                    }
 
-                }
-
-                if (response == "Phone Exists") {
-                    $('.phone_check').show()
-                    $('#phoneNumber').css({
-                        "background-color": "#f4d2d294",
-                        "border": "1.5px solid #e10000a3"
-                    });
-                }
+                    if (response == "Phone Exists") {
+                        $('.phone_check').show();
+                        $('#phoneNumber').addClass('err');
+                    }
 
                 //TODO password too weak
 
