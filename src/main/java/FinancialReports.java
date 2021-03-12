@@ -44,7 +44,7 @@ public class FinancialReports extends HttpServlet {
                 while (resultFromSellerProduct.next()) {
                     int orderId = resultFromSellerProduct.getInt("OrderID");
                     Statement s2 = con.createStatement();
-                    String getPrice = "SELECT totalPrice FROM Orders WHERE OrderID = " + orderId;
+                    String getPrice = "SELECT totalPrice FROM Orders WHERE OrderID =" + orderId ;
                     ResultSet price = s2.executeQuery(getPrice);
                     if (!price.next()) {
                         throw new Exception(" There is some error");
