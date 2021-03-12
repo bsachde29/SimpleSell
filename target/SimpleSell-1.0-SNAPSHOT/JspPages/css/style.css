@@ -614,7 +614,9 @@ body {
     /* text-align: center; */
     text-align: left;
 }
-
+.complete_order.order_btns {
+    width: 85%;
+}
 
 .accept_order.order_btns {
     width: 40%;
@@ -648,4 +650,8 @@ body {
     float: left;
     margin-right: 0.5%;
     margin-top: 0.45%;
+}
+
+.order_id {
+    font-size: 25px;
 }

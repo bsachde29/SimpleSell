@@ -276,6 +276,20 @@
 
                 for (var i = 0; i < obj.length; i++) {
 
+
+                    var accepted = false;
+
+                    var str = "<div class=\"order_btns_wrapper\">\n" +
+                        "            <button class=\"decline_order order_btns\">Decline</button>\n" +
+                        "            <button class=\"accept_order order_btns\">Accept</button>\n" +
+                        "        </div>";
+
+                    if (obj[i]["accept"] == "ACCEPTED") {
+                        str = "<div class=\"order_btns_wrapper\">\n" +
+                            "    <button class=\"complete_order order_btns\">Mark as Completed</button>\n" +
+                            "</div>"
+                    }
+
                     html_append += "<div class=\"order_wrapper\">\n" +
                         "\n" +
                         "    <div class=\"all_order_products\">"
@@ -291,7 +305,7 @@
                             "            <img src=\"img/product_image.jpg\" class=\"order_image\">\n" +
                             "            <section class=\"order_prod_name\">" + obj[i]["products"][j]["name"] + "</section>\n" +
                             "            <div class=\"order_prod_details\">\n" +
-                            "                <span class=\"order_prod_price\">" + obj[i]["products"][j]["price"] + "</span>\n" +
+                            "                <span class=\"order_prod_price\">Price: " + obj[i]["products"][j]["price"] + "</span>\n" +
                             "                <span class=\"order_prod_qty\">Qty.: " + obj[i]["quantities"][j] + "</span>\n" +
                             "            </div>\n" +
                             "        </div>"
@@ -306,10 +320,7 @@
                         "            <span class=\"order_buyer_phnumber\">" + obj[i]["mobileNum"] + "</span>\n" +
                         "        </div>\n" +
                         "\n" +
-                        "        <div class=\"order_btns_wrapper\">\n" +
-                        "            <button class=\"decline_order order_btns\">Decline</button>\n" +
-                        "            <button class=\"accept_order order_btns\">Accept</button>\n" +
-                        "        </div>\n" +
+                        str +
                         "\n" +
                         "    </div>\n" +
                         "\n" +
