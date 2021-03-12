@@ -56,11 +56,8 @@
         <div class="content_main_out">
             <div class="content_main modify_details" >
                 <h1 class="product_text prd_title">Account Details</h1><br></br>
-                <div class="left">
-                    <h2 class= "product_text">First Name</h2>
-                    <input class="sml_prd_txt_box product_page_txt_box" id="firstName"/>
-                </div>
-
+                <h2 class= "product_text">First Name</h2>
+                <input class="sml_prd_txt_box product_page_txt_box" id="firstName"/>
                 <h2 class= "product_text push_right">Last Name</h2>
                 <input class="sml_prd_txt_box product_page_txt_box" id="lastName"/>
 
