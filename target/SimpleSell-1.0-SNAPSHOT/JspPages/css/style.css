@@ -601,13 +601,13 @@ body {
 
 .order_bottom {
 }
-
 .order_buyer_details {
     margin-left: 35%;
     margin-right: 18%;
     font-size: 21;
     line-height: 1.5;
     font-weight: 500;
+    display: grid;
 }
 
 .all_orders {
@@ -640,6 +640,7 @@ body {
     background: white;
     padding: 10px;
     padding-bottom: 34px;
+    margin-bottom: 40px;
 }
 
 .in_page_icon {
