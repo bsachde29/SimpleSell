@@ -66,7 +66,7 @@
                 <h2 class= "product_text">Total Sales</h2>
                 <i class="fas fa-dollar-sign in_page_icon"></i>
                 <h2 class= "product_text sales_txt" id="total_sales">999.99</h2>
-                <h2 class= "product_text">Average Order Value</h2>
+                <h2 class= "product_text" >Average Order Value</h2>
                 <i class="fas fa-dollar-sign in_page_icon"></i>
                 <h2 class= "product_text sales_txt" id="avg_order_value">999.99</h2>
             </div>

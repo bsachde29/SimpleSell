@@ -376,9 +376,25 @@
         });
     });
 
-    //TODO Send requests for Login
+    if (($("#analytics_page"))) {
+
+        $("#analytics_page").hide();
+        $.ajax({
+            type: 'get',
+            url: '/SimpleSell_war/FinancialReports',
+            data: {
+                SellerID: sessionStorage.getItem("sellerID")
+            },
+            success: function (response) {
+                var seller = JSON.parse(response);
+                console.log(response);
+                $("#total_sales").text(seller.sales)
+                $("#avg_order_value").text(seller.avg)
+                $("#analytics_page").show();
+            }
+        });
+    }
 
 
-    //TODO Send requests for Modifying
 
 })(jQuery);

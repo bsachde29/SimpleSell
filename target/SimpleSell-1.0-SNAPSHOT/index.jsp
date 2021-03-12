@@ -15,6 +15,7 @@
     <li><a href="JspPages/Inventory.jsp">Inventory</a></li>
     <li><a href="JspPages/test_inv.jsp">Test Inventory</a></li>
     <li><a href="JspPages/Orders.jsp">Orders</a></li>
+    <li><a href="JspPages/Analytics.jsp">Analytics</a></li>
 </ul>
 </body>
 </html>
