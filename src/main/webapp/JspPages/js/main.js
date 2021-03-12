@@ -397,7 +397,7 @@
         });
     });
 
-    if (($("#analytics_page"))) {
+    if (($("#analytics_page")[0])) {
 
         $("#analytics_page").hide();
         $.ajax({
@@ -416,29 +416,81 @@
         });
     }
 
+    $('.sub_input').hide();
+    $('#has_no_sub_add').hide();
+
+
+
+
+
+    $('#is_sub_add').on('click', function () {
+        $('.sub_input').show();
+        $('#has_sub_add').show();
+        $('#has_no_sub_add').hide();
+        $
+    });
+
+
+    $('#has_sub_add').on('click', function () {
+        $('#has_no_sub_add').show();
+        $('#has_sub_add').hide();
+        $('.sub_input').hide();
+    });
+
+    $('#has_no_sub_add').on('click', function () {
+        $('#has_no_sub_add').hide();
+        $('#has_sub_add').show();
+        $('.sub_input').hide();
+    });
+
     var addButton = $('#save_add_prod');
 
     addButton.on('click', function () {
+        var sellerID = sessionStorage.getItem("sellerID");
         var title = $('#title').val();
         var description = $('#description').val();
         var price = $('#price').val();
         var category = $('#category').val();
 
+        var hasSub = 0;
+
+        var parentID = 0;
+
+        if ($('#has_sub_add').is(":hidden")) {
+            hasSub = 1;
+
+        } else {
+            parentID = $('#sub_of').val();
+        }
+
+
+        DEBUG && console.log(title);
+        DEBUG && console.log(hasSub);
+        DEBUG && console.log(description);
+        DEBUG && console.log(price);
+        DEBUG && console.log(category);
+        DEBUG && console.log(parentID);
+        DEBUG && console.log(sellerID);
+
+
+
             $.ajax({
                 type: 'post',
                 url: '/SimpleSell_war/InventoryAdd',
                 data: {
-                    Name: title, Description: description, price: price, Category: category
+                    Name: title, hasSubcategories: hasSub, Description: description, price: price, Category: category, inStock: 1, ProductID: parentID
                 },
                 success: function (response) {
 
                     DEBUG && console.log(response);
-
                 }
             });
 
 
     });
+
+
+
 
 
 

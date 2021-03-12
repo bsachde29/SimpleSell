@@ -20,6 +20,11 @@
         $('.phone_check').hide();
         $('.pass_check').hide();
 
+        var title = $('#title').val()
+
+
+
+
         var FirstName = $('#firstName').val();
         var LastName = $('#lastName').val();
         var EmailID = $('#email').val();
@@ -96,7 +101,7 @@
 
             success: function (response) {
 
-                    DEBUG && console.log(response);
+                DEBUG && console.log(response);
 
                 if (response == "Wrong Details") {
 
@@ -112,19 +117,15 @@
 
                 window.location.href = "Inventory.jsp";
 
-                    // if (data != 1) {
-                    //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'red');
-                    // }
-                    // else {
-                    //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'green');
-                    // }
-                }
-            });
-        } else {
-            $('.pass_check').show();
-            $('#password').addClass('err');
-            $('re-password').addClass('err');
-        }
+                // if (data != 1) {
+                //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'red');
+                // }
+                // else {
+                //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'green');
+                // }
+
+            }
+        });
     });
 
 
@@ -269,6 +270,22 @@
 
                 DEBUG && console.log(response);
 
+                var obj = JSON.parse(response);
+
+                var html_append;
+
+                for (var i = 0; i < obj.length; i++) {
+
+                    html_append += "<div class=\"order_wrapper\">\n" +
+                        "\n" +
+                        "    <div class=\"all_order_products\">"
+
+
+
+                }
+
+
+
                 // if (response == "Wrong Details") {
                 //
                 //
@@ -357,15 +374,22 @@
 
                 DEBUG && console.log(response);
 
-                    if (response == "Email Exists") {
-                        $('.email_check').show();
-                        $('#email').addClass('err');
-                    }
+                if (response == "Email Exists") {
+                    $('.email_check').show();
+                    $('#email').css({
+                        "background-color": "#f4d2d294",
+                        "border": "1.5px solid #e10000a3"
+                    });
 
-                    if (response == "Phone Exists") {
-                        $('.phone_check').show();
-                        $('#phoneNumber').addClass('err');
-                    }
+                }
+
+                if (response == "Phone Exists") {
+                    $('.phone_check').show()
+                    $('#phoneNumber').css({
+                        "background-color": "#f4d2d294",
+                        "border": "1.5px solid #e10000a3"
+                    });
+                }
 
                 //TODO password too weak
 
@@ -373,7 +397,7 @@
         });
     });
 
-    if (($("#analytics_page"))) {
+    if (($("#analytics_page")[0])) {
 
         $("#analytics_page").hide();
         $.ajax({
@@ -391,6 +415,82 @@
             }
         });
     }
+
+    $('.sub_input').hide();
+    $('#has_no_sub_add').hide();
+
+
+
+
+
+    $('#is_sub_add').on('click', function () {
+        $('.sub_input').show();
+        $('#has_sub_add').show();
+        $('#has_no_sub_add').hide();
+        $
+    });
+
+
+    $('#has_sub_add').on('click', function () {
+        $('#has_no_sub_add').show();
+        $('#has_sub_add').hide();
+        $('.sub_input').hide();
+    });
+
+    $('#has_no_sub_add').on('click', function () {
+        $('#has_no_sub_add').hide();
+        $('#has_sub_add').show();
+        $('.sub_input').hide();
+    });
+
+    var addButton = $('#save_add_prod');
+
+    addButton.on('click', function () {
+        var sellerID = sessionStorage.getItem("sellerID");
+        var title = $('#title').val();
+        var description = $('#description').val();
+        var price = $('#price').val();
+        var category = $('#category').val();
+
+        var hasSub = 0;
+
+        var parentID = 0;
+
+        if ($('#has_sub_add').is(":hidden")) {
+            hasSub = 1;
+
+        } else {
+            parentID = $('#sub_of').val();
+        }
+
+
+        DEBUG && console.log(title);
+        DEBUG && console.log(hasSub);
+        DEBUG && console.log(description);
+        DEBUG && console.log(price);
+        DEBUG && console.log(category);
+        DEBUG && console.log(parentID);
+        DEBUG && console.log(sellerID);
+
+
+
+            $.ajax({
+                type: 'post',
+                url: '/SimpleSell_war/InventoryAdd',
+                data: {
+                    Name: title, hasSubcategories: hasSub, Description: description, price: price, Category: category, inStock: 1, ProductID: parentID
+                },
+                success: function (response) {
+
+                    DEBUG && console.log(response);
+                }
+            });
+
+
+    });
+
+
+
 
 
 
