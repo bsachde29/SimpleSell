@@ -6,60 +6,86 @@
 
     var DEBUG = true;
 
+    DEBUG && console.log("main.js added")
+
+    if (($(".redirect_to_signin")[0])) {
+        window.location.href = "JspPages/LogIn.jsp";
+    }
+
+    $('.sellername').text(sessionStorage.getItem("sellerName"))
+
     var signUpButton = $('#su_but');
     $('.email_check').hide();
     $('.phone_check').hide();
+    $('.pass_check').hide();
 
 
     signUpButton.on('click', function () {
+
+        $('.email_check').hide();
+        $('.phone_check').hide();
+        $('.pass_check').hide();
+
+        var title = $('#title').val()
+
+
+
+
         var FirstName = $('#firstName').val();
         var LastName = $('#lastName').val();
         var EmailID = $('#email').val();
         var Password = $('#password').val();
+        var repass = $('#re-password').val();
         var MobileNumber = $('#mobileNumber').val();
         var storeName = $('#storeName').val();
         // send ajax request
         DEBUG && console.log(Password);
         DEBUG && console.log("Sign Up button works");
 
-        $.ajax({
-            type: 'post',
-            url: '/SimpleSell_war/SignUp',
-            data: {
-                FirstName: FirstName, LastName: LastName, EmailID: EmailID, Password: Password,
-                MobileNumber: MobileNumber, StoreName: storeName
-            },
-            success: function (response) {
+        var err = 0;
 
-                DEBUG && console.log(response);
+        if (Password != repass) {
+            err = 1;
+        }
 
-                if (response == "Email Exists") {
-                    $('.email_check').show();
-                    $('#email').css({
-                        "background-color": "#f4d2d294",
-                        "border": "1.5px solid #e10000a3"
-                    });
 
+        if (!err) {
+            $.ajax({
+                type: 'post',
+                url: '/SimpleSell_war/SignUp',
+                data: {
+                    FirstName: FirstName, LastName: LastName, EmailID: EmailID, Password: Password,
+                    MobileNumber: MobileNumber, StoreName: storeName
+                },
+                success: function (response) {
+
+                    DEBUG && console.log(response);
+
+                    if (response == "Email Exists") {
+                        $('.email_check').show();
+                        $('#email').addClass('err');
+                    }
+
+                    if (response == "Phone Exists") {
+                        $('.phone_check').show();
+                        $('#phoneNumber').addClass('err');
+                    }
+
+                    // if (data != 1) {
+                    //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'red');
+                    // }
+                    // else {
+                    //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'green');
+                    // }
                 }
-
-                if (response == "Phone Exists") {
-                    $('.phone_check').show()
-                    $('#phoneNumber').css({
-                        "background-color": "#f4d2d294",
-                        "border": "1.5px solid #e10000a3"
-                    });
-                }
-
-                // if (data != 1) {
-                //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'red');
-                // }
-                // else {
-                //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'green');
-                // }
-
-            }
-        });
+            });
+        } else {
+            $('.pass_check').show();
+            $('#password').addClass('err');
+            $('re-password').addClass('err');
+        }
     });
+
 
     var logInButton = $('#li_but');
 
@@ -171,7 +197,7 @@
                         "                            <div class=\"prod_right\">\n" +
                         "                                <p class = \"prod_id\">SKU Number: " + obj[i]["productID"] + "</p>\n" +
                         "                                <p class = \"has_sub\">Has Sub Products: " + hasSub +"</p>\n" +
-                        "\n" +
+                        "\n<p class='units_sold'>Units Sold: " + obj[i]["unitsSold"] +  " </p>" +
                         "                                <button class=\"product_btns sold_out\">Mark as sold out</button>\n" +
                         "                                <button class=\"product_btns in_stock\" >Mark as in stock</button>\n" +
                         "                                <button class=\"product_btns delete_prod\" >Remove from inventory</button>\n" +
@@ -249,6 +275,74 @@
             success: function (response) {
 
                 DEBUG && console.log(response);
+
+                var obj = JSON.parse(response);
+
+                var html_append = "";
+
+                for (var i = 0; i < obj.length; i++) {
+
+
+                    var accepted = false;
+
+                    var str = "<div class=\"order_btns_wrapper\">\n" +
+                        "            <button class=\"decline_order order_btns\">Decline</button>\n" +
+                        "            <button class=\"accept_order order_btns\">Accept</button>\n" +
+                        "        </div>";
+
+                    if (obj[i]["accept"] == "ACCEPTED") {
+                        str = "<div class=\"order_btns_wrapper\">\n" +
+                            "    <button class=\"complete_order order_btns\">Mark as Completed</button>\n" +
+                            "</div>"
+                    }
+
+                    html_append += "<div class=\"order_wrapper\">\n" +
+                        "\n" +
+                        "    <div class=\"all_order_products\">"
+
+
+                    html_append += "<div>\n" +
+                        "    <p class=\"order_id\">Order ID: " + obj[i]["orderId"] + "</p>\n" +
+                        "</div>"
+
+                    for (var j = 0; j < obj[i]["products"].length; j++) {
+
+                        html_append += "<div class=\"order_prod_wrapper\">\n" +
+                            "            <img src=\"img/product_image.jpg\" class=\"order_image\">\n" +
+                            "            <section class=\"order_prod_name\">" + obj[i]["products"][j]["name"] + "</section>\n" +
+                            "            <div class=\"order_prod_details\">\n" +
+                            "                <span class=\"order_prod_price\">Price: " + obj[i]["products"][j]["price"] + "</span>\n" +
+                            "                <span class=\"order_prod_qty\">Qty.: " + obj[i]["quantities"][j] + "</span>\n" +
+                            "            </div>\n" +
+                            "        </div>"
+
+                    }
+
+                    html_append += "<div class=\"order_bottom\">\n" +
+                        "\n" +
+                        "        <div class=\"order_buyer_details\">\n" +
+                        "            <span class=\"order_buyer_name\">" + obj[i]["firstName"] + " " + obj[i]["lastName"] + "</span>\n" +
+                        "            <span class=\"order_buyer_email\">" + obj[i]["email"] + "</span>\n" +
+                        "            <span class=\"order_buyer_phnumber\">" + obj[i]["mobileNum"] + "</span>\n" +
+                        "        </div>\n" +
+                        "\n" +
+                        str +
+                        "\n" +
+                        "    </div>\n" +
+                        "\n" +
+                        "\n" +
+                        "\n" +
+                        "</div>" + "</div>";
+
+
+
+                }
+
+
+                $('.all_orders').append(html_append);
+                $('.scripts').append("<script src=\"js/save_moded.js\"></script>")
+
+
 
                 // if (response == "Wrong Details") {
                 //
@@ -361,9 +455,102 @@
         });
     });
 
-    //TODO Send requests for Login
+    if (($("#analytics_page")[0])) {
+
+        $("#analytics_page").hide();
+        $.ajax({
+            type: 'get',
+            url: '/SimpleSell_war/FinancialReports',
+            data: {
+                SellerID: sessionStorage.getItem("sellerID")
+            },
+            success: function (response) {
+                var seller = JSON.parse(response);
+                console.log(response);
+                $("#total_sales").text(seller.sales)
+                $("#avg_order_value").text(seller.avg)
+                $("#analytics_page").show();
+            }
+        });
+    }
+
+    $('.sub_input').hide();
+    $('#has_no_sub_add').hide();
 
 
-    //TODO Send requests for Modifying
+
+
+
+    $('#is_sub_add').on('click', function () {
+        $('.sub_input').show();
+        $('#has_sub_add').show();
+        $('#has_no_sub_add').hide();
+        $
+    });
+
+
+    $('#has_sub_add').on('click', function () {
+        $('#has_no_sub_add').show();
+        $('#has_sub_add').hide();
+        $('.sub_input').hide();
+    });
+
+    $('#has_no_sub_add').on('click', function () {
+        $('#has_no_sub_add').hide();
+        $('#has_sub_add').show();
+        $('.sub_input').hide();
+    });
+
+    var addButton = $('#save_add_prod');
+
+    addButton.on('click', function () {
+        var sellerID = sessionStorage.getItem("sellerID");
+        var title = $('#title').val();
+        var description = $('#description').val();
+        var price = $('#price').val();
+        var category = $('#category').val();
+
+        var hasSub = 0;
+
+        var parentID = 0;
+
+        if ($('#has_sub_add').is(":hidden")) {
+            hasSub = 1;
+
+        } else if (!$('.sub_input').is(":hidden")) {
+            parentID = $('#sub_of').val();
+        }
+
+
+        DEBUG && console.log(title);
+        DEBUG && console.log(hasSub);
+        DEBUG && console.log(description);
+        DEBUG && console.log(price);
+        DEBUG && console.log(category);
+        DEBUG && console.log(parentID);
+        DEBUG && console.log(sellerID);
+
+
+
+            $.ajax({
+                type: 'post',
+                url: '/SimpleSell_war/InventoryAdd',
+                data: {
+                    Name: title, hasSubcategories: hasSub, Description: description, price: price,
+                    Category: category, inStock: 1, ProductID: parentID, SellerID : sellerID
+                },
+                success: function (response) {
+
+                    DEBUG && console.log(response);
+                }
+            });
+
+
+    });
+
+
+
+
+
 
 })(jQuery);

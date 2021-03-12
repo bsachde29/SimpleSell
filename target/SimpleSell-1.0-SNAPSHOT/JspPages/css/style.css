@@ -351,8 +351,10 @@ body {
 }
 
 .selected_nav_item {
-    background-color: #cacaca;
+    background-color: #d7d7d7;
     border-radius: 10px;
+    border-left: solid 13px #82ace6;
+    margin-left: 5%;
 }
 
 .product_text {
@@ -409,7 +411,7 @@ body {
     margin-left: 2%;
     /*! display:grid; */
     background-color: white;
-    border: 2px solid gray;
+    border: 1px solid gray;
     border-radius: 8px;
     width: 96%;
     margin-bottom: 2%;
@@ -422,7 +424,7 @@ body {
     height: 200px;
     float: left;
     margin-left: 3%;
-    border: 2px solid gray;
+    border: 1px solid gray;
     border-radius: 1rem;
     margin-top: 2%;
     height: wid;
@@ -432,7 +434,7 @@ body {
     text-align:justify;
     /*! margin-left: 2%; */
     display: inline;
-    border: 2px solid gray;
+    border: 1px solid gray;
     border-radius: 8px;
     padding-left: 1%;
     /*! padding-right: 1%; */
@@ -479,7 +481,7 @@ body {
 }
 .prd_desc {
     display: inline-block;
-    border: 2px solid gray;
+    border: 1px solid gray;
     border-radius: 8px;
     width: 100%;
     margin-top: 29px;
@@ -601,20 +603,22 @@ body {
 
 .order_bottom {
 }
-
 .order_buyer_details {
     margin-left: 35%;
     margin-right: 18%;
     font-size: 21;
     line-height: 1.5;
     font-weight: 500;
+    display: grid;
 }
 
 .all_orders {
     /* text-align: center; */
     text-align: left;
 }
-
+.complete_order.order_btns {
+    width: 85%;
+}
 
 .accept_order.order_btns {
     width: 40%;
@@ -640,4 +644,44 @@ body {
     background: white;
     padding: 10px;
     padding-bottom: 34px;
+    margin-bottom: 40px;
+}
+
+.in_page_icon {
+    margin-left: 2%;
+    float: left;
+    margin-right: 0.5%;
+    margin-top: 0.45%;
+}
+
+.order_id {
+    font-size: 25px;
+}
+
+.units_sold {
+    font-size: 21;
+    font-weight: 501;
+}
+
+#li_but, #su_but {
+    width: 47%;
+    height: 40px;
+    background-color: #74a3e3;
+    border-radius: 8px;
+    color: white;
+    font-size: inherit;
+    border: 1.5px solid #74a3e3;
+    cursor: pointer;
+}
+
+.add_title {
+    display: flex;
+    margin-bottom: 52px;
+}
+
+.add_new_prod {
+    float: right;
+    margin-left: 80%;
+    font-size: 59;
+    color: #7ea2de;
 }

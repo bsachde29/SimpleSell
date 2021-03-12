@@ -25,29 +25,29 @@
     </div>
     <div class="content">
         <div class="side_bar">
-            <span class="side_bar_item">
+            <span class = "side_bar_item">
                 <i class="fas fa-home"></i>
                 Home
             </span>
-            <span class="side_bar_item selected_nav_item">
+            <span style="cursor: pointer;" onclick="window.location='Inventory.jsp';" class = "side_bar_item ">
                 <i class="fas fa-dolly-flatbed"></i>
                 Inventory
 
             </span>
-            <span class="side_bar_item">
+            <span style="cursor: pointer;" onclick="window.location='Analytics.jsp';" class = "side_bar_item">
                 <i class="fas fa-chart-bar"></i>
                 Analytics
 
             </span>
-            <span class="side_bar_item">
+            <span class = "side_bar_item">
                 <i class="fas fa-star"></i>
                 Discounts
             </span>
-            <span class="side_bar_item">
-                <i class="fas fa-store"></i>
-                Storefront
+            <span style="cursor: pointer;" onclick="window.location='Orders.jsp';" class = "side_bar_item">
+                <i class="fas fa-boxes"></i>
+                Orders
             </span>
-            <span class="side_bar_item">
+            <span style="cursor: pointer;" onclick="window.location='ModifyAccountDetails.jsp';" class = "selected_nav_item side_bar_item">
                 <i class="fas fa-user-alt"></i>
                 Profile
             </span>
@@ -56,11 +56,8 @@
         <div class="content_main_out">
             <div class="content_main modify_details" >
                 <h1 class="product_text prd_title">Account Details</h1><br></br>
-                <div class="left">
-                    <h2 class= "product_text">First Name</h2>
-                    <input class="sml_prd_txt_box product_page_txt_box" id="firstName"/>
-                </div>
-
+                <h2 class= "product_text">First Name</h2>
+                <input class="sml_prd_txt_box product_page_txt_box" id="firstName"/>
                 <h2 class= "product_text push_right">Last Name</h2>
                 <input class="sml_prd_txt_box product_page_txt_box" id="lastName"/>
 

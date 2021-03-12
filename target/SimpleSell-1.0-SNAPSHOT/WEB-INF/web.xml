@@ -95,6 +95,25 @@
         <url-pattern>/FetchOrder</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>InventoryAdd</servlet-name>
+        <servlet-class>InventoryAdd</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>InventoryAdd</servlet-name>
+        <url-pattern>/InventoryAdd</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AcceptOrder</servlet-name>
+        <servlet-class>AcceptOrder</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AcceptOrder</servlet-name>
+        <url-pattern>/AcceptOrder</url-pattern>
+    </servlet-mapping>
 
 
 </web-app>
