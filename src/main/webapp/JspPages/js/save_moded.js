@@ -44,7 +44,15 @@
                 DEBUG && console.log(response);
                 DEBUG && console.log(response);
 
-                window.location.href = "Inventory.jsp";
+
+                if (response == "Updated successfully") {
+                    window.alert("Product Details Updated!");
+                    window.location.href = "Inventory.jsp";
+
+
+                }
+
+
 
             }
         });

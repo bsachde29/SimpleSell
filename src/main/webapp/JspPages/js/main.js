@@ -71,6 +71,12 @@
                         $('#phoneNumber').addClass('err');
                     }
 
+
+                    if (response == "User Successfully Registered") {
+                        window.alert("User Registered.")
+                        window.location.href = "LogIn.jsp";
+                    }
+
                     // if (data != 1) {
                     //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'red');
                     // }
@@ -191,7 +197,7 @@
                         "                                    </section>\n" +
                         "                                </div>\n" +
                         "                                <textarea class=\"prd_desc\">" + obj[i]["description"] + " </textarea>\n" +
-                        "                                <input class=\"prod_cat\" value=\"" + obj[i]["category"] + "\">\n" +
+                        "                                <input class=\"prod_cat\" placeholder='Category' value=\"" + obj[i]["category"] + "\">\n" +
                         "                                <button class=\"product_btns save_mod_prod\">Save</button>\n" +
                         "                            </div>\n" +
                         "                            <div class=\"prod_right\">\n" +
@@ -410,7 +416,6 @@
         var instaID = $('#instaID').val();
         var fbID = $('#instaID').val();
         // send ajax request
-        DEBUG && console.log("Sign Up button works");
 
         $.ajax({
             type: 'post',
@@ -432,21 +437,9 @@
 
                 DEBUG && console.log(response);
 
-                if (response == "Email Exists") {
-                    $('.email_check').show();
-                    $('#email').css({
-                        "background-color": "#f4d2d294",
-                        "border": "1.5px solid #e10000a3"
-                    });
-
-                }
-
-                if (response == "Phone Exists") {
-                    $('.phone_check').show()
-                    $('#phoneNumber').css({
-                        "background-color": "#f4d2d294",
-                        "border": "1.5px solid #e10000a3"
-                    });
+                if (response == "Updated Seller Info") {
+                    window.alert("Account Details Updated!");
+                    window.location.href = "ModifyAccountDetails.jsp";
                 }
 
                 //TODO password too weak

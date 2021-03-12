@@ -672,6 +672,10 @@ body {
     font-size: inherit;
     border: 1.5px solid #74a3e3;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .add_title {
