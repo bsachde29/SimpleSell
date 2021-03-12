@@ -24,7 +24,7 @@ body {
     /*! float: left; */
 }
 
-.email_check, .phone_check, pass_check {
+.email_check, .phone_check, pass_check, .pass_weak {
     text-align: left;
     margin-left: 28%;
     margin-bottom: 18px;
@@ -33,10 +33,7 @@ body {
     font-size: 14px;
 }
 
-.err {
-background-color: #f4d2d294,
-border: 1.5px solid #e10000a3
-}
+
 
 .su_txt_box.name {
     width: 21%;
@@ -577,6 +574,11 @@ body {
 
 .order_prod_price {
     margin-bottom: 21px;
+}
+
+.err {
+    background-color: #f4d2d294;
+    border: 1.5px solid #e10000a3;
 }
 
 .order_prod_details {
