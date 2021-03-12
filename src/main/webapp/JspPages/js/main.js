@@ -6,60 +6,75 @@
 
     var DEBUG = true;
 
+    var DEBUG = true;
+
     var signUpButton = $('#su_but');
     $('.email_check').hide();
     $('.phone_check').hide();
+    $('.pass_check').hide();
 
 
     signUpButton.on('click', function () {
+
+        $('.email_check').hide();
+        $('.phone_check').hide();
+        $('.pass_check').hide();
+
         var FirstName = $('#firstName').val();
         var LastName = $('#lastName').val();
         var EmailID = $('#email').val();
         var Password = $('#password').val();
+        var repass = $('#re-password').val();
         var MobileNumber = $('#mobileNumber').val();
         var storeName = $('#storeName').val();
         // send ajax request
         DEBUG && console.log(Password);
         DEBUG && console.log("Sign Up button works");
 
-        $.ajax({
-            type: 'post',
-            url: '/SimpleSell_war/SignUp',
-            data: {
-                FirstName: FirstName, LastName: LastName, EmailID: EmailID, Password: Password,
-                MobileNumber: MobileNumber, StoreName: storeName
-            },
-            success: function (response) {
+        var err = 0;
 
-                DEBUG && console.log(response);
+        if (Password != repass) {
+            err = 1;
+        }
 
-                if (response == "Email Exists") {
-                    $('.email_check').show();
-                    $('#email').css({
-                        "background-color": "#f4d2d294",
-                        "border": "1.5px solid #e10000a3"
-                    });
 
+        if (!err) {
+            $.ajax({
+                type: 'post',
+                url: '/SimpleSell_war/SignUp',
+                data: {
+                    FirstName: FirstName, LastName: LastName, EmailID: EmailID, Password: Password,
+                    MobileNumber: MobileNumber, StoreName: storeName
+                },
+                success: function (response) {
+
+                    DEBUG && console.log(response);
+
+                    if (response == "Email Exists") {
+                        $('.email_check').show();
+                        $('#email').addClass('err');
+                    }
+
+                    if (response == "Phone Exists") {
+                        $('.phone_check').show();
+                        $('#phoneNumber').addClass('err');
+                    }
+
+                    // if (data != 1) {
+                    //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'red');
+                    // }
+                    // else {
+                    //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'green');
+                    // }
                 }
-
-                if (response == "Phone Exists") {
-                    $('.phone_check').show()
-                    $('#phoneNumber').css({
-                        "background-color": "#f4d2d294",
-                        "border": "1.5px solid #e10000a3"
-                    });
-                }
-
-                // if (data != 1) {
-                //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'red');
-                // }
-                // else {
-                //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'green');
-                // }
-
-            }
-        });
+            });
+        } else {
+            $('.pass_check').show();
+            $('#password').addClass('err');
+            $('re-password').addClass('err');
+        }
     });
+
 
     var logInButton = $('#li_but');
 
