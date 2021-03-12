@@ -58,7 +58,7 @@
                 <h1 class= "product_text prd_title">Add Products</h1>
 
                 <h2 class= "product_text">Title</h2>
-                <input class="product_page_txt_box" id="title" type="text" placeholder="Product Title">
+                <input class="product_page_txt_box " id="title" type="text" placeholder="Product Title">
 
                 <h2 class= "product_text">Description</h2>
                 <input class = "product_page_txt_box desc" id="description" type="text" placeholder="Tell us about your product" maxlength="250" height="100px">
@@ -73,11 +73,14 @@
                 <h2 class= "product_text">Price</h2>
                 <input class="product_page_txt_box sml_prd_txt_box" id="price" type="text" placeholder="">
 
+                <h2 class= "product_text">Category</h2>
+                <input class="product_page_txt_box sml_prd_txt_box" id="category" type="text" placeholder="">
+
                 <h2 class= "product_text ">Discount</h2>
                 <input class="product_page_txt_box sml_prd_txt_box" id="discount" type="text" placeholder=""><br></br>
 
-                <button class="product_btns cancel_btn">Discard</button>
-                <button class="product_btns">Save</button>
+
+                <button class="product_btns" id = "save_add_prod">Save</button>
             </div>
         </div>
     </div>
