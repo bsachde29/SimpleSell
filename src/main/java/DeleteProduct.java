@@ -24,7 +24,6 @@ public class DeleteProduct extends HttpServlet {
         String username = "simpledb";
         String password = "sell1234";
         Connection con = null;
-
         try {
             Class.forName("com.mysql.jdbc.Driver");
             con = DriverManager.getConnection(url, username, password);
@@ -38,13 +37,13 @@ public class DeleteProduct extends HttpServlet {
                     if (result.getBoolean("isSubProduct")) {
                         Statement s2 = con.createStatement();
                         String query = "DELETE FROM Product WHERE ProductID = '" + productID + "'";
-                        s2.executeQuery(query);
+                        s2.executeUpdate(query);
                         Statement s3 = con.createStatement();
                         query = "DELETE FROM Product_Subcategories WHERE SubItemID = '" + productID + "'";
-                        s3.executeQuery(query);
+                        s3.executeUpdate(query);
                         Statement s4 = con.createStatement();
                         query = "DELETE FROM Seller_Product WHERE ProductID = '" + productID + "'";
-                        s4.executeQuery(query);
+                        s4.executeUpdate(query);
                     } else if (result.getBoolean("hasSubcategories")) {
                         Statement s2 = con.createStatement();
                         String query = "SELECT * FROM Product_Subcategories WHERE ProductID = '" + productID + "'";
@@ -53,26 +52,26 @@ public class DeleteProduct extends HttpServlet {
                             Statement s3 = con.createStatement();
                             int subProdID = resultSet.getInt("SubItemID");
                             query = "DELETE FROM Product WHERE ProductID = '" + subProdID + "'";
-                            s3.executeQuery(query);
+                            s3.executeUpdate(query);
                             Statement s4 = con.createStatement();
                             query = "DELETE FROM Seller_Product WHERE ProductID = '" + subProdID + "'";
-                            s4.executeQuery(query);
+                            s4.executeUpdate(query);
                         }
                         query = "DELETE FROM Product WHERE ProductID = '" + productID + "'";
-                        s2.executeQuery(query);
+                        s2.executeUpdate(query);
                         Statement s3 = con.createStatement();
                         query = "DELETE FROM Product_Subcategories WHERE ProductID = '" + productID + "'";
-                        s3.executeQuery(query);
+                        s3.executeUpdate(query);
                         Statement s4 = con.createStatement();
                         query = "DELETE FROM Seller_Product WHERE ProductID = '" + productID + "'";
-                        s4.executeQuery(query);
+                        s4.executeUpdate(query);
                     } else {
                         Statement s2 = con.createStatement();
                         String query =  "DELETE FROM Product WHERE ProductID = '" + productID + "'";
-                        s2.executeQuery(query);
+                        s2.executeUpdate(query);
                         Statement s4 = con.createStatement();
                         query = "DELETE FROM Seller_Product WHERE ProductID = '" + productID + "'";
-                        s4.executeQuery(query);
+                        s4.executeUpdate(query);
                     }
                     System.out.println("Everything removed successfully");
                     response.getWriter().write("Product/s Deleted");

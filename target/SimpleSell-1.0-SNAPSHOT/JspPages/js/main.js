@@ -20,6 +20,11 @@
         $('.phone_check').hide();
         $('.pass_check').hide();
 
+        var title = $('#title').val()
+
+
+
+
         var FirstName = $('#firstName').val();
         var LastName = $('#lastName').val();
         var EmailID = $('#email').val();
@@ -96,7 +101,7 @@
 
             success: function (response) {
 
-                    DEBUG && console.log(response);
+                DEBUG && console.log(response);
 
                 if (response == "Wrong Details") {
 
@@ -112,19 +117,15 @@
 
                 window.location.href = "Inventory.jsp";
 
-                    // if (data != 1) {
-                    //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'red');
-                    // }
-                    // else {
-                    //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'green');
-                    // }
-                }
-            });
-        } else {
-            $('.pass_check').show();
-            $('#password').addClass('err');
-            $('re-password').addClass('err');
-        }
+                // if (data != 1) {
+                //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'red');
+                // }
+                // else {
+                //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'green');
+                // }
+
+            }
+        });
     });
 
 
@@ -269,6 +270,22 @@
 
                 DEBUG && console.log(response);
 
+                var obj = JSON.parse(response);
+
+                var html_append;
+
+                for (var i = 0; i < obj.length; i++) {
+
+                    html_append += "<div class=\"order_wrapper\">\n" +
+                        "\n" +
+                        "    <div class=\"all_order_products\">"
+
+
+
+                }
+
+
+
                 // if (response == "Wrong Details") {
                 //
                 //
@@ -357,15 +374,22 @@
 
                 DEBUG && console.log(response);
 
-                    if (response == "Email Exists") {
-                        $('.email_check').show();
-                        $('#email').addClass('err');
-                    }
+                if (response == "Email Exists") {
+                    $('.email_check').show();
+                    $('#email').css({
+                        "background-color": "#f4d2d294",
+                        "border": "1.5px solid #e10000a3"
+                    });
 
-                    if (response == "Phone Exists") {
-                        $('.phone_check').show();
-                        $('#phoneNumber').addClass('err');
-                    }
+                }
+
+                if (response == "Phone Exists") {
+                    $('.phone_check').show()
+                    $('#phoneNumber').css({
+                        "background-color": "#f4d2d294",
+                        "border": "1.5px solid #e10000a3"
+                    });
+                }
 
                 //TODO password too weak
 
