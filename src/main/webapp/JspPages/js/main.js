@@ -20,6 +20,11 @@
         $('.phone_check').hide();
         $('.pass_check').hide();
 
+        var title = $('#title').val()
+
+
+
+
         var FirstName = $('#firstName').val();
         var LastName = $('#lastName').val();
         var EmailID = $('#email').val();
@@ -264,6 +269,22 @@
             success: function (response) {
 
                 DEBUG && console.log(response);
+
+                var obj = JSON.parse(response);
+
+                var html_append;
+
+                for (var i = 0; i < obj.length; i++) {
+
+                    html_append += "<div class=\"order_wrapper\">\n" +
+                        "\n" +
+                        "    <div class=\"all_order_products\">"
+
+
+
+                }
+
+
 
                 // if (response == "Wrong Details") {
                 //
