@@ -6,7 +6,11 @@
 
     var DEBUG = true;
 
-    var DEBUG = true;
+    DEBUG && console.log("main.js added")
+
+    if (($(".redirect_to_signin")[0])) {
+        window.location.href = "JspPages/LogIn.jsp";
+    }
 
     $('.sellername').text(sessionStorage.getItem("sellerName"))
 
