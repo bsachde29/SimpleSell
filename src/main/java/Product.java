@@ -11,6 +11,7 @@ public class Product {
     private boolean hasSubCategories;
     private double price;
     private int productID;
+    private int unitsSold;
     private inStock in_Stock;
     private ArrayList<Product> subCategories;
 
@@ -23,6 +24,14 @@ public class Product {
         this.price = price;
         this.productID = productID;
         this.in_Stock = in_Stock;
+    }
+
+    public int getUnitsSold() {
+        return unitsSold;
+    }
+
+    public void setUnitsSold(int unitsSold) {
+        this.unitsSold = unitsSold;
     }
 
     public boolean isHasSubCategories() {

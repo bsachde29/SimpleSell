@@ -31,7 +31,8 @@ public class AcceptOrder extends HttpServlet {
                             "'" + orderState.PLACED + "' WHERE " +
                             "OrderID = '" + orderID + "'";
                     System.out.println(sqlquery);
-                    s1.executeUpdate(sqlquery);
+                    Statement s2 = con.createStatement();
+                    s2.executeUpdate(sqlquery);
                     System.out.println("Updated Order to Accepted");
                     response.getWriter().write("Order Accepted");
                 } else {

@@ -499,7 +499,7 @@
         if ($('#has_sub_add').is(":hidden")) {
             hasSub = 1;
 
-        } else {
+        } else if (!$('.sub_input').is(":hidden")) {
             parentID = $('#sub_of').val();
         }
 
@@ -518,7 +518,8 @@
                 type: 'post',
                 url: '/SimpleSell_war/InventoryAdd',
                 data: {
-                    Name: title, hasSubcategories: hasSub, Description: description, price: price, Category: category, inStock: 1, ProductID: parentID
+                    Name: title, hasSubcategories: hasSub, Description: description, price: price,
+                    Category: category, inStock: 1, ProductID: parentID, SellerID : sellerID
                 },
                 success: function (response) {
 
