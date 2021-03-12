@@ -9,7 +9,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-@WebServlet(name = "InventoryAdd")
+@WebServlet(name = "InventoryAdd", value = "/InventoryAdd")
 public class InventoryAdd extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int sellerID = Integer.parseInt(request.getParameter("SellerID"));
