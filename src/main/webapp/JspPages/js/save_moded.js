@@ -44,7 +44,6 @@
                 DEBUG && console.log(response);
                 DEBUG && console.log(response);
 
-
                 window.location.href = "Inventory.jsp";
 
             }
@@ -73,15 +72,16 @@
         DEBUG && console.log(prod_id)
 
         $.ajax({
+            type: 'post',
             url: '/SimpleSell_war/DeleteProduct',
             data: {
                 ProductID: prod_id
-
             },
 
             success: function (response) {
                 DEBUG && console.log(response);
-                DEBUG && console.log(response);
+
+                window.location.href = "Inventory.jsp";
             }
         });
 

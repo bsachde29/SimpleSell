@@ -53,11 +53,11 @@ public class InventoryAdd extends HttpServlet {
                     if (!isSub) {
                         String secQuery = "INSERT INTO Seller_Product (SellerID, ProductID) VALUES ('" + sellerID +
                                 "','"+ productID + "')";
-                        s1.executeQuery(secQuery);
+                        s1.executeUpdate(secQuery);
                     } else {
                         String secQuery = "INSERT INTO Product_Subcategories (ProductID, SubItemID) VALUES ('" + mainID +
                                 "','"+ productID + "')";
-                        s1.executeQuery(secQuery);
+                        s1.executeUpdate(secQuery);
                     }
                     System.out.println("Inserted Product into Inventory");
                     response.getWriter().write("Product Inserted");
