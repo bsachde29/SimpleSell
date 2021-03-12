@@ -437,7 +437,7 @@
 
                 DEBUG && console.log(response);
 
-                if (response == "Updated Seller Info") {
+                if (response == "Seller Info Updated") {
                     window.alert("Account Details Updated!");
                     window.location.href = "ModifyAccountDetails.jsp";
                 }
@@ -535,6 +535,10 @@
                 success: function (response) {
 
                     DEBUG && console.log(response);
+
+                    if (response == "Product Inserted") {
+                        window.alert("Product added!")
+                    }
                 }
             });
 
