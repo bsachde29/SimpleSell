@@ -43,3 +43,8 @@
 
 
 </div>
+
+
+<div class="order_btns_wrapper">
+    <button class="complete_order order_btns">Mark as Completed</button>
+</div>
