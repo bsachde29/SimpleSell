@@ -24,7 +24,7 @@ body {
     /*! float: left; */
 }
 
-.email_check, .phone_check, pass_check {
+.email_check, .phone_check, pass_check, .pass_weak {
     text-align: left;
     margin-left: 28%;
     margin-bottom: 18px;

@@ -18,6 +18,7 @@
     $('.email_check').hide();
     $('.phone_check').hide();
     $('.pass_check').hide();
+    $('.pass_weak').hide();
 
 
     signUpButton.on('click', function () {
@@ -25,6 +26,7 @@
         $('.email_check').hide();
         $('.phone_check').hide();
         $('.pass_check').hide();
+        $('.pass_weak').hide();
 
         var title = $('#title').val()
 
@@ -77,6 +79,12 @@
                         window.location.href = "LogIn.jsp";
                     }
 
+                    if (response == "Password Too weak") {
+                        $('.pass_weak').show();
+                        $('#password').addClass('err');
+                        $('#re-password').addClass('err');
+                    }
+
                     // if (data != 1) {
                     //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'red');
                     // }
@@ -88,7 +96,7 @@
         } else {
             $('.pass_check').show();
             $('#password').addClass('err');
-            $('re-password').addClass('err');
+            $('#re-password').addClass('err');
         }
     });
 
