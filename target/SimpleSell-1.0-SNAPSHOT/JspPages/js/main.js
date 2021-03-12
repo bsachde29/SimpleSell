@@ -272,7 +272,7 @@
 
                 var obj = JSON.parse(response);
 
-                var html_append;
+                var html_append = "";
 
                 for (var i = 0; i < obj.length; i++) {
 
@@ -281,8 +281,48 @@
                         "    <div class=\"all_order_products\">"
 
 
+                    html_append += "<div>\n" +
+                        "    <p class=\"order_id\">Order ID: " + obj[i]["orderId"] + "</p>\n" +
+                        "</div>"
+
+                    for (var j = 0; j < obj[i]["products"].length; j++) {
+
+                        html_append += "<div class=\"order_prod_wrapper\">\n" +
+                            "            <img src=\"img/product_image.jpg\" class=\"order_image\">\n" +
+                            "            <section class=\"order_prod_name\">" + obj[i]["products"][j]["name"] + "</section>\n" +
+                            "            <div class=\"order_prod_details\">\n" +
+                            "                <span class=\"order_prod_price\">" + obj[i]["products"][j]["price"] + "</span>\n" +
+                            "                <span class=\"order_prod_qty\">Qty.: " + obj[i]["quantities"][j] + "</span>\n" +
+                            "            </div>\n" +
+                            "        </div>"
+
+                    }
+
+                    html_append += "<div class=\"order_bottom\">\n" +
+                        "\n" +
+                        "        <div class=\"order_buyer_details\">\n" +
+                        "            <span class=\"order_buyer_name\">" + obj[i]["firstName"] + " " + obj[i]["lastName"] + "</span>\n" +
+                        "            <span class=\"order_buyer_email\">" + obj[i]["email"] + "</span>\n" +
+                        "            <span class=\"order_buyer_phnumber\">" + obj[i]["mobileNum"] + "</span>\n" +
+                        "        </div>\n" +
+                        "\n" +
+                        "        <div class=\"order_btns_wrapper\">\n" +
+                        "            <button class=\"decline_order order_btns\">Decline</button>\n" +
+                        "            <button class=\"accept_order order_btns\">Accept</button>\n" +
+                        "        </div>\n" +
+                        "\n" +
+                        "    </div>\n" +
+                        "\n" +
+                        "\n" +
+                        "\n" +
+                        "</div>" + "</div>";
+
+
 
                 }
+
+
+                $('.all_orders').append(html_append);
 
 
 

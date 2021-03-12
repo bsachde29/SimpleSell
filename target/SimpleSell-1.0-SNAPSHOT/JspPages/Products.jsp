@@ -9,6 +9,12 @@
 </head>
 <body style="overflow: scroll">
 
+
+<div>
+    <p class="order_id">Order ID: 2</p>
+</div>
+
+
 <div>
     <div class="nav_bar">
         <div class="logo_nav">
@@ -76,11 +82,19 @@
                 <h2 class= "product_text">Category</h2>
                 <input class="product_page_txt_box sml_prd_txt_box" id="category" type="text" placeholder="">
 
-                <h2 class= "product_text ">Discount</h2>
-                <input class="product_page_txt_box sml_prd_txt_box" id="discount" type="text" placeholder=""><br></br>
+                <br></br>
 
+                <button class="order_btns" id="has_sub_add">has sub-products?</button>
+                <button class="order_btns" id="has_no_sub_add">no sub products?</button>
+                <button class="order_btns" id="is_sub_add">is sub-product?</button>
+                <section class="sub_input">
+                    <h2 class= "product_text">Sub-Product of? </h2>
+                    <input class="product_page_txt_box sml_prd_txt_box" id="sub_of" type="text" placeholder="">
+                </section>
 
+<div>
                 <button class="product_btns" id = "save_add_prod">Save</button>
+</div>
             </div>
         </div>
     </div>
