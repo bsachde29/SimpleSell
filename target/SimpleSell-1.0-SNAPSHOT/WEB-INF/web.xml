@@ -116,4 +116,14 @@
     </servlet-mapping>
 
 
+    <servlet>
+        <servlet-name>RejectOrder</servlet-name>
+        <servlet-class>RejectOrder</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RejectOrder</servlet-name>
+        <url-pattern>/RejectOrder</url-pattern>
+    </servlet-mapping>
+
 </web-app>
