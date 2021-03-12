@@ -108,6 +108,8 @@
         });
     });
 
+
+
     if (($(".all_products")[0])) {
 
 
@@ -135,10 +137,21 @@
                         hasSub = "Yes";
                     }
 
+
+
                     var soldout_btn = "<button class=\"product_btns sold_out\" >Mark as sold out</button>\n"
                     var instock_btn = "<button class=\"product_btns in_stock\" >Mark as in stock</button>\n"
 
                     var final_btn;
+
+
+
+
+
+
+
+
+
 
                     $('.all_products').append("<div class=\"prod_wrapper prod_" + i +"\">\n" +
                         "                        <div class=\"product_content\">\n" +
@@ -170,7 +183,9 @@
                         "\n" +
                         "                    </div>")
 
-                    DEBUG && console.log(obj[i]["in_Stock"]);
+                    DEBUG &&
+                    console.log(obj[i]["in_Stock"]);
+
 
                     if (obj[i]["in_Stock"] == "IN_STOCK") {
                         $('.prod_'+ i).find('.in_stock').hide();
@@ -216,35 +231,50 @@
 
 
 
-    if (($(".all_order_products")[0])) {
+    if (($(".all_orders")[0])) {
+
+
+        var sellerID = sessionStorage.getItem("sellerID");
+
+
 
 
         $.ajax({
-            type: 'post',
-            url: '/SimpleSell_war/Login',
+            type: 'get',
+            url: '/SimpleSell_war/FetchOrder',
             data: {
-                EmailID: EmailID, Password: Password
+                SellerID: sellerID
             },
 
             success: function (response) {
 
                 DEBUG && console.log(response);
 
-                if (response == "Wrong Details") {
+                // if (response == "Wrong Details") {
+                //
+                //
+                // } else {
+                //     var seller = JSON.parse(response);
+                //     console.log(seller);
+                //     sessionStorage.setItem("sellerID", seller.sellerID);
+                //     sessionStorage.setItem(("storeName"), seller.appName);
+                //     sessionStorage.setItem("sellerName", seller.firstName + " " + seller.lastName);
+                //
+                // }
+                //
+                // window.location.href = "Inventory.jsp";
 
+                // if (data != 1) {
+                //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'red');
+                // }
+                // else {
+                //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'green');
+                // }
 
-                } else {
-                    var seller = JSON.parse(response);
-                    console.log(seller);
-                    sessionStorage.setItem("sellerID", seller.sellerID);
-                    sessionStorage.setItem(("storeName"), seller.appName);
-                    sessionStorage.setItem("sellerName", seller.firstName + " " + seller.lastName);
-                }
-                window.location.href = "Inventory.jsp";
             }
         });
-    }
 
+    }
 
     if (($(".modify_details")[0])) {
 
@@ -330,10 +360,6 @@
             }
         });
     });
-
-
-
-
 
     //TODO Send requests for Login
 
