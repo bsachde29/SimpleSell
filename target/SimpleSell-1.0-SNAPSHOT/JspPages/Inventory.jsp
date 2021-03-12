@@ -55,7 +55,13 @@
         </div>
         <div class="content_main_out">
             <div class="content_main">
+                <div class="add_title">
                 <h1 class="product_text prd_title">Inventory</h1>
+
+                <section style="cursor: pointer;" onclick="window.location='Products.jsp';" class="add_new_prod">
+                    <i class="fas fa-plus-circle"></i>
+                </section>
+                </div>
 
                 <div class="all_products">
 

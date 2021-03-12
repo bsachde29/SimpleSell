@@ -351,8 +351,10 @@ body {
 }
 
 .selected_nav_item {
-    background-color: #cacaca;
+    background-color: #d7d7d7;
     border-radius: 10px;
+    border-left: solid 13px #82ace6;
+    margin-left: 5%;
 }
 
 .product_text {
@@ -659,4 +661,27 @@ body {
 .units_sold {
     font-size: 21;
     font-weight: 501;
+}
+
+#li_but, #su_but {
+    width: 47%;
+    height: 40px;
+    background-color: #74a3e3;
+    border-radius: 8px;
+    color: white;
+    font-size: inherit;
+    border: 1.5px solid #74a3e3;
+    cursor: pointer;
+}
+
+.add_title {
+    display: flex;
+    margin-bottom: 52px;
+}
+
+.add_new_prod {
+    float: right;
+    margin-left: 80%;
+    font-size: 59;
+    color: #7ea2de;
 }
