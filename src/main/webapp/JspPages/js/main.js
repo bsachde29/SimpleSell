@@ -416,6 +416,30 @@
         });
     }
 
+    var addButton = $('#save_add_prod');
+
+    addButton.on('click', function () {
+        var title = $('#title').val();
+        var description = $('#description').val();
+        var price = $('#price').val();
+        var category = $('#category').val();
+
+            $.ajax({
+                type: 'post',
+                url: '/SimpleSell_war/InventoryAdd',
+                data: {
+                    Name: title, Description: description, price: price, Category: category
+                },
+                success: function (response) {
+
+                    DEBUG && console.log(response);
+
+                }
+            });
+
+
+    });
+
 
 
 })(jQuery);
