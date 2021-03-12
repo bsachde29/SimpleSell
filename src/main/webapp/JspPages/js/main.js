@@ -535,6 +535,10 @@
                 success: function (response) {
 
                     DEBUG && console.log(response);
+
+                    if (response == "Product Inserted") {
+                        window.alert("Product added!")
+                    }
                 }
             });
 
