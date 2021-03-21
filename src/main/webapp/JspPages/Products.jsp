@@ -9,6 +9,8 @@
 </head>
 <body style="overflow: scroll">
 
+
+
 <div>
     <div class="nav_bar">
         <div class="logo_nav">
@@ -29,12 +31,12 @@
                 <i class="fas fa-home"></i>
                 Home
             </span>
-            <span class = "side_bar_item selected_nav_item">
+            <span style="cursor: pointer;" onclick="window.location='Inventory.jsp';" class = "side_bar_item selected_nav_item">
                 <i class="fas fa-dolly-flatbed"></i>
                 Inventory
 
             </span>
-            <span class = "side_bar_item">
+            <span style="cursor: pointer;" onclick="window.location='Analytics.jsp';" class = "side_bar_item">
                 <i class="fas fa-chart-bar"></i>
                 Analytics
 
@@ -43,11 +45,11 @@
                 <i class="fas fa-star"></i>
                 Discounts
             </span>
-            <span class = "side_bar_item">
-                <i class="fas fa-store"></i>
-                Storefront
+            <span style="cursor: pointer;" onclick="window.location='Orders.jsp';" class = "side_bar_item">
+                <i class="fas fa-boxes"></i>
+                Orders
             </span>
-            <span class = "side_bar_item">
+            <span style="cursor: pointer;" onclick="window.location='ModifyAccountDetails.jsp';" class = "side_bar_item">
                 <i class="fas fa-user-alt"></i>
                 Profile
             </span>
@@ -58,7 +60,7 @@
                 <h1 class= "product_text prd_title">Add Products</h1>
 
                 <h2 class= "product_text">Title</h2>
-                <input class="product_page_txt_box" id="title" type="text" placeholder="Product Title">
+                <input class="product_page_txt_box " id="title" type="text" placeholder="Product Title">
 
                 <h2 class= "product_text">Description</h2>
                 <input class = "product_page_txt_box desc" id="description" type="text" placeholder="Tell us about your product" maxlength="250" height="100px">
@@ -73,11 +75,22 @@
                 <h2 class= "product_text">Price</h2>
                 <input class="product_page_txt_box sml_prd_txt_box" id="price" type="text" placeholder="">
 
-                <h2 class= "product_text ">Discount</h2>
-                <input class="product_page_txt_box sml_prd_txt_box" id="discount" type="text" placeholder=""><br></br>
+                <h2 class= "product_text">Category</h2>
+                <input class="product_page_txt_box sml_prd_txt_box" id="category" type="text" placeholder="">
 
-                <button class="product_btns cancel_btn">Discard</button>
-                <button class="product_btns">Save</button>
+                <br></br>
+
+                <button class="order_btns" id="has_sub_add">has sub-products?</button>
+                <button class="order_btns" id="has_no_sub_add">no sub products?</button>
+                <button class="order_btns" id="is_sub_add">is sub-product?</button>
+                <section class="sub_input">
+                    <h2 class= "product_text">Sub-Product of? </h2>
+                    <input class="product_page_txt_box sml_prd_txt_box" id="sub_of" type="text" placeholder="">
+                </section>
+
+<div>
+                <button class="product_btns" id = "save_add_prod">Save</button>
+</div>
             </div>
         </div>
     </div>

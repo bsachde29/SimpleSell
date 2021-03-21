@@ -3,7 +3,6 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
-
     <servlet>
         <servlet-name>MyServlet</servlet-name>
         <servlet-class>MyServlet</servlet-class>
@@ -85,6 +84,36 @@
         <url-pattern>/DeleteProduct</url-pattern>
     </servlet-mapping>
 
+
+    <servlet>
+        <servlet-name>FetchOrder</servlet-name>
+        <servlet-class>FetchOrder</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FetchOrder</servlet-name>
+        <url-pattern>/FetchOrder</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>InventoryAdd</servlet-name>
+        <servlet-class>InventoryAdd</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>InventoryAdd</servlet-name>
+        <url-pattern>/InventoryAdd</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AcceptOrder</servlet-name>
+        <servlet-class>AcceptOrder</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AcceptOrder</servlet-name>
+        <url-pattern>/AcceptOrder</url-pattern>
+    </servlet-mapping>
 
 
 </web-app>

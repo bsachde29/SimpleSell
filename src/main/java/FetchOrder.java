@@ -12,14 +12,14 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-@WebServlet(name = "FetchOrder")
+@WebServlet(name = "FetchOrder", value = "/FetchOrder")
 public class FetchOrder extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        int sellerID = Integer.parseInt(request.getParameter("OrderID"));
+        int sellerID = Integer.parseInt(request.getParameter("SellerID"));
         String dburl = "jdbc:mysql://selldb.cqt5tgj7qyws.us-east-2.rds.amazonaws.com:3306/simpledb";
         String dbusername = "simpledb";
         String dbpassword = "sell1234";
@@ -36,24 +36,28 @@ public class FetchOrder extends HttpServlet {
                 if (ordersSet.next()) {
                     do {
                         int orderID = ordersSet.getInt("OrderID");
+                        Statement s2 = con.createStatement();
                         String checkUser = "SELECT * FROM Orders WHERE OrderID = '" + orderID + "' ";
-                        ResultSet userCheck = s1.executeQuery(checkUser);
+                        ResultSet userCheck = s2.executeQuery(checkUser);
                             if (userCheck.next()) {
+                                Statement s3 = con.createStatement();
                                 String productCount = "SELECT * FROM Order_Product_Count WHERE OrderID = '" + orderID + "'";
-                                ResultSet productCounts = s1.executeQuery(productCount);
+                                ResultSet productCounts = s3.executeQuery(productCount);
                                 ArrayList<Product> products = new ArrayList<Product>();
                                 ArrayList<Integer> count = new ArrayList<Integer>();
                                 if (productCounts.next()) {
                                     do {
                                         int productID = (productCounts.getInt("ProductID"));
+                                        Statement s4 = con.createStatement();
                                         String getProduct = "SELECT * FROM Product WHERE ProductID = '" + productID + "'";
-                                        ResultSet productQuery = s1.executeQuery(getProduct);
+                                        ResultSet productQuery = s4.executeQuery(getProduct);
                                         if (productQuery.next()) {
                                             ArrayList<Product> subProducts = null;
                                             if (productQuery.getBoolean("hasSubcategories")) {
                                                 subProducts = new ArrayList<Product>();
+                                                Statement s5 = con.createStatement();
                                                 String subQuery = "SELECT * FROM Product_Subcategories WHERE ProductID = '" + productID + "'";
-                                                ResultSet subProdRes = s1.executeQuery(subQuery);
+                                                ResultSet subProdRes = s5.executeQuery(subQuery);
                                                 if (subProdRes.next()) {
                                                     do {
                                                         inStock substock = inStock.IN_STOCK;
@@ -80,7 +84,7 @@ public class FetchOrder extends HttpServlet {
                                             Product product = new Product(productQuery.getString("Name"),
                                                     productQuery.getString("Description"),
                                                     productQuery.getString("Category"),
-                                                    productQuery.getBoolean("hasSubcategory"),
+                                                    productQuery.getBoolean("hasSubcategories"),
                                                     productQuery.getDouble("price"),
                                                     productQuery.getInt("ProductID"),
                                                     stock,

@@ -9,19 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="save id corrected">
+    <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="Password too week">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ModifyProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ModifyProducts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/js/save_moded.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/js/save_moded.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/product_item.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/product_item.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/SignUp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/SignUp.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/product_item.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/product_item.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ModifyProducts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ModifyProducts.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +43,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/JspPages/css/style.css" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -89,104 +87,21 @@
       <recent name="$PROJECT_DIR$/src/main/webapp" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.main.js">
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="main.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="main.js" working-dir="$PROJECT_DIR$/src/main/webapp/JspPages/js">
       <method v="2" />
     </configuration>
-    <configuration name="Tomcat 9.0.431" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.431" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
-      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
-      <deployment>
-        <artifact name="SimpleSell:war">
-          <settings>
-            <option name="CONTEXT_PATH" value="/SimpleSell_war" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="cd06345c-04cf-4b77-89cf-eaae877f6ac3" />
-        <option name="DEPLOY_TOMCAT_APPS" value="true" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="52711" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="SimpleSell:war" />
-        </option>
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Node.js.main.js" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.431" />
-    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.main.js" />
@@ -218,7 +133,8 @@
       <workItem from="1615444587086" duration="163000" />
       <workItem from="1615444785958" duration="81000" />
       <workItem from="1615445315996" duration="3676000" />
-      <workItem from="1615454406730" duration="2916000" />
+      <workItem from="1615454406730" duration="3225000" />
+      <workItem from="1615457778631" duration="7385000" />
     </task>
     <task id="LOCAL-00001" summary="jquery added&#10;main.js created">
       <created>1614501372547</created>
@@ -339,7 +255,133 @@
       <option name="project" value="LOCAL" />
       <updated>1615447069823</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Inventory working other than delete product">
+      <created>1615457495690</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1615457495690</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Inventory working other than delete product">
+      <created>1615457549569</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1615457549569</updated>
+    </task>
+    <task id="LOCAL-00020" summary="ModifyAccountDetails tested and debugged. Modified both the front end and the back end">
+      <created>1615502056589</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1615502056589</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Merge">
+      <created>1615531650376</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1615531650376</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Save id added">
+      <created>1615536974838</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1615536974838</updated>
+    </task>
+    <task id="LOCAL-00023" summary="AJAX working add products">
+      <created>1615540496973</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1615540496973</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Orders page fetching and displaying orders">
+      <created>1615544706419</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1615544706419</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Accept orders ajax sent">
+      <created>1615547031239</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1615547031239</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Accept orders ajax sent">
+      <created>1615547172659</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1615547172659</updated>
+    </task>
+    <task id="LOCAL-00027" summary="decline orders ajax sent">
+      <created>1615547459383</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1615547459383</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Side bar working, seller name displayed, change\d logo, added orders to side bar">
+      <created>1615550974981</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1615550974981</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Add button added">
+      <created>1615551962084</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1615551962084</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Redirection done">
+      <created>1615552440895</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1615552440895</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Created pop ups">
+      <created>1615578063047</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1615578063047</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Basic Corrections">
+      <created>1615578770752</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1615578770752</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Basic Corrections 2">
+      <created>1615578833132</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1615578833132</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Basic Corrections 3">
+      <created>1615579471337</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1615579471337</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Password too week">
+      <created>1615579947539</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1615579947539</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,14 +400,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Arjun and Shivam implemented the Java template for the backend using a Tomcat Server" />
-    <MESSAGE value="jquery added&#10;main.js created" />
-    <MESSAGE value="jquery working" />
-    <MESSAGE value="Added first and last names, stored both to database, printed ajax response to console. NOT TESTED YET." />
-    <MESSAGE value="Email and phone repetition checked!" />
-    <MESSAGE value="Added the Hash function and added some TODOS to help team-mates" />
-    <MESSAGE value="Initial Login Made" />
-    <MESSAGE value="Seller Class made" />
     <MESSAGE value="Product Class and In Stock enum" />
     <MESSAGE value="Buyer Class Made" />
     <MESSAGE value="Order Class made and previous classes fixed." />
@@ -375,7 +409,23 @@
     <MESSAGE value="Added more details to Inventory.jsp" />
     <MESSAGE value="Sku repaired" />
     <MESSAGE value="save id corrected" />
-    <option name="LAST_COMMIT_MESSAGE" value="save id corrected" />
+    <MESSAGE value="ModifyAccountDetails tested and debugged. Modified both the front end and the back end" />
+    <MESSAGE value="Inventory working other than delete product" />
+    <MESSAGE value="Merge" />
+    <MESSAGE value="Save id added" />
+    <MESSAGE value="AJAX working add products" />
+    <MESSAGE value="Orders page fetching and displaying orders" />
+    <MESSAGE value="Accept orders ajax sent" />
+    <MESSAGE value="decline orders ajax sent" />
+    <MESSAGE value="Side bar working, seller name displayed, change\d logo, added orders to side bar" />
+    <MESSAGE value="Add button added" />
+    <MESSAGE value="Redirection done" />
+    <MESSAGE value="Created pop ups" />
+    <MESSAGE value="Basic Corrections" />
+    <MESSAGE value="Basic Corrections 2" />
+    <MESSAGE value="Basic Corrections 3" />
+    <MESSAGE value="Password too week" />
+    <option name="LAST_COMMIT_MESSAGE" value="Password too week" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -17,7 +17,7 @@
 <div class="back login">
     <div class="li_su_box">
         <div class="logo login">
-            <img src="img/logo.png">
+            <img src="img/logo_full.png">
         </div>
 
         <div class="login_txt">
@@ -33,6 +33,8 @@
             <section class="phone_check">Phone Number already exists!</section>
             <input class="su_txt_box" id="password" type="password" placeholder="Password">
             <input class="su_txt_box" id="re-password" type="password" placeholder="Re-type Password">
+            <section class="pass_weak">Password too weak</section>
+            <section class="pass_check">Passwords do not match!</section>
             <input class="su_txt_box" id="storeName" type="text" placeholder="Store Name">
             <input class="su_txt_box" id="description" type="text" placeholder="About">
             <section class="already"><a href="LogIn.jsp">Already registed? Sign In.</a></section>

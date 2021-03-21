@@ -4,12 +4,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
 
-@WebServlet(name = "InventoryAdd")
+@WebServlet(name = "InventoryAdd", value = "/InventoryAdd")
 public class InventoryAdd extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int sellerID = Integer.parseInt(request.getParameter("SellerID"));
@@ -43,21 +40,23 @@ public class InventoryAdd extends HttpServlet {
                 }
                 if (result.next()) {
                     String sqlquery = "INSERT INTO Product (Name, Category, hasSubcategories, price, inStock, Description, isSubProduct) " +
-                            "VALUES ('" + name + "','" + category + "','" + hasSubs + "','" + price + "','" +
-                            inStock + "','" + description + "','" +isSub + "')";
-                    System.out.println(sqlquery);
-                    s1.executeUpdate(sqlquery);
-                    String getID = "SELECT LAST_INSERT_ID()";
-                    ResultSet productIDRes = s1.executeQuery(getID);
-                    int productID = productIDRes.getInt("ProductID");
+                            "VALUES ('" + name + "','" + category + "','" + ((hasSubs) ? 1 : 0) + "','" + price + "','" +
+                            ((inStock) ? 1 : 0) + "','" + description + "','" + ((isSub) ? 1 : 0) + "')";
+                    Statement s2 = con.createStatement();
+                    s2.executeUpdate(sqlquery);
+                    String maxQ = "SELECT MAX(ProductID) AS maxProd from Product";
+                    Statement s3 = con.createStatement();
+                    ResultSet prodIDRes =  s3.executeQuery(maxQ);
+                    prodIDRes.next();
+                    int productID = prodIDRes.getInt("maxProd");
                     if (!isSub) {
                         String secQuery = "INSERT INTO Seller_Product (SellerID, ProductID) VALUES ('" + sellerID +
-                                "','"+ productID + "')";
-                        s1.executeQuery(secQuery);
+                                "','" + productID + "')";
+                        s1.executeUpdate(secQuery);
                     } else {
                         String secQuery = "INSERT INTO Product_Subcategories (ProductID, SubItemID) VALUES ('" + mainID +
-                                "','"+ productID + "')";
-                        s1.executeQuery(secQuery);
+                                "','" + productID + "')";
+                        s1.executeUpdate(secQuery);
                     }
                     System.out.println("Inserted Product into Inventory");
                     response.getWriter().write("Product Inserted");
@@ -68,6 +67,7 @@ public class InventoryAdd extends HttpServlet {
             }
         } catch (Exception e) {
             response.getWriter().write("User Not Registered");
+
             e.printStackTrace();
         }
     }
