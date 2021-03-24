@@ -9,14 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="Password too week">
+    <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/DiscountCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/SignUp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/SignUp.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/simplesell/com/SimpleSell/AddDiscounts.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,15 +72,15 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib" />
-      <recent name="$PROJECT_DIR$/lib" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/JspPages/js" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/JspPages" />
       <recent name="$PROJECT_DIR$/src/main/webapp/JspPages/js" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib" />
+      <recent name="$PROJECT_DIR$/lib" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/JspPages/js" />
     </key>
   </component>
   <component name="RunManager">
@@ -135,6 +131,7 @@
       <workItem from="1615445315996" duration="3676000" />
       <workItem from="1615454406730" duration="3225000" />
       <workItem from="1615457778631" duration="7385000" />
+      <workItem from="1616544643767" duration="1508000" />
     </task>
     <task id="LOCAL-00001" summary="jquery added&#10;main.js created">
       <created>1614501372547</created>
@@ -381,7 +378,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615579947539</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Add discounts">
+      <created>1616368556177</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1616368556177</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,7 +404,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Product Class and In Stock enum" />
     <MESSAGE value="Buyer Class Made" />
     <MESSAGE value="Order Class made and previous classes fixed." />
     <MESSAGE value="Inventory servlet build" />
@@ -425,7 +428,34 @@
     <MESSAGE value="Basic Corrections 2" />
     <MESSAGE value="Basic Corrections 3" />
     <MESSAGE value="Password too week" />
-    <option name="LAST_COMMIT_MESSAGE" value="Password too week" />
+    <MESSAGE value="Add discounts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add discounts" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="386" y="414" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1616545365603">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="386" y="414" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1616545365603" />
+    <state x="563" y="88" key="CommitChangelistDialog2" timestamp="1616368555442">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="563" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1616368555442" />
+    <state x="184" y="86" key="MergeDialog" timestamp="1616368436763">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="86" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1616368436763" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1616368559403">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1616368559403" />
+    <state x="338" y="261" width="499" height="524" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1616545029632">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="338" y="261" width="499" height="524" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1616545029632" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616368411809">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1616368411809" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
