@@ -568,7 +568,6 @@ body {
 }
 
 .order_prod_name {
-    /* margin-right: 32%; */
     margin-right: 31%;
 }
 
@@ -604,8 +603,6 @@ body {
     display: flex;
 }
 
-.order_bottom {
-}
 .order_buyer_details {
     margin-left: 35%;
     margin-right: 18%;
