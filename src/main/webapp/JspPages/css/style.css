@@ -411,7 +411,7 @@ body {
     margin-bottom: 5%;
 }
 
-.product_btns:hover {
+.product_btns:hover, .sec_btns:hover {
     background-color:#2978e7 ;
     color: white;
 }
