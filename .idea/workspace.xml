@@ -9,8 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="Added Security Questions to SignUp.java">
-      <change afterPath="$PROJECT_DIR$/src/main/java/PasswordReset.java" afterDir="false" />
+    <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="Made PasswordReset class for Password Resetting.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,17 +85,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="main.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="main.js" working-dir="$PROJECT_DIR$/src/main/webapp/JspPages/js">
       <method v="2" />
     </configuration>
@@ -135,7 +123,8 @@
       <workItem from="1615457778631" duration="7385000" />
       <workItem from="1616544643767" duration="1508000" />
       <workItem from="1616982454673" duration="179000" />
-      <workItem from="1617078505239" duration="2457000" />
+      <workItem from="1617078505239" duration="2583000" />
+      <workItem from="1617216926078" duration="460000" />
     </task>
     <task id="LOCAL-00001" summary="jquery added&#10;main.js created">
       <created>1614501372547</created>
@@ -410,7 +399,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617079550491</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Made PasswordReset class for Password Resetting.">
+      <created>1617081135659</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1617081135659</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,7 +425,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Inventory servlet build" />
     <MESSAGE value="Email Integration check" />
     <MESSAGE value="Debugged Inventory.java tested the code queries send to front end as JSON" />
     <MESSAGE value="Added more details to Inventory.jsp" />
@@ -454,7 +449,8 @@
     <MESSAGE value="Add discounts" />
     <MESSAGE value="testing changes" />
     <MESSAGE value="Added Security Questions to SignUp.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Security Questions to SignUp.java" />
+    <MESSAGE value="Made PasswordReset class for Password Resetting." />
+    <option name="LAST_COMMIT_MESSAGE" value="Made PasswordReset class for Password Resetting." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
