@@ -10,12 +10,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="Password too week">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ModifySecurityQuestions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT.war" afterDir="false" />
+    <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/ModifySecurityQuestions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ModifySecurityQuestions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -647,7 +643,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617081135659</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Security Questions JS done">
+      <created>1617256184146</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1617256184146</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -666,7 +669,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Email Integration check" />
     <MESSAGE value="Debugged Inventory.java tested the code queries send to front end as JSON" />
     <MESSAGE value="Added more details to Inventory.jsp" />
     <MESSAGE value="Sku repaired" />
@@ -691,7 +693,8 @@
     <MESSAGE value="testing changes" />
     <MESSAGE value="Added Security Questions to SignUp.java" />
     <MESSAGE value="Made PasswordReset class for Password Resetting." />
-    <option name="LAST_COMMIT_MESSAGE" value="Made PasswordReset class for Password Resetting." />
+    <MESSAGE value="Security Questions JS done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Security Questions JS done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
