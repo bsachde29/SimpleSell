@@ -87,6 +87,28 @@
                 <br></br>
                 <button class="product_btns" id = "modify_account_button">Save</button>
 
+                <div class="add_title">
+                    <h1 class="product_text prd_title">Security Questions</h1><br></br>
+                </div>
+                <h2 class= "product_text">Question #1</h2>
+                <select id="q1" name="q1" class="sec_drop_down">
+                    <option selected>Select one...</option>
+                    <option value="tour">What Is your favorite book?</option>
+                    <option value="dinner">What is the name of the road you grew up on?</option>
+                </select>
+                <br></br>
+                <input class="sml_prd_txt_box product_page_txt_box"  id="q1_answer" placeholder="Answer"/>
+                <h2 class= "product_text">Question #2</h2>
+                <select id="q2" name="q2" class="sec_drop_down">
+                    <option selected>Select one...</option>
+                    <option value="dance">What is your mother’s maiden name?</option>
+                    <option value="whales">What was the first company that you worked for?</option>
+                </select>
+                <br></br>
+                <input class="sml_prd_txt_box product_page_txt_box"  id="q2_answer" placeholder="Answer"/>
+                <br></br>
+                <button class="sec_btns" id = "sec_questions_button">Save</button>
+
             </div>
         </div>
     </div>

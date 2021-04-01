@@ -9,7 +9,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-@WebServlet(name = "AcceptOrder")
+@WebServlet(name = "AcceptOrder", value = "/AcceptOrder")
 public class AcceptOrder extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int orderID = Integer.parseInt(request.getParameter("OrderId"));
@@ -27,8 +27,8 @@ public class AcceptOrder extends HttpServlet {
                 String checkExist = "SELECT * FROM Orders WHERE OrderID = '" + orderID + "'";
                 ResultSet result = s1.executeQuery(checkExist);
                 if (result.next()) {
-                    String sqlquery = "UPDATE Orders SET OrderAccept = '" + orderAccept.ACCEPTED +"', OrderState = " +
-                            "'" + orderState.PLACED + "' WHERE " +
+                    String sqlquery = "UPDATE Orders SET OrderAccept = '" + 0 +"', OrderState = " +
+                            "'" + 1 + "' WHERE " +
                             "OrderID = '" + orderID + "'";
                     System.out.println(sqlquery);
                     Statement s2 = con.createStatement();
