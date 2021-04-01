@@ -15,6 +15,7 @@ public class DiscountCode extends HttpServlet {
         String discountCode = request.getParameter("DiscountCode");
         int discountAmount = Integer.parseInt(request.getParameter("DiscountAmount"));
         boolean flatOrPerc = Boolean.parseBoolean(request.getParameter("FlatPercentage"));
+        int sellerID = Integer.parseInt(request.getParameter("SellerID"));
 
         String dburl = "jdbc:mysql://selldb.cqt5tgj7qyws.us-east-2.rds.amazonaws.com:3306/simpledb";
         String dbusername = "simpledb";
@@ -32,8 +33,8 @@ public class DiscountCode extends HttpServlet {
                     response.getWriter().write("Code Exists");
                     return;
                 }
-                String insertDisc = "INSERT INTO Discount (DiscountCode, DiscountAmount, FlatPercentage) "+
-                        "VALUES ('" + discountCode +"','"+discountAmount+"','"+flatOrPerc+"')";
+                String insertDisc = "INSERT INTO Discount (DiscountCode, DiscountAmount, FlatPercentage, SellerID) "+
+                        "VALUES ('" + discountCode +"','"+discountAmount+"','"+flatOrPerc+"', '"+sellerID+"')";
                 s1.executeUpdate(insertDisc);
                 System.out.println("Inserted Discount into Table");
                 response.getWriter().write("Discount Enabled");
