@@ -48,7 +48,6 @@ public class GetDiscountCodes extends HttpServlet {
             }
 
 
-            //TODO check in database whether email exists if not return with response does not exist
             //If exists then get the whole object return sellerID for now
         } catch (Exception e) {
             e.printStackTrace();
