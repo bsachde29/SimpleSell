@@ -311,6 +311,39 @@
         });
     }
 
+    var discountButton = $('#apply_discount');
+
+    discountButton.on('click', function () {
+        var check_b = "0";
+        if ($('#isPercentage').is(":checked"))
+        {
+            check_b = "1";
+        }
+        console.log($("#isPercentage").val());
+        $.ajax({
+            type: 'post',
+            url: '/SimpleSell_war/DiscountCode',
+            data: {
+                SellerID: sessionStorage.getItem("sellerID"),
+                FlatPercentage: check_b,
+                DiscountCode:$("#discountCode1").val(),
+                DiscountAmount: $("#discountCode2").val()
+            },
+            success: function (response) {
+                if (response === "Code Exists") {
+                    console.log("Code Already Exists");
+                } else if (response === "Discount Enabled"){
+                    console.log("Code Created");
+                }else if (response === "Discount Not Enabled") {
+                    console.log("PROBLEM");
+                }else {
+                    console.log("GOD KNOWS");
+                }
+
+            }
+        });
+    });
+
 
     if (($(".reset_password")[0])) {
         //var sellerID = sessionStorage.getItem("sellerID");
