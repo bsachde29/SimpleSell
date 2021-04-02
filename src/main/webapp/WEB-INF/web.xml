@@ -126,4 +126,15 @@
         <url-pattern>/RejectOrder</url-pattern>
     </servlet-mapping>
 
+
+    <servlet>
+        <servlet-name>ModifySecurityQuestions</servlet-name>
+        <servlet-class>ModifySecurityQuestions</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ModifySecurityQuestions</servlet-name>
+        <url-pattern>/ModifySecurityQuestions</url-pattern>
+    </servlet-mapping>
+
 </web-app>

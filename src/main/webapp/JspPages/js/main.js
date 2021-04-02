@@ -102,8 +102,8 @@
 
     var securityButton = $('#sec_questions_button');
     securityButton.on('click', function () {
-        var q1 = $("#q1 :selected").val();
-        var q2 = $("#q2 :selected").val();
+        var q1 = $("#q1 :selected").text();
+        var q2 = $("#q2 :selected").text();
         var ans1 = $("#q1_answer").val();
         var ans2 = $("#q2_answer").val();
 
@@ -122,9 +122,11 @@
 
                 DEBUG && console.log(response);
 
-                if (response == "Seller Security Questions Added") {
+                if (response === "Security Questions updated") {
                     window.alert("Security Questions Updated!");
                 }
+
+                window.location.href = "ModifyAccountDetails.jsp";
 
 
             }

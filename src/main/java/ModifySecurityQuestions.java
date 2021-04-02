@@ -35,6 +35,7 @@ public class ModifySecurityQuestions extends HttpServlet {
                 Statement s1 = con.createStatement();
                 String check = "UPDATE Sellers SET SecurityQuestion1 = '" + secQ1 + "',Answer1 = '" + ans1 + "'," +
                         "SecurityQuestion2 = '" + secQ2 + "',Answer2 = '" + ans2 + "' WHERE SellerID = '" + sellerID + "'";
+                System.out.println(check);
                 s1.executeUpdate(check);
                 System.out.println("Security Questions updated");
                 response.getWriter().write("Security Questions updated");

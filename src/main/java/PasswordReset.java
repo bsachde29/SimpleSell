@@ -21,14 +21,13 @@ public class PasswordReset extends HttpServlet {
         boolean check = pwcheck.isValidPass(newPassword);
         if (!check) {
             updatePass = false;
-//            response.getWriter().write("Password Too weak");
-//            return;
+            response.getWriter().write("Password Too weak");
+            return;
         }
 
         //HASHING THE PASSWORD
         String hashedPass = "";
-        if (updatePass)
-            hashedPass = SHA256Hash.hash(newPassword);
+        hashedPass = SHA256Hash.hash(newPassword);
         String dburl = "jdbc:mysql://selldb.cqt5tgj7qyws.us-east-2.rds.amazonaws.com:3306/simpledb";
         String dbusername = "simpledb";
         String dbpassword = "sell1234";
@@ -58,20 +57,12 @@ public class PasswordReset extends HttpServlet {
 //                    return;
 //                }
                 String sqlquery;
-                if (updatePass) {
-                    sqlquery = "UPDATE Sellers SET Pswd = '" + hashedPass + "' + WHERE Email = '" + emailID + "'";
-                    System.out.println(sqlquery);
-                    s1.executeUpdate(sqlquery);
-                    System.out.println("Updated Seller Info");
-                    response.getWriter().write("Seller Info Updated");
-                }
-                else {
-                    System.out.println("Updated Seller Info");
-                    response.getWriter().write("Password not updated");
-                }
+                sqlquery = "UPDATE Sellers SET Pswd = '" + hashedPass + "' + WHERE Email = '" + emailID + "'";
+                System.out.println(sqlquery);
+                s1.executeUpdate(sqlquery);
+                System.out.println("Updated Seller Info");
+                response.getWriter().write("Seller Info Updated");
                 // check and return appropriate message to response.getWriter
-
-
             }
         } catch (Exception e) {
             response.getWriter().write("User Not Registered");
