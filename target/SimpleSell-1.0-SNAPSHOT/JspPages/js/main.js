@@ -100,6 +100,41 @@
         }
     });
 
+    var securityButton = $('#sec_questions_button');
+    securityButton.on('click', function () {
+        var q1 = $("#q1 :selected").text();
+        var q2 = $("#q2 :selected").text();
+        var ans1 = $("#q1_answer").val();
+        var ans2 = $("#q2_answer").val();
+
+
+        $.ajax({
+            type: 'post',
+            url: '/SimpleSell_war/ModifySecurityQuestions',
+            data: {
+                SellerID: sessionStorage.getItem("sellerID"),
+                SecurityQuestion1: q1,
+                Answer1: ans1,
+                SecurityQuestion2: q2,
+                Answer2: ans2
+            },
+            success: function (response) {
+
+                DEBUG && console.log(response);
+
+                if (response === "Security Questions updated") {
+                    window.alert("Security Questions Updated!");
+                }
+
+                window.location.href = "ModifyAccountDetails.jsp";
+
+
+            }
+        });
+
+
+    });
+
 
     var logInButton = $('#li_but');
 

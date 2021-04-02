@@ -1,3 +1,10 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: shivambairoliya
+  Date: 4/1/21
+  Time: 11:57 PM
+  To change this template use File | Settings | File Templates.
+--%>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,7 +19,7 @@
             <img src="img/logo_full.png">
         </div>
 
-        <div class="login_txt">
+        <div class="login_txt reset_password">
 
             <section class="si_txt">Reset Password. </section>
 
@@ -26,10 +33,10 @@
             <section class="pass_check">Passwords do not match!</section>
         </div>
 
-            <button id="su_but">Reset Password</button>
-            <script>
-                console.log("${pageContext.request.contextPath}/SignUp");
-            </script>
+        <button id="su_but">Reset Password</button>
+        <script>
+            console.log("${pageContext.request.contextPath}/SignUp");
+        </script>
     </div>
 </div>
 <script src="js/jquery-3.5.1.js"></script>
@@ -42,3 +49,4 @@
 
 </body>
 </html>
+
