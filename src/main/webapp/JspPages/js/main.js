@@ -372,14 +372,14 @@
                 type: 'post',
                 url: '/SimpleSell_war/PasswordReset',
                 data: {
-                    SellerID: sessionStorage.getItem("sellerID"),
+                    Email: $('#email1').val(),
                     NewPassword: $("#password").val(),
                     Answer1:  $("#q1_answer").val(),
                     Answer2:  $("#q2_answer").val()
                 },
                 success: function (response) {
                     if (response === "Seller Info Updated") {
-                        window.location.href = "Login.jsp";
+                        window.location.href = "LogIn.jsp";
                         console.log("FUN IS HERE");
 
                     } else {

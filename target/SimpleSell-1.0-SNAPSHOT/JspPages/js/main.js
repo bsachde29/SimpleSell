@@ -347,19 +347,22 @@
 
     if (($(".reset_password")[0])) {
         //var sellerID = sessionStorage.getItem("sellerID");
+        var getButton = $('#su_but_reset_button');
+        getButton.on('click', function () {
+            $.ajax({
+                type: 'post',
+                url: '/SimpleSell_war/GetSecurity',
+                data: {
+                    Email: $('#email1').val()
+                },
+                success: function (response) {
+                    console.log(response);
+                    var security = JSON.parse(response);
+                    $("#securityQuestion1").text(security.q1);
+                    $("#securityQuestion2").text(security.q2);
+                }
+            });
 
-        $.ajax({
-            type: 'post',
-            url: '/SimpleSell_war/GetSecurity',
-            data: {
-                SellerID: sessionStorage.getItem("sellerID")
-            },
-            success: function (response) {
-                console.log(response);
-                var security = JSON.parse(response);
-                $("#securityQuestion1").text(security.q1);
-                $("#securityQuestion2").text(security.q2);
-            }
         });
 
         var resetButton = $('#su_but_reset');
@@ -369,14 +372,14 @@
                 type: 'post',
                 url: '/SimpleSell_war/PasswordReset',
                 data: {
-                    SellerID: sessionStorage.getItem("sellerID"),
+                    Email: $('#email1').val(),
                     NewPassword: $("#password").val(),
                     Answer1:  $("#q1_answer").val(),
                     Answer2:  $("#q2_answer").val()
                 },
                 success: function (response) {
                     if (response === "Seller Info Updated") {
-                        window.location.href = "Login.jsp";
+                        window.location.href = "LogIn.jsp";
                         console.log("FUN IS HERE");
 
                     } else {
