@@ -137,4 +137,15 @@
         <url-pattern>/ModifySecurityQuestions</url-pattern>
     </servlet-mapping>
 
+
+    <servlet>
+        <servlet-name>DiscountCode</servlet-name>
+        <servlet-class>DiscountCode</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DiscountCode</servlet-name>
+        <url-pattern>/DiscountCode</url-pattern>
+    </servlet-mapping>
+
 </web-app>

@@ -63,13 +63,13 @@
         <div class="content_main_out">
             <h1 class="product_text prd_title">Discounts</h1><br></br>
             <h2 class= "product_text">Discount Code</h2>
-            <input class="sml_prd_txt_box product_page_txt_box" id="discountCode"/><br></br>
+            <input class="sml_prd_txt_box product_page_txt_box" id="discountCode1"/><br></br>
 
             <h2 class= "product_text">Amount</h2>
-            <input class="sml_prd_txt_box product_page_txt_box" id="discountCode"/><br></br>
+            <input class="sml_prd_txt_box product_page_txt_box" id="discountCode2"/><br></br>
             <div class="pair">
                 <h2 class= "product_text">Apply as percentage</h2>
-                <input class= "checkbox" type="checkbox" id="isPercentage" name="isPercentage" value="isPercentage"><br></br>
+                <input class= "checkbox" type="checkbox" id="isPercentage" name="isPercentage"><br></br>
             </div>
             <button class="sec_btns" id = "apply_discount">Apply</button>
 

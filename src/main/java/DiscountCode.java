@@ -9,12 +9,12 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-@WebServlet(name = "DiscountCode")
+@WebServlet(name = "DiscountCode", value = "/DiscountCode")
 public class DiscountCode extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String discountCode = request.getParameter("DiscountCode");
         int discountAmount = Integer.parseInt(request.getParameter("DiscountAmount"));
-        boolean flatOrPerc = Boolean.parseBoolean(request.getParameter("FlatPercentage"));
+        int flatOrPerc = Integer.parseInt(request.getParameter("FlatPercentage"));
         int sellerID = Integer.parseInt(request.getParameter("SellerID"));
 
         String dburl = "jdbc:mysql://selldb.cqt5tgj7qyws.us-east-2.rds.amazonaws.com:3306/simpledb";
