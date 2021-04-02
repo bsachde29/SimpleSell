@@ -24,7 +24,7 @@
             <section class="si_txt">Reset Password. </section>
 
             <p id="securityQuestion1">Security Question 1</p>
-            <input class="su_txt_box" id="q1_answer" type="text" placeholder="Answer">
+            <input class="su_txt_box" id="q1_answer" type="password" placeholder="Answer">
             <p id="securityQuestion2">Security Question 2</p>
             <input class="su_txt_box" id="q2_answer" type="password" placeholder="Answer">
             <input class="su_txt_box" id="password" type="password" placeholder="New Password">

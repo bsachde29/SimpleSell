@@ -306,7 +306,7 @@
     }
 
 
-    if (($(".login_txt")[0])) {
+    if (($(".reset_password")[0])) {
         //var sellerID = sessionStorage.getItem("sellerID");
 
         $.ajax({
@@ -317,8 +317,8 @@
             },
             success: function (response) {
                 var security = JSON.parse(response);
-                $("#securityQuestion1").val(security.q1);
-                $("#securityQuestion2").val(security.q2);
+                $("#securityQuestion1").text(security.q1);
+                $("#securityQuestion2").text(security.q2);
             }
         });
 
