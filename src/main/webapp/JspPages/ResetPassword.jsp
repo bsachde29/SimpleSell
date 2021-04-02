@@ -23,8 +23,8 @@
 
             <section class="si_txt">Reset Password. </section>
             <p id="email">Email Address</p>
-            <input class="su_txt_box" id="email" type="email" placeholder="Email">
-            <button id="su_but_reset" >Get my Security Questions</button>
+            <input class="su_txt_box" id="email1" type="email" placeholder="Email">
+            <button id="su_but_reset_button" >Get my Security Questions</button>
             <p id="securityQuestion1">Security Question 1</p>
             <input class="su_txt_box" id="q1_answer" type="password" placeholder="Answer">
             <p id="securityQuestion2">Security Question 2</p>

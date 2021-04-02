@@ -18,7 +18,7 @@ public class GetSecurity extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String sellerID = request.getParameter("SellerID");
+        String email = request.getParameter("Email");
         String url = "jdbc:mysql://selldb.cqt5tgj7qyws.us-east-2.rds.amazonaws.com:3306/simpledb";
         String username = "simpledb";
         String password = "sell1234";
@@ -29,7 +29,7 @@ public class GetSecurity extends HttpServlet {
             if (con != null) {
                 System.out.println("Database connection is successful !!!!");
                 Statement s1 = con.createStatement();
-                String check = "SELECT SecurityQuestion1, SecurityQuestion2, Answer1, Answer2 FROM Sellers WHERE SellerID ='" + sellerID + "'";
+                String check = "SELECT SecurityQuestion1, SecurityQuestion2, Answer1, Answer2 FROM Sellers WHERE Email ='" + email + "'";
                 System.out.println(check);
                 ResultSet result = s1.executeQuery(check);
                 if (result.next()) {

@@ -692,7 +692,7 @@ body {
     font-weight: 501;
 }
 
-#li_but, #su_but, #su_but_reset {
+#li_but, #su_but, #su_but_reset, #su_but_reset_button {
     width: 47%;
     height: 40px;
     background-color: #74a3e3;

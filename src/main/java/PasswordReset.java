@@ -15,7 +15,7 @@ public class PasswordReset extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String sellerID = request.getParameter("SellerID");
+        String email = request.getParameter("Email");
         String newPassword = request.getParameter("NewPassword");
         String answer1 = request.getParameter("Answer1");
         String answer2 = request.getParameter("Answer2");
@@ -42,14 +42,14 @@ public class PasswordReset extends HttpServlet {
             if (con != null) {
                 Statement s1 = con.createStatement();
                 System.out.println("Database connection is successful !!!!");
-                String checkUser = "SELECT * FROM Sellers WHERE SellerID = '" + sellerID + "' AND Answer1 = '" + answer1 + "' AND Answer2 = '" + answer2 + "' ";
+                String checkUser = "SELECT * FROM Sellers WHERE Email = '" + email + "' AND Answer1 = '" + answer1 + "' AND Answer2 = '" + answer2 + "' ";
                 ResultSet userCheck = s1.executeQuery(checkUser);
                 if (!userCheck.next()) {
                     response.getWriter().write("Wrong Details");
                     return;
                 }
                 String sqlquery;
-                sqlquery = "UPDATE Sellers SET Pswd = '" + hashedPass + "' WHERE SellerID = '" + sellerID + "'";
+                sqlquery = "UPDATE Sellers SET Pswd = '" + hashedPass + "' WHERE Email = '" + email + "'";
                 System.out.println(sqlquery);
                 s1.executeUpdate(sqlquery);
                 System.out.println("Updated Seller Info");

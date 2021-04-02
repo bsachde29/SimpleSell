@@ -180,7 +180,7 @@ body {
 /* Element | http://localhost:63342/SimpleTest/SignUp.html?_ijt=s0fvrrsn61sqkf05ghdt7fge39 */
 
 .back {
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
     background-color: #E7F1FF;
     padding: ;
@@ -692,7 +692,7 @@ body {
     font-weight: 501;
 }
 
-#li_but, #su_but, #su_but_reset {
+#li_but, #su_but, #su_but_reset, #su_but_reset_button {
     width: 47%;
     height: 40px;
     background-color: #74a3e3;
