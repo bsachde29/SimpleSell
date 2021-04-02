@@ -11,7 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +87,17 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.43" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.43" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/SimpleSell_war" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -640,7 +651,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617335087755</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Created ResetPassword.jsp">
+      <created>1617336557251</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1617336557251</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -659,7 +677,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Debugged Inventory.java tested the code queries send to front end as JSON" />
     <MESSAGE value="Added more details to Inventory.jsp" />
     <MESSAGE value="Sku repaired" />
     <MESSAGE value="save id corrected" />
@@ -684,7 +701,8 @@
     <MESSAGE value="Added Security Questions to SignUp.java" />
     <MESSAGE value="Made PasswordReset class for Password Resetting." />
     <MESSAGE value="Tested and Debugged ModifySecurityQuestions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tested and Debugged ModifySecurityQuestions" />
+    <MESSAGE value="Created ResetPassword.jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created ResetPassword.jsp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
