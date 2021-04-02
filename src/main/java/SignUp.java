@@ -38,7 +38,7 @@ public class SignUp extends HttpServlet {
         if (!chk) {
             //response.getWriter().write("Email Too weak");
             //TODO use response getWriter to respond with password requirements
-            response.getWriter().write("Email needs to have an @");
+            response.getWriter().write("Email format invalid");
             //doPost(request, response);
             return;
             //
