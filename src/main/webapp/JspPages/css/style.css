@@ -274,7 +274,7 @@ body {
 
 .back {
     /* background-color: # .back > div:nth-child(1) { width: 39% height: 40% margin: auto margin-top: 20% display: grid align-content: baseline } .logo > img:nth-child(1) { width: 45% margin: auto } .back { height: 100vh width: 100vw } .logo { margin: auto margin-top: 8% margin-bottom: 15% display: flex align-content: end } #userName { width: 40% } #password { width: 40% margin: margin-top: 20px } .login_txt { text-align: center } .back > div:nth-child(1) > div:nth-child(3) { text-align: center margin-top: 10% margin-bottom: 10% }; */
-    height: 100vh;
+    height: 150vh;
     width: 100vw;
     background-color: #E7F1FF;
     padding-top: 8%;
@@ -411,7 +411,7 @@ body {
     margin-bottom: 5%;
 }
 
-.product_btns:hover, .sec_btns:hover, #su_but:hover{
+.product_btns:hover, .sec_btns:hover, #su_but:hover, #su_but_reset:hover{
     background-color:#2978e7 ;
     color: white;
 }
