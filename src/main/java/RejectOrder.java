@@ -16,7 +16,7 @@ import java.sql.Statement;
 @WebServlet(name = "RejectOrder", value = "/RejectOrder")
 public class RejectOrder extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int orderID = Integer.parseInt(request.getParameter("OrderId"));
 
         String dburl = "jdbc:mysql://selldb.cqt5tgj7qyws.us-east-2.rds.amazonaws.com:3306/simpledb";
@@ -50,7 +50,7 @@ public class RejectOrder extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
 }

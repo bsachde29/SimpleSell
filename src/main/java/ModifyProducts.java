@@ -8,7 +8,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
-
+//testing changes
 @WebServlet(name = "ModifyProducts", value = "/ModifyProducts")
 public class ModifyProducts extends HttpServlet {
     @Override

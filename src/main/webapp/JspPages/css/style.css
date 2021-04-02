@@ -81,6 +81,21 @@ body {
     display: inline;
 }
 
+.sec_drop_down {
+    width: 25%;
+    border-radius: 9px;
+    height: 34px;
+    border: 4px;
+    border: 1.5px solid #ecececa3;
+    margin-left: 30px;
+    background-color: #ffffff;
+    margin: auto;
+    margin-bottom: 21px;
+    margin-left: 2%;
+    border: solid lightgray;
+    display: inline;
+}
+
 .sml_prd_txt_box {
     width: 160px;
 }
@@ -165,7 +180,7 @@ body {
 /* Element | http://localhost:63342/SimpleTest/SignUp.html?_ijt=s0fvrrsn61sqkf05ghdt7fge39 */
 
 .back {
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
     background-color: #E7F1FF;
     padding: ;
@@ -259,7 +274,7 @@ body {
 
 .back {
     /* background-color: # .back > div:nth-child(1) { width: 39% height: 40% margin: auto margin-top: 20% display: grid align-content: baseline } .logo > img:nth-child(1) { width: 45% margin: auto } .back { height: 100vh width: 100vw } .logo { margin: auto margin-top: 8% margin-bottom: 15% display: flex align-content: end } #userName { width: 40% } #password { width: 40% margin: margin-top: 20px } .login_txt { text-align: center } .back > div:nth-child(1) > div:nth-child(3) { text-align: center margin-top: 10% margin-bottom: 10% }; */
-    height: 100vh;
+    height: 150vh;
     width: 100vw;
     background-color: #E7F1FF;
     padding-top: 8%;
@@ -368,8 +383,6 @@ body {
     margin-left: auto;
     width: 21%;
     height: 40px;
-
-
     background-color: #74a3e3;
     border-radius: 8px;
     color: white;
@@ -382,7 +395,23 @@ body {
     margin-bottom: 5%;
 }
 
-.product_btns:hover {
+.sec_btns {
+    margin-left: 2%;
+    width: 21%;
+    height: 40px;
+    background-color: #74a3e3;
+    border-radius: 8px;
+    color: white;
+    font-size: inherit;
+    border: 1.5px solid #74a3e3;
+    text-align: center;
+    margin-right: auto;
+    /*! transform: translate(0, 79%); */
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.product_btns:hover, .sec_btns:hover, #su_but:hover, #su_but_reset:hover{
     background-color:#2978e7 ;
     color: white;
 }
@@ -568,7 +597,6 @@ body {
 }
 
 .order_prod_name {
-    /* margin-right: 32%; */
     margin-right: 31%;
 }
 
@@ -604,8 +632,6 @@ body {
     display: flex;
 }
 
-.order_bottom {
-}
 .order_buyer_details {
     margin-left: 35%;
     margin-right: 18%;
@@ -666,7 +692,7 @@ body {
     font-weight: 501;
 }
 
-#li_but, #su_but {
+#li_but, #su_but, #su_but_reset, #su_but_reset_button {
     width: 47%;
     height: 40px;
     background-color: #74a3e3;
@@ -691,4 +717,20 @@ body {
     margin-left: 80%;
     font-size: 59;
     color: #7ea2de;
+}
+
+.checkbox {
+    margin-top: 1.7%;
+    margin-left: 2%;
+    border: solid lightgray;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  
+}
+
+.pair {
+    display: flex;
 }
