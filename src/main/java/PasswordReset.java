@@ -44,6 +44,7 @@ public class PasswordReset extends HttpServlet {
                     response.getWriter().write("User does not exist");
                     return;
                 }
+
 //                String checkEmailQuery = "SELECT * FROM Sellers WHERE Sellers.Email = '" + emailID + "'";
 //                ResultSet set = s1.executeQuery(checkEmailQuery);
 //                if ((set.next() && !set.getString("SellerID").equals(request.getParameter("SellerID")))) {
@@ -56,6 +57,7 @@ public class PasswordReset extends HttpServlet {
 //                    response.getWriter().write("Phone Exists");
 //                    return;
 //                }
+
                 String sqlquery;
                 sqlquery = "UPDATE Sellers SET Pswd = '" + hashedPass + "' + WHERE Email = '" + emailID + "'";
                 System.out.println(sqlquery);
