@@ -11,19 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GetSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GetSecurity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PasswordReset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PasswordReset.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/ModifyAccountDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/ModifyAccountDetails.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/ResetPassword.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/ResetPassword.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/ModifyAccountDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/ModifyAccountDetails.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/PasswordReset.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/PasswordReset.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PasswordReset.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PasswordReset.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/Discounts.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -677,7 +665,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617338990090</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Tested Reset PasswordReset">
+      <created>1617348785499</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1617348785499</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -696,7 +691,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Sku repaired" />
     <MESSAGE value="save id corrected" />
     <MESSAGE value="ModifyAccountDetails tested and debugged. Modified both the front end and the back end" />
     <MESSAGE value="Inventory working other than delete product" />
@@ -721,7 +715,8 @@
     <MESSAGE value="Tested and Debugged ModifySecurityQuestions" />
     <MESSAGE value="Created ResetPassword.jsp" />
     <MESSAGE value="Tested Security Questions front end view" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tested Security Questions front end view" />
+    <MESSAGE value="Tested Reset PasswordReset" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tested Reset PasswordReset" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
