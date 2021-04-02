@@ -104,6 +104,8 @@
 
 
 
+
+
     var securityButton = $('#sec_questions_button');
     securityButton.on('click', function () {
         var q1 = $("#q1 :selected").text();
@@ -322,7 +324,28 @@
             }
         });
 
+        var resetButton = $('#su_but_reset');
+        resetButton.on('click', function () {
+            $.ajax({
+                type: 'post',
+                url: '/SimpleSell_war/PasswordReset',
+                data: {
+                    SellerID: sessionStorage.getItem("sellerID"),
+                    NewPassword: $("#password").text(),
+                    Answer1:  $("#q1_answer").text(),
+                    Answer2:  $("#q2_answer").text()
+                },
+                success: function (response) {
+                    if (response === "Seller Info Updated") {
+                        console.log("FUN IS HERE");
+                    }
+                }
+            });
+        });
+
     }
+
+
 
 
 

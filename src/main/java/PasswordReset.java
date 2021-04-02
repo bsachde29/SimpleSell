@@ -15,8 +15,11 @@ public class PasswordReset extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String emailID = request.getParameter("EmailID");
+        String sellerID = request.getParameter("SellerID");
         String newPassword = request.getParameter("NewPassword");
+        String answer1 = request.getParameter("Answer1");
+        String answer2 = request.getParameter("Answer2");
+
         boolean updatePass = true;
         boolean check = pwcheck.isValidPass(newPassword);
         if (!check) {
@@ -38,28 +41,14 @@ public class PasswordReset extends HttpServlet {
             if (con != null) {
                 Statement s1 = con.createStatement();
                 System.out.println("Database connection is successful !!!!");
-                String checkUser = "SELECT * FROM Sellers WHERE Email = '" + emailID + "' ";
+                String checkUser = "SELECT * FROM Sellers WHERE SellerID = '" + sellerID + "' AND Answer1 = '" + answer1 + "' AND Answer2 = '" + answer2 + "' ";
                 ResultSet userCheck = s1.executeQuery(checkUser);
                 if (!userCheck.next()) {
                     response.getWriter().write("User does not exist");
                     return;
                 }
-
-//                String checkEmailQuery = "SELECT * FROM Sellers WHERE Sellers.Email = '" + emailID + "'";
-//                ResultSet set = s1.executeQuery(checkEmailQuery);
-//                if ((set.next() && !set.getString("SellerID").equals(request.getParameter("SellerID")))) {
-//                    response.getWriter().write("Email Exists");
-//                    return;
-//                }
-//                String checkPhoneQuery = "SELECT * FROM Sellers WHERE Sellers.MobileNum = '" + mobileNum + "'";
-//                set = s1.executeQuery(checkPhoneQuery);
-//                if ((set.next() && !set.getString("SellerID").equals(request.getParameter("SellerID")))) {
-//                    response.getWriter().write("Phone Exists");
-//                    return;
-//                }
-
                 String sqlquery;
-                sqlquery = "UPDATE Sellers SET Pswd = '" + hashedPass + "' + WHERE Email = '" + emailID + "'";
+                sqlquery = "UPDATE Sellers SET Pswd = '" + hashedPass + "' + WHERE SellerID = '" + sellerID + "'";
                 System.out.println(sqlquery);
                 s1.executeUpdate(sqlquery);
                 System.out.println("Updated Seller Info");

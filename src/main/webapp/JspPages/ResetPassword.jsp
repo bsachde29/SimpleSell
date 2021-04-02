@@ -33,7 +33,7 @@
             <section class="pass_check">Passwords do not match!</section>
         </div>
 
-        <button id="su_but">Reset Password</button>
+        <button id="su_but_reset">Reset Password</button>
         <script>
             console.log("${pageContext.request.contextPath}/SignUp");
         </script>
