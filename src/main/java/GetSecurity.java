@@ -30,6 +30,7 @@ public class GetSecurity extends HttpServlet {
                 System.out.println("Database connection is successful !!!!");
                 Statement s1 = con.createStatement();
                 String check = "SELECT SecurityQuestion1, SecurityQuestion2, Answer1, Answer2 FROM Sellers WHERE SellerID ='" + sellerID + "'";
+                System.out.println(check);
                 ResultSet result = s1.executeQuery(check);
                 if (result.next()) {
                     System.out.println("Seller found");

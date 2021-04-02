@@ -101,7 +101,7 @@
                 <h2 class= "product_text">Question #2</h2>
                 <select id="q2" name="q2" class="sec_drop_down">
                     <option selected>Select one...</option>
-                    <option value="dance">What is your mother's maiden name?</option>
+                    <option value="dance">What is your mothers maiden name?</option>
                     <option value="whales">What was the first company that you worked for?</option>
                 </select>
                 <br></br>

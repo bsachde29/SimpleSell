@@ -22,6 +22,7 @@ public class PasswordReset extends HttpServlet {
 
         boolean updatePass = true;
         boolean check = pwcheck.isValidPass(newPassword);
+        System.out.println(newPassword);;
         if (!check) {
             updatePass = false;
             response.getWriter().write("Password Too weak");
@@ -44,11 +45,11 @@ public class PasswordReset extends HttpServlet {
                 String checkUser = "SELECT * FROM Sellers WHERE SellerID = '" + sellerID + "' AND Answer1 = '" + answer1 + "' AND Answer2 = '" + answer2 + "' ";
                 ResultSet userCheck = s1.executeQuery(checkUser);
                 if (!userCheck.next()) {
-                    response.getWriter().write("User does not exist");
+                    response.getWriter().write("Wrong Details");
                     return;
                 }
                 String sqlquery;
-                sqlquery = "UPDATE Sellers SET Pswd = '" + hashedPass + "' + WHERE SellerID = '" + sellerID + "'";
+                sqlquery = "UPDATE Sellers SET Pswd = '" + hashedPass + "' WHERE SellerID = '" + sellerID + "'";
                 System.out.println(sqlquery);
                 s1.executeUpdate(sqlquery);
                 System.out.println("Updated Seller Info");
