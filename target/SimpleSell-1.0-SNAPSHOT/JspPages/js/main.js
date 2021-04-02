@@ -100,6 +100,10 @@
         }
     });
 
+
+
+
+
     var securityButton = $('#sec_questions_button');
     securityButton.on('click', function () {
         var q1 = $("#q1 :selected").text();
@@ -302,7 +306,23 @@
     }
 
 
+    if (($(".login_txt")[0])) {
+        //var sellerID = sessionStorage.getItem("sellerID");
 
+        $.ajax({
+            type: 'post',
+            url: '/SimpleSell_war/GetSecurity',
+            data: {
+                SellerID: sessionStorage.getItem("sellerID")
+            },
+            success: function (response) {
+                var security = JSON.parse(response);
+                $("#securityQuestion1").val(security.q1);
+                $("#securityQuestion2").val(security.q2);
+            }
+        });
+
+    }
 
 
 
