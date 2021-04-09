@@ -744,3 +744,12 @@ body {
     border-radius: 2px;
 }
 
+.box2 {
+    position: absolute;
+    border-radius: 2px;
+}
+
+.box3  {
+    position: sticky;
+    border-radius: 2px;
+}
