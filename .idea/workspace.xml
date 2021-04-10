@@ -11,20 +11,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SignUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/ResetPassword.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/ResetPassword.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/Products.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/Analytics.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/Analytics.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/Discounts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/Discounts.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/Inventory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/Inventory.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/LogIn.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/LogIn.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/ModifyAccountDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/ModifyAccountDetails.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/Orders.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/Orders.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/Products.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/Products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/Products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/Products.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/SecurityQuestions.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/SecurityQuestions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/LogIn.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/LogIn.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/ModifyAccountDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/ModifyAccountDetails.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/SecurityQuestions.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/SecurityQuestions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/Analytics.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/Analytics.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/Inventory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/Inventory.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/Orders.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/Orders.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/SignUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/SignUp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PasswordReset.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PasswordReset.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SignUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SignUp.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +91,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.23103449" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -100,19 +106,9 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tomcat 9.0.43" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.43" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat 9.0.43" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.431" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/SimpleSell_war" />
+      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="SimpleSell:war">
@@ -376,6 +372,7 @@
       <workItem from="1617216926078" duration="460000" />
       <workItem from="1617251460352" duration="258000" />
       <workItem from="1617251725852" duration="646000" />
+      <workItem from="1617353611318" duration="1961000" />
     </task>
     <task id="LOCAL-00001" summary="jquery added&#10;main.js created">
       <created>1614501372547</created>
@@ -685,7 +682,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617348785499</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Discount Code Working">
+      <created>1617353127517</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1617353127517</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -704,7 +708,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="save id corrected" />
     <MESSAGE value="ModifyAccountDetails tested and debugged. Modified both the front end and the back end" />
     <MESSAGE value="Inventory working other than delete product" />
     <MESSAGE value="Merge" />
@@ -729,7 +732,8 @@
     <MESSAGE value="Created ResetPassword.jsp" />
     <MESSAGE value="Tested Security Questions front end view" />
     <MESSAGE value="Tested Reset PasswordReset" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tested Reset PasswordReset" />
+    <MESSAGE value="Discount Code Working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Discount Code Working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -737,16 +741,6 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/webapp/JspPages/LogIn.jsp</url>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/PasswordReset.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/main/webapp/JspPages/js/main.js</url>
-          <line>324</line>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
