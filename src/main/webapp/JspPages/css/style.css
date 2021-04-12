@@ -753,3 +753,8 @@ body {
     position: sticky;
     border-radius: 2px;
 }
+
+.box4  {
+    position: static;
+    border-radius: 2px;
+}
