@@ -21,7 +21,6 @@ public class SignUp extends HttpServlet {
 
         //check password here
         boolean check = pwcheck.isValidPass(password);
-        //TODO insert password checking algorithm
         if (!check) {
             response.getWriter().write("Password Too weak");
             return;
@@ -31,13 +30,12 @@ public class SignUp extends HttpServlet {
         String hashedPass = SHA256Hash.hash(password);
 
 
-        //Not Important TODO Maybe check email with regex
+        //Not Important
 //
         boolean chk = mailchk.isValidEmail(emailID);
 
         if (!chk) {
-            //response.getWriter().write("Email Too weak");
-            //TODO use response getWriter to respond with password requirements
+            //response.getWriter().write("Email Too weak")
             response.getWriter().write("Email format invalid");
             //doPost(request, response);
             return;
