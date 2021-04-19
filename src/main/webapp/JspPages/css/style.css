@@ -748,13 +748,3 @@ body {
     position: absolute;
     border-radius: 2px;
 }
-
-.box3  {
-    position: sticky;
-    border-radius: 2px;
-}
-
-.box4  {
-    position: static;
-    border-radius: 2px;
-}
