@@ -596,6 +596,10 @@ body {
     font-size: 20px;
 }
 
+.already {
+    margin-top: 20px;
+}
+
 .order_prod_name {
     margin-right: 31%;
 }
@@ -734,3 +738,4 @@ body {
 .pair {
     display: flex;
 }
+

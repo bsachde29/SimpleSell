@@ -86,6 +86,12 @@
                         $('#re-password').addClass('err');
                     }
 
+                    if (response == "Email format invalid") {
+                        window.alert("Email format invalid");
+                    }
+
+
+
                     // if (data != 1) {
                     //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'red');
                     // }
@@ -334,6 +340,9 @@
                     console.log("Code Already Exists");
                 } else if (response === "Discount Enabled"){
                     console.log("Code Created");
+                    window.alert("Discount Created");
+                    window.location.href = "Discounts.jsp";
+
                 }else if (response === "Discount Not Enabled") {
                     console.log("PROBLEM");
                 }else {
@@ -347,19 +356,22 @@
 
     if (($(".reset_password")[0])) {
         //var sellerID = sessionStorage.getItem("sellerID");
+        var getButton = $('#su_but_reset_button');
+        getButton.on('click', function () {
+            $.ajax({
+                type: 'post',
+                url: '/SimpleSell_war/GetSecurity',
+                data: {
+                    Email: $('#email1').val()
+                },
+                success: function (response) {
+                    console.log(response);
+                    var security = JSON.parse(response);
+                    $("#securityQuestion1").text(security.q1);
+                    $("#securityQuestion2").text(security.q2);
+                }
+            });
 
-        $.ajax({
-            type: 'post',
-            url: '/SimpleSell_war/GetSecurity',
-            data: {
-                SellerID: sessionStorage.getItem("sellerID")
-            },
-            success: function (response) {
-                console.log(response);
-                var security = JSON.parse(response);
-                $("#securityQuestion1").text(security.q1);
-                $("#securityQuestion2").text(security.q2);
-            }
         });
 
         var resetButton = $('#su_but_reset');
@@ -369,14 +381,14 @@
                 type: 'post',
                 url: '/SimpleSell_war/PasswordReset',
                 data: {
-                    SellerID: sessionStorage.getItem("sellerID"),
+                    Email: $('#email1').val(),
                     NewPassword: $("#password").val(),
                     Answer1:  $("#q1_answer").val(),
                     Answer2:  $("#q2_answer").val()
                 },
                 success: function (response) {
                     if (response === "Seller Info Updated") {
-                        window.location.href = "Login.jsp";
+                        window.location.href = "LogIn.jsp";
                         console.log("FUN IS HERE");
 
                     } else {
@@ -480,6 +492,7 @@
 
 
                 // if (response == "Wrong Details") {
+                //
                 //
                 //
                 // } else {

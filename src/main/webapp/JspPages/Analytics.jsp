@@ -46,7 +46,7 @@
                 Analytics
 
             </span>
-            <span class = "side_bar_item">
+            <span style="cursor: pointer;" onclick="window.location='Discounts.jsp';" class = "side_bar_item">
                 <i class="fas fa-star"></i>
                 Discounts
             </span>

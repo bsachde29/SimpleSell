@@ -86,6 +86,12 @@
                         $('#re-password').addClass('err');
                     }
 
+                    if (response == "Email format invalid") {
+                        window.alert("Email format invalid");
+                    }
+
+
+
                     // if (data != 1) {
                     //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'red');
                     // }
@@ -334,6 +340,9 @@
                     console.log("Code Already Exists");
                 } else if (response === "Discount Enabled"){
                     console.log("Code Created");
+                    window.alert("Discount Created");
+                    window.location.href = "Discounts.jsp";
+
                 }else if (response === "Discount Not Enabled") {
                     console.log("PROBLEM");
                 }else {
@@ -372,14 +381,14 @@
                 type: 'post',
                 url: '/SimpleSell_war/PasswordReset',
                 data: {
-                    SellerID: sessionStorage.getItem("sellerID"),
+                    Email: $('#email1').val(),
                     NewPassword: $("#password").val(),
                     Answer1:  $("#q1_answer").val(),
                     Answer2:  $("#q2_answer").val()
                 },
                 success: function (response) {
                     if (response === "Seller Info Updated") {
-                        window.location.href = "Login.jsp";
+                        window.location.href = "LogIn.jsp";
                         console.log("FUN IS HERE");
 
                     } else {
@@ -483,6 +492,7 @@
 
 
                 // if (response == "Wrong Details") {
+                //
                 //
                 //
                 // } else {

@@ -10,17 +10,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="">
+    <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="Test signup fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GetSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GetSecurity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PasswordReset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PasswordReset.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/ResetPassword.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/ResetPassword.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/ResetPassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/ResetPassword.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/ResetPassword.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/ResetPassword.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/PasswordReset.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/PasswordReset.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/SignUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/SignUp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SignUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SignUp.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +78,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.23103449" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -96,8 +93,9 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Tomcat 9.0.43" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.43" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat 9.0.43" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.431" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/SimpleSell_war" />
+      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="SimpleSell:war">
@@ -362,6 +360,7 @@
       <workItem from="1617251460352" duration="258000" />
       <workItem from="1617251725852" duration="646000" />
       <workItem from="1617353611318" duration="1961000" />
+      <workItem from="1618369514800" duration="624000" />
     </task>
     <task id="LOCAL-00001" summary="jquery added&#10;main.js created">
       <created>1614501372547</created>
@@ -678,7 +677,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617353127517</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Check signup change">
+      <created>1618093672548</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1618093672548</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Test signup fix">
+      <created>1618093724265</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1618093724265</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -697,8 +710,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ModifyAccountDetails tested and debugged. Modified both the front end and the back end" />
-    <MESSAGE value="Inventory working other than delete product" />
     <MESSAGE value="Merge" />
     <MESSAGE value="Save id added" />
     <MESSAGE value="AJAX working add products" />
@@ -722,7 +733,9 @@
     <MESSAGE value="Tested Security Questions front end view" />
     <MESSAGE value="Tested Reset PasswordReset" />
     <MESSAGE value="Discount Code Working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Discount Code Working" />
+    <MESSAGE value="Check signup change" />
+    <MESSAGE value="Test signup fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test signup fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
