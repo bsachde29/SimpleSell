@@ -36,7 +36,7 @@ public class returningCustomer extends HttpServlet {
                 String check = "SELECT BuyerID, Count(OrderID) from Seller_Buyer_Orders where SellerID = '" + sellerID + "' group by BuyerID";
                 ResultSet result = s1.executeQuery(check);
                 while (result.next()) {
-                    int count = result.getInt(1);
+                    int count = result.getInt(1); // Column index check
                     totalCustomer++;
                     if (count > 1) {
                         returningCustomer++;
