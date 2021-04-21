@@ -25,43 +25,68 @@
     </div>
     <div class="content">
         <div class="side_bar">
-            <span class="side_bar_item">
+            <span class = "side_bar_item">
                 <i class="fas fa-home"></i>
                 Home
             </span>
-            <span class="side_bar_item">
+            <span style="cursor: pointer;" onclick="window.location='Inventory.jsp';" class = "side_bar_item ">
                 <i class="fas fa-dolly-flatbed"></i>
                 Inventory
 
             </span>
-            <span class="side_bar_item selected_nav_item">
+            <span style="cursor: pointer;" onclick="window.location='Analytics.jsp';" class = "side_bar_item selected_nav_item">
                 <i class="fas fa-chart-bar"></i>
                 Analytics
 
             </span>
-            <span class="side_bar_item">
+            <span style="cursor: pointer;" onclick="window.location='Discounts.jsp';" class = "side_bar_item">
                 <i class="fas fa-star"></i>
                 Discounts
             </span>
-            <span class="side_bar_item">
-                <i class="fas fa-store"></i>
-                Storefront
+            <span style="cursor: pointer;" onclick="window.location='Orders.jsp';" class = "side_bar_item">
+                <i class="fas fa-boxes"></i>
+                Orders
             </span>
-            <span class="side_bar_item">
+            <span style="cursor: pointer;" onclick="window.location='ModifyAccountDetails.jsp';" class = "side_bar_item">
                 <i class="fas fa-user-alt"></i>
                 Profile
             </span>
 
         </div>
         <div class="content_main_out">
-            <div class="content_main" >
+
+            <div class="content_main" id="analytics_page" >
                 <h1 class="product_text prd_title">Analytics</h1>
+                
                 <h2 class= "product_text">Total Sales</h2>
                 <i class="fas fa-dollar-sign in_page_icon"></i>
                 <h2 class= "product_text sales_txt" id="total_sales">999.99</h2>
-                <h2 class= "product_text">Average Order Value</h2>
+                <h2 class= "product_text">Total Number of Orders</h2>
+                <h2 class= "product_text sales_txt" id="total_orders">1984</h2>
+                <h2 class= "product_text" >Average Order Value</h2>
                 <i class="fas fa-dollar-sign in_page_icon"></i>
                 <h2 class= "product_text sales_txt" id="avg_order_value">999.99</h2>
+                <h2 class= "product_text" >Returning Customer Rates</h2>
+                <h2 class= "product_text sales_txt" id="ret_cust_rate">69.69 <span>&#37;</span>
+                <h2 class= "product_text" >Number of Orders Per Customer</h2>
+                <table class="product_text styled-table" id="cust_table">
+                    <thead>
+                        <tr>
+                            <th>Customer Name</th>
+                            <th>No. of Orders</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>420</td>
+                        </tr>
+                        <tr>
+                            <td>Jane Doe</td>
+                            <td>666</td>
+                        </tr>
+                    </tbody>
+                </table>                
             </div>
         </div>
     </div>

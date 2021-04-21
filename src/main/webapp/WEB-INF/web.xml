@@ -148,4 +148,17 @@
         <url-pattern>/DiscountCode</url-pattern>
     </servlet-mapping>
 
+
+    <servlet>
+        <servlet-name>FetchCarts</servlet-name>
+        <servlet-class>FetchCarts</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FetchCarts</servlet-name>
+        <url-pattern>/FetchCarts</url-pattern>
+    </servlet-mapping>
+
+
+
 </web-app>
