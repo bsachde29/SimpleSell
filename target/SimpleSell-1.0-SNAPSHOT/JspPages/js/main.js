@@ -518,6 +518,120 @@
 
     }
 
+    if (($(".all_abandoned_orders")[0])) {
+
+
+        var sellerID = sessionStorage.getItem("sellerID");
+
+
+
+
+        $.ajax({
+            type: 'get',
+            url: '/SimpleSell_war/FetchCarts',
+            data: {
+                SellerID: sellerID
+            },
+
+            success: function (response) {
+
+                DEBUG && console.log(response);
+
+                var obj = JSON.parse(response);
+
+                var html_append = "";
+
+                for (var i = 0; i < obj.length; i++) {
+
+
+                    var accepted = false;
+
+                    var str = "<div class=\"order_btns_wrapper\">\n" +
+                        "            <button class=\"decline_order order_btns\">Decline</button>\n" +
+                        "            <button class=\"accept_order order_btns\">Accept</button>\n" +
+                        "        </div>";
+
+                    // if (obj[i]["accept"] == "ACCEPTED") {
+                    //     str = "<div class=\"order_btns_wrapper\">\n" +
+                    //         "    <button class=\"complete_order order_btns\">Mark as Completed</button>\n" +
+                    //         "</div>"
+                    // }
+
+                    html_append += "<div class=\"order_wrapper\">\n" +
+                        "\n" +
+                        "    <div class=\"all_order_products\">"
+
+
+                    // html_append += "<div>\n" +
+                    //     "    <p class=\"order_id\">Order ID: " + obj[i]["orderId"] + "</p>\n" +
+                    //     "</div>"
+
+                    for (var j = 0; j < obj[i]["products"].length; j++) {
+
+                        html_append += "<div class=\"order_prod_wrapper\">\n" +
+                            "            <img src=\"img/product_image.jpg\" class=\"order_image\">\n" +
+                            "            <section class=\"order_prod_name\">" + obj[i]["products"][j]["name"] + "</section>\n" +
+                            "            <div class=\"order_prod_details\">\n" +
+                            "                <span class=\"order_prod_price\">Price: " + obj[i]["products"][j]["price"] + "</span>\n" +
+                            "                <span class=\"order_prod_qty\">Qty.: " + obj[i]["quantities"][j] + "</span>\n" +
+                            "            </div>\n" +
+                            "        </div>"
+
+                    }
+
+                    html_append += "<div class=\"order_bottom\">\n" +
+                        "\n" +
+                        "        <div class=\"order_buyer_details\">\n" +
+                        "            <span class=\"order_buyer_name\">" + obj[i]["firstName"] + " " + obj[i]["lastName"] + "</span>\n" +
+                        "            <span class=\"order_buyer_email\">" + obj[i]["email"] + "</span>\n" +
+                        "            <span class=\"order_buyer_phnumber\">" + obj[i]["mobileNum"] + "</span>\n" +
+                        "        </div>\n" +
+                        "\n" +
+                        str +
+                        "\n" +
+                        "    </div>\n" +
+                        "\n" +
+                        "\n" +
+                        "\n" +
+                        "</div>" + "</div>";
+
+
+
+                }
+
+
+                $('.all_abandoned_orders').append(html_append);
+                $('.scripts').append("<script src=\"js/save_moded.js\"></script>")
+
+
+
+                // if (response == "Wrong Details") {
+                //
+                //
+                //
+                // } else {
+                //     var seller = JSON.parse(response);
+                //     console.log(seller);
+                //     sessionStorage.setItem("sellerID", seller.sellerID);
+                //     sessionStorage.setItem(("storeName"), seller.appName);
+                //     sessionStorage.setItem("sellerName", seller.firstName + " " + seller.lastName);
+                //
+                // }
+                //
+                // window.location.href = "Inventory.jsp";
+
+                // if (data != 1) {
+                //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'red');
+                // }
+                // else {
+                //     $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'green');
+                // }
+
+            }
+        });
+
+    }
+
     if (($(".modify_details")[0])) {
 
         $(".modify_details").hide();
