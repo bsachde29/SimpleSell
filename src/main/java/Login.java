@@ -44,10 +44,6 @@ public class Login extends HttpServlet {
                     System.out.println("Wrong Details");
                     response.getWriter().write("Wrong Details");
                 }
-
-
-
-                //TODO check in database whether email exists if not return with response does not exist
                 //If exists then get the whole object return sellerID for now
             }
         } catch (Exception e) {
