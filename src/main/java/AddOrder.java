@@ -21,7 +21,7 @@ public class AddOrder extends HttpServlet {
         int orderState = Integer.parseInt(request.getParameter("OrderState"));
         int orderAccept = Integer.parseInt(request.getParameter("OrderAccept"));
 
-        //TODO: populate orders from buyer orders (second sprint)
+
         /*
         String dburl = "jdbc:mysql://selldb.cqt5tgj7qyws.us-east-2.rds.amazonaws.com:3306/simpledb";
         String dbusername = "simpledb";
