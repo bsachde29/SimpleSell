@@ -10,27 +10,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="">
+    <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="Test signup fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/Products.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Products.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/Analytics.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/Analytics.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/Discounts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/Discounts.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/Inventory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/Inventory.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/LogIn.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/LogIn.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/ModifyAccountDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/ModifyAccountDetails.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/Orders.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/Orders.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/Products.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/Products.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/Products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/Products.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/SecurityQuestions.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/SecurityQuestions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/Analytics.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/Analytics.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/Inventory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/Inventory.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/Orders.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/Orders.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/ResetPassword.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/ResetPassword.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/SignUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/WEB-INF/classes/SignUp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SignUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SignUp.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -373,6 +360,7 @@
       <workItem from="1617251460352" duration="258000" />
       <workItem from="1617251725852" duration="646000" />
       <workItem from="1617353611318" duration="1961000" />
+      <workItem from="1618369514800" duration="624000" />
     </task>
     <task id="LOCAL-00001" summary="jquery added&#10;main.js created">
       <created>1614501372547</created>
@@ -689,7 +677,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617353127517</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Check signup change">
+      <created>1618093672548</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1618093672548</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Test signup fix">
+      <created>1618093724265</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1618093724265</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -708,8 +710,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ModifyAccountDetails tested and debugged. Modified both the front end and the back end" />
-    <MESSAGE value="Inventory working other than delete product" />
     <MESSAGE value="Merge" />
     <MESSAGE value="Save id added" />
     <MESSAGE value="AJAX working add products" />
@@ -733,7 +733,9 @@
     <MESSAGE value="Tested Security Questions front end view" />
     <MESSAGE value="Tested Reset PasswordReset" />
     <MESSAGE value="Discount Code Working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Discount Code Working" />
+    <MESSAGE value="Check signup change" />
+    <MESSAGE value="Test signup fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test signup fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

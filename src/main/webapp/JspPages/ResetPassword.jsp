@@ -19,6 +19,7 @@
             <img src="img/logo_full.png">
         </div>
 
+
         <div class="login_txt reset_password">
 
             <section class="si_txt">Reset Password. </section>

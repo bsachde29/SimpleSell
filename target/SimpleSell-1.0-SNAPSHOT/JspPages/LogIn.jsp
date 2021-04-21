@@ -19,6 +19,7 @@
             <input class="li_txt_box" id="email" type="text" placeholder="Username">
             <input class="li_txt_box" id="password" type="password" placeholder="Password">
             <section class="already"><a href="SignUp.jsp">New to SimpleSell? Sign Up.</a></section>
+            <section class="already"><a href="ResetPassword.jsp">Forgot Password</a></section>
         </div>
 
         <div>
