@@ -8,11 +8,22 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 @WebServlet(name = "orderPerCustomer", value = "/orderPerCustomer")
 public class orderPerCustomer extends HttpServlet {
 
+    private class ResultObj {
+        String email;
+        int count;
+
+        public ResultObj(String email, int count) {
+            this.email = email;
+            this.count = count;
+        }
+    }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -46,11 +57,15 @@ public class orderPerCustomer extends HttpServlet {
                         String email = result2.getString("Email");
                         map.put(email, count);
                     }
-
+                }
+                ArrayList<ResultObj> resultObjs = new ArrayList<>();
+                for(Map.Entry<String,Integer> entry : map.entrySet()) {
+                    resultObjs.add(new ResultObj(entry.getKey(), entry.getValue()));
                 }
                 Gson gson = new Gson();
-                String data = gson.toJson(map);
+                String data = gson.toJson(resultObjs);
                 response.getWriter().write(data);
+
 
             }
         } catch (Exception e) {
