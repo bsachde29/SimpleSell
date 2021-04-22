@@ -12,6 +12,8 @@ import java.util.HashMap;
 
 @WebServlet(name = "orderPerCustomer", value = "/orderPerCustomer")
 public class orderPerCustomer extends HttpServlet {
+    
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -20,7 +22,7 @@ public class orderPerCustomer extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        String sellerID = request.getParameter("sellerID");
+        String sellerID = request.getParameter("SellerID");
         String url = "jdbc:mysql://selldb.cqt5tgj7qyws.us-east-2.rds.amazonaws.com:3306/simpledb";
         String username = "simpledb";
         String password = "sell1234";

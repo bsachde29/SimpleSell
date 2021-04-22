@@ -10,7 +10,15 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 @WebServlet(name = "GetNumberOrders", value = "/GetNumberOrders")
+
+
+
 public class GetNumberOrders extends HttpServlet {
+
+    private class Result {
+        int temp;
+    }
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -19,7 +27,7 @@ public class GetNumberOrders extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        String sellerID = request.getParameter("sellerID");
+        String sellerID = request.getParameter("SellerID");
         String url = "jdbc:mysql://selldb.cqt5tgj7qyws.us-east-2.rds.amazonaws.com:3306/simpledb";
         String username = "simpledb";
         String password = "sell1234";
@@ -33,14 +41,17 @@ public class GetNumberOrders extends HttpServlet {
                 System.out.println("Database connection is successful !!!!");
                 Statement s1 = con.createStatement();
                 String check = "SELECT  Count(OrderID) from Seller_Buyer_Orders where SellerID = '" + sellerID + "'";
+                System.out.println(check);
                 ResultSet result = s1.executeQuery(check);
                 int count = -1;
                if (result.next()) {
-                    count = result.getInt(0); // Column index check
-
+                    count = result.getInt("Count(OrderID)"); // Column index check
                 }
+                System.out.println(count);
+                Result result1 = new Result();
+                result1.temp = count;
                 Gson gson = new Gson();
-                String data = gson.toJson(count);
+                String data = gson.toJson(result1);
                 response.getWriter().write(data);
 
             }

@@ -61,14 +61,39 @@
 
         </div>
         <div class="content_main_out">
+
             <div class="content_main" id="analytics_page" >
                 <h1 class="product_text prd_title">Analytics</h1>
+                
                 <h2 class= "product_text">Total Sales</h2>
                 <i class="fas fa-dollar-sign in_page_icon"></i>
                 <h2 class= "product_text sales_txt" id="total_sales">999.99</h2>
+                <h2 class= "product_text">Total Number of Orders</h2>
+                <h2 class= "product_text sales_txt" id="total_orders">1984</h2>
                 <h2 class= "product_text" >Average Order Value</h2>
                 <i class="fas fa-dollar-sign in_page_icon"></i>
                 <h2 class= "product_text sales_txt" id="avg_order_value">999.99</h2>
+                <h2 class= "product_text" >Returning Customer Rates</h2>
+                <h2 class= "product_text sales_txt" id="ret_cust_rate">69.69 <span>&#37;</span>
+                <h2 class= "product_text" >Number of Orders Per Customer</h2>
+                <table class="product_text styled-table" id="cust_table">
+                    <thead>
+                        <tr>
+                            <th>Customer Name</th>
+                            <th>No. of Orders</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>420</td>
+                        </tr>
+                        <tr>
+                            <td>Jane Doe</td>
+                            <td>666</td>
+                        </tr>
+                    </tbody>
+                </table>                
             </div>
         </div>
     </div>

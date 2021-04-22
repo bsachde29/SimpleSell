@@ -148,4 +148,37 @@
         <url-pattern>/DiscountCode</url-pattern>
     </servlet-mapping>
 
+
+    <servlet>
+        <servlet-name>FetchCarts</servlet-name>
+        <servlet-class>FetchCarts</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FetchCarts</servlet-name>
+        <url-pattern>/FetchCarts</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>returningCustomer</servlet-name>
+        <servlet-class>returningCustomer</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>returningCustomer</servlet-name>
+        <url-pattern>/returningCustomer</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetNumberOrders</servlet-name>
+        <servlet-class>GetNumberOrders</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GetNumberOrders</servlet-name>
+        <url-pattern>/GetNumberOrders</url-pattern>
+    </servlet-mapping>
+
+
+
 </web-app>
