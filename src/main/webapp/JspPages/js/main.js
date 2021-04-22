@@ -723,6 +723,21 @@
         });
 
         $.ajax({
+            type: 'get',
+            url: '/SimpleSell_war/orderPerCustomer',
+            data: {
+                SellerID: sessionStorage.getItem("sellerID")
+            },
+            success: function (response) {
+                var seller = JSON.parse(response);
+                console.log(response);
+                // $("#total_sales").text(seller.sales)
+                // $("#avg_order_value").text(seller.avg)
+                // // $("#analytics_page").show();
+            }
+        });
+
+        $.ajax({
             type: 'post',
             url: '/SimpleSell_war/returningCustomer',
             data: {
@@ -731,7 +746,7 @@
             success: function (response) {
                 var seller = JSON.parse(response);
                 console.log(response);
-                $("#ret_cust_rate").text(seller.returningRate);
+                $("#ret_cust_rate").text(seller.returningRate + "%");
                 // $("#analytics_page").show();
             }
         });
@@ -745,7 +760,7 @@
             success: function (response) {
                 var seller = JSON.parse(response);
                 console.log(response);
-                $("#total_orders").text(seller.temp + "%");
+                $("#total_orders").text(seller.temp);
                 $("#analytics_page").show();
             }
         });

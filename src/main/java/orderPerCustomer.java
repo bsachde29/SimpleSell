@@ -12,15 +12,15 @@ import java.util.HashMap;
 
 @WebServlet(name = "orderPerCustomer", value = "/orderPerCustomer")
 public class orderPerCustomer extends HttpServlet {
-    
+
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String sellerID = request.getParameter("SellerID");
         String url = "jdbc:mysql://selldb.cqt5tgj7qyws.us-east-2.rds.amazonaws.com:3306/simpledb";
@@ -38,12 +38,12 @@ public class orderPerCustomer extends HttpServlet {
                 ResultSet result = s1.executeQuery(check);
                 while (result.next()) {
                     int buyer = result.getInt("BuyerID");
-                    int count = result.getInt(1);
+                    int count = result.getInt("Count(OrderID)");
                     Statement s2 = con.createStatement();
                     String buyerEmail = "SELECT Email FROM Buyers WHERE BuyerID ='" + buyer + "'";
                     ResultSet result2 = s2.executeQuery(buyerEmail);
                     if (result2.next()) {
-                        String email = result.getString("Email");
+                        String email = result2.getString("Email");
                         map.put(email, count);
                     }
 

@@ -48,7 +48,6 @@ public class returningCustomer extends HttpServlet {
                     if (count > 1) {
                         returningCustomer++;
                     }
-
                 }
                 System.out.println(totalCustomer);
                 System.out.println(returningCustomer);
