@@ -84,14 +84,7 @@
                         </tr>
                     </thead>
                     <tbody class="tableBody">
-                        <tr>
-                            <td>John Doe</td>
-                            <td>420</td>
-                        </tr>
-                        <tr>
-                            <td>Jane Doe</td>
-                            <td>666</td>
-                        </tr>
+
                     </tbody>
                 </table>                
             </div>
