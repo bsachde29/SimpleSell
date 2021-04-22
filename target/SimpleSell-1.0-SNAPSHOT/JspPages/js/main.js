@@ -402,7 +402,16 @@
 
 
 
-
+var test = "<tr>\n" +
+    "        <th colspan=\"5\">\n" +
+    "            <hr>\n" +
+    "        </th>\n" +
+    "    </tr>\n" +
+    "    </tbody>\n" +
+    "</table>\n" +
+    "\n" +
+    "</body>\n" +
+    "</html>"
 
     if (($(".all_orders")[0])) {
 
@@ -631,6 +640,32 @@
         });
 
     }
+    if (($(".styled-table")[0])) {
+        $.ajax({
+            type: 'get',
+            url: '/SimpleSell_war/orderPerCustomer',
+            data: {
+                SellerID: sessionStorage.getItem("sellerID")
+            },
+            success: function (response) {
+
+                var obj = JSON.parse(response);
+
+                var html_append = "";
+
+                for (var i = 0; i < obj.length; i++) {
+                    html_append += "<tr>\n" +
+                        "                            <td>" + obj[i]["email"] + "</td>\n" +
+                        "                            <td>" + obj[i]["count"] + "</td>\n" +
+                        "                        </tr>"
+
+                }
+
+                $('.tableBody').append(html_append);
+            }
+        });
+    }
+
 
     if (($(".modify_details")[0])) {
 

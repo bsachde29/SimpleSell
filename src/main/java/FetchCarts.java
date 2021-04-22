@@ -12,7 +12,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-@WebServlet(name = "FetchCarts")
+@WebServlet(name = "FetchCarts", value = "/FetchCarts")
 public class FetchCarts extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -39,6 +39,9 @@ public class FetchCarts extends HttpServlet {
                         Statement s2 = con.createStatement();
                         String checkUser = "SELECT * FROM Cart WHERE BuyerID = '" + buyerID + "' ";
                         ResultSet userCheck = s2.executeQuery(checkUser);
+                        if (!userCheck.next()) {
+                            continue;
+                        }
                         int cartID = userCheck.getInt("cartID");
                         Statement s3 = con.createStatement();
                         String productCount = "SELECT * FROM Cart_Product_Count WHERE CartID = '" + cartID + "'";

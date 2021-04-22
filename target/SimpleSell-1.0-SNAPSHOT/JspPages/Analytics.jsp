@@ -83,7 +83,7 @@
                             <th>No. of Orders</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="tableBody">
                         <tr>
                             <td>John Doe</td>
                             <td>420</td>
