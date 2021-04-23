@@ -652,6 +652,7 @@ var test = "<tr>\n" +
                 var obj = JSON.parse(response);
 
                 var html_append = "";
+                var html_append = "";
 
                 for (var i = 0; i < obj.length; i++) {
                     html_append += "<tr>\n" +

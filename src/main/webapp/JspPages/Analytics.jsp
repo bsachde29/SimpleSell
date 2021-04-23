@@ -64,7 +64,7 @@
 
             <div class="content_main" id="analytics_page" >
                 <h1 class="product_text prd_title">Analytics</h1>
-                
+                <h2 class= "product_text" onclick="window.location='AbandonedCheckouts.jsp';">See Abandoned Checkouts</h2>
                 <h2 class= "product_text">Total Sales</h2>
                 <i class="fas fa-dollar-sign in_page_icon"></i>
                 <h2 class= "product_text sales_txt" id="total_sales">999.99</h2>
