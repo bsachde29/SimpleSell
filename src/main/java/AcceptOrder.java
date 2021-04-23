@@ -41,7 +41,7 @@ public class AcceptOrder extends HttpServlet {
                         String buy = res.getString("BuyerID");
                         String sq = "INSERT INTO Notification (OrderID, SellerID, BuyerID) VALUES ( '" + orderID + "','" + sell + "','" + buy + "')";
                         Statement s4 = con.createStatement();
-                        s4.executeQuery(sq);
+                        s4.executeUpdate(sq);
                         System.out.println("Notification Created");
 
                     }
