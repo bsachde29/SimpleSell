@@ -17,7 +17,7 @@ public class SignUp extends HttpServlet {
         String password = request.getParameter("Password");
         String storeName = request.getParameter("StoreName");
         String description = request.getParameter("Description");
-        String SecurityQuestion = request.getParameter("SecurityQuestion");
+//        String SecurityQuestion = request.getParameter("SecurityQuestion");
 
         //check password here
         boolean check = pwcheck.isValidPass(password);
@@ -64,9 +64,9 @@ public class SignUp extends HttpServlet {
                     response.getWriter().write("Phone Exists");
                     return;
                 }
-                String sqlquery = "INSERT INTO Sellers (FirstName,LastName,Email,MobileNum,Pswd,StoreName,Description, SecurityQuestions)" +
+                String sqlquery = "INSERT INTO Sellers (FirstName,LastName,Email,MobileNum,Pswd,StoreName,Description)" +
                         "VALUES ('" + firstName + "','" + lastName + "','" + emailID + "','" + mobileNum + "','" +
-                        hashedPass + "','" + storeName + "','" + description + "','" + SecurityQuestion +  "')";
+                        hashedPass + "','" + storeName + "','" + description + "')";
                 System.out.println(sqlquery);
                 s1.executeUpdate(sqlquery);
                 System.out.println("Inserted Seller into Table");

@@ -12,12 +12,8 @@
   <component name="ChangeListManager">
     <list default="true" id="65637109-41db-42f0-b0f8-6d53a0289368" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/AbandonedCheckouts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/AbandonedCheckouts.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JspPages/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JspPages/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SignUp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/Analytics.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/Analytics.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/JspPages/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/SimpleSell-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -375,13 +371,6 @@
       <workItem from="1619034879174" duration="303000" />
       <workItem from="1619071541529" duration="1152000" />
     </task>
-    <task id="LOCAL-00001" summary="jquery added&#10;main.js created">
-      <created>1614501372547</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1614501372547</updated>
-    </task>
     <task id="LOCAL-00002" summary="jquery working">
       <created>1614505901476</created>
       <option name="number" value="00002" />
@@ -718,7 +707,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619072379871</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Corrected Analytics.jsp">
+      <created>1619165486315</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1619165486315</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -737,7 +733,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="AJAX working add products" />
     <MESSAGE value="Orders page fetching and displaying orders" />
     <MESSAGE value="Accept orders ajax sent" />
     <MESSAGE value="decline orders ajax sent" />
@@ -762,7 +757,8 @@
     <MESSAGE value="Test signup fix" />
     <MESSAGE value="Tested and debugged analytics" />
     <MESSAGE value="Tested orderPerCustomer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tested orderPerCustomer" />
+    <MESSAGE value="Corrected Analytics.jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrected Analytics.jsp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
