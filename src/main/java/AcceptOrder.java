@@ -33,6 +33,19 @@ public class AcceptOrder extends HttpServlet {
                     System.out.println(sqlquery);
                     Statement s2 = con.createStatement();
                     s2.executeUpdate(sqlquery);
+                    String sqlCommand = "SELECT SellerID, BuyerID FROM Seller_Buyer_Orders WHERE OrderID = '" + orderID + "'";
+                    Statement s3 = con.createStatement();
+                    ResultSet res = s3.executeQuery(sqlCommand);
+                    if (res.next()) {
+                        String sell = res.getString("SellerID");
+                        String buy = res.getString("BuyerID");
+                        String sq = "INSERT INTO Notification (OrderID, SellerID, BuyerID) VALUES ( '" + orderID + "','" + sell + "','" + buy + "')";
+                        Statement s4 = con.createStatement();
+                        s4.executeUpdate(sq);
+                        System.out.println("Notification Created");
+
+                    }
+
                     System.out.println("Updated Order to Accepted");
                     response.getWriter().write("Order Accepted");
                 } else {
