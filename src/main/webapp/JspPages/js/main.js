@@ -596,8 +596,6 @@ var test = "<tr>\n" +
                         "            <span class=\"order_buyer_phnumber\">" + obj[i]["mobileNum"] + "</span>\n" +
                         "        </div>\n" +
                         "\n" +
-                        str +
-                        "\n" +
                         "    </div>\n" +
                         "\n" +
                         "\n" +

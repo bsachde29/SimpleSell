@@ -1,7 +1,7 @@
 <html class="" lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Orders</title>
+    <title>Abandoned Checkouts</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/7dff33b5c2.js" crossorigin="anonymous"></script>
@@ -43,7 +43,7 @@
                 <i class="fas fa-star"></i>
                 Discounts
             </span>
-            <span style="cursor: pointer;" onclick="window.location='Orders.jsp';" class = "side_bar_item selected_nav_item">
+            <span style="cursor: pointer;" onclick="window.location='Orders.jsp';" class = "side_bar_item ">
                 <i class="fas fa-boxes"></i>
                 Orders
             </span>
@@ -55,7 +55,7 @@
         </div>
         <div class="content_main_out">
             <div class="content_main">
-                <h1 class="product_text prd_title">Orders</h1>
+                <h1 class="product_text prd_title">Abandoned Checkouts</h1>
 
                 <div class="all_abandoned_orders">
 

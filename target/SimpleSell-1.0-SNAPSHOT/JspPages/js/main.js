@@ -596,8 +596,6 @@ var test = "<tr>\n" +
                         "            <span class=\"order_buyer_phnumber\">" + obj[i]["mobileNum"] + "</span>\n" +
                         "        </div>\n" +
                         "\n" +
-                        str +
-                        "\n" +
                         "    </div>\n" +
                         "\n" +
                         "\n" +
@@ -651,6 +649,7 @@ var test = "<tr>\n" +
 
                 var obj = JSON.parse(response);
 
+                var html_append = "";
                 var html_append = "";
 
                 for (var i = 0; i < obj.length; i++) {
