@@ -1,3 +1,4 @@
 # SimpleSell
 
-CS307 Project Team 5
+[SimpleApp]: https://github.com/bsachde29/SimpleApp
+
