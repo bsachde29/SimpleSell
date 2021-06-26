@@ -1,4 +1,4 @@
 # SimpleSell
 
-[SimpleApp]: https://github.com/bsachde29/SimpleApp
+[SimpleApp]: (https://github.com/bsachde29/SimpleApp)
 
